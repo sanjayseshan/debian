@@ -1,14 +1,34 @@
+Package: avrdude
+Priority: extra
+Section: electronics
+Installed-Size: 876
+Maintainer: Michael Biebl <biebl@debian.org>
+Architecture: armel
+Version: 1:5.10-4
+Depends: libc6 (>= 2.7), libncurses5 (>= 5.7+20100313), libreadline6 (>= 6.0), libusb-0.1-4 (>= 2:0.1.12)
+Suggests: avrdude-doc
+Filename: pool/main/a/avrdude/avrdude_5.10-4_armel.deb
+Size: 207576
+MD5sum: 199d92954fcebd8b66bf96986d632353
+SHA1: a71e5ea75f574e9ae66d3e5f2f65211c10723164
+SHA256: ce09127f2bd5dfa9e258014a3035ed7f019a55974d2128d29ba9d5b7aad4c331
+Description: software for programming Atmel AVR microcontrollers
+ AVRDUDE is an open source utility to download/upload/manipulate the
+ ROM and EEPROM contents of AVR microcontrollers using the in-system
+ programming technique (ISP).
+Homepage: http://savannah.nongnu.org/projects/avrdude/
+
 Package: brickpi-boot
 Priority: required
 Section: base
 Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
-Architecture: armel
+Architecture: all
 Version: 1.0
 Depends: raspberrypi-bootloader (>= 1.0.0)
-Filename: pool/main/b/brickpi-boot/BrickPiBoot_1.0_armel.deb
-Size: 2386
-MD5sum: 8c8542f7fbed02a1833a7308a62dd98c
-SHA1: be888761fd1c95fb4a368c038172c948d6cc9342
-SHA256: c5acfc3cc96cd8187db5b3a8df6017147205eae951c314a14fe1d512fb815725
+Filename: pool/main/b/brickpi-boot/BrickPiBoot_1.0_all.deb
+Size: 2384
+MD5sum: 47d67789061889d67f1a4a25310f618a
+SHA1: e5ac36784c8388f63e62a2f22d1df3289467d423
+SHA256: 5f74139f27213ca456d53cbc7eb29214ec520fb3e85771750d4fde17c609fb3d
 Description: Installs the required raspberrypi bootloader files for the brickpi to work
 
