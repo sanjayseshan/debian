@@ -1,0 +1,14 @@
+Package: brickpi-boot
+Priority: required
+Section: base
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: armel
+Version: 1.0
+Depends: raspberrypi-bootloader (>= 1.0.0)
+Filename: pool/main/b/brickpi-boot/BrickPiBoot_1.0_armel.deb
+Size: 2386
+MD5sum: 8c8542f7fbed02a1833a7308a62dd98c
+SHA1: be888761fd1c95fb4a368c038172c948d6cc9342
+SHA256: c5acfc3cc96cd8187db5b3a8df6017147205eae951c314a14fe1d512fb815725
+Description: Installs the required raspberrypi bootloader files for the brickpi to work
+

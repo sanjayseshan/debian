@@ -1,0 +1,14 @@
+Package: brickpi-boot
+Priority: required
+Section: base
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: armhf
+Version: 1.0
+Depends: raspberrypi-bootloader (>= 1.0.0)
+Filename: pool/main/b/brickpi-boot/BrickPiBoot_1.0_armhf.deb
+Size: 2394
+MD5sum: 829f5d8fa53be3a9b072ef3eae4868b7
+SHA1: 4de183cda45858234bf816be68c21900425ceb05
+SHA256: 4fba291ac2896e5c8fb7f3aea1dc279a4c7a908591c6f16f8a2c345bc1723602
+Description: Installs the required raspberrypi bootloader files for the brickpi to work
+
