@@ -37,12 +37,12 @@ Priority: required
 Section: base
 Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Architecture: all
-Version: 1.0
+Version: 1.1
 Depends: python2.7 (>= 1.0.0)
 Filename: pool/main/b/brickpi-python/Python-BrickPi_1.0_all.deb
-Size: 9064
-MD5sum: bca50677756442e6e4879dd04bf3ef48
-SHA1: 52aa8c00576a44d10b6819238858d53c50a91e29
-SHA256: 9a875e2715d80a65a8c24f9c7cb79442e34088ca04f1dd04369e4c06cbb1ce05
+Size: 18624
+MD5sum: 0d5378fbdfcbe3fda7d430fc8c2c2fef
+SHA1: 52ee1ca4c40473c27071201e563a1fc8a92aad45
+SHA256: 6eca412423b58125dc1eeaa992008025fb230ca4e10d6cb7ae36c2dab0f4f6c4
 Description: Installs the BrickPi Python Modules
 
