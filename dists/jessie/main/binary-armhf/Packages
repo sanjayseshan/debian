@@ -60,3 +60,17 @@ SHA1: 52ee1ca4c40473c27071201e563a1fc8a92aad45
 SHA256: 6eca412423b58125dc1eeaa992008025fb230ca4e10d6cb7ae36c2dab0f4f6c4
 Description: Installs the BrickPi Python Modules
 
+Package: ev3lessons-archive-keyring
+Priority: required
+Section: base
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.0
+Depends: apt (>= 1.0.0)
+Filename: pool/main/e/ev3lessons-archive-keyring/ev3lessons-archive-keyring_1.0_all.deb
+Size: 1998
+MD5sum: d5cbff7ddd4fed0b541b7f8963f307e0
+SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
+SHA256: d91d5e002d8056dd9534f31f0f3b77470a04b65869b365aa9b0e547294fae3be
+Description: Installs the ev3lessons gpg key
+
