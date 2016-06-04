@@ -1,17 +1,18 @@
 Package: avrdude
 Priority: extra
 Section: electronics
-Installed-Size: 836
-Maintainer: Michael Biebl <biebl@debian.org>
-Architecture: armhf
-Version: 1:5.10-4
-Depends: libc6 (>= 2.13-28), libncurses5 (>= 5.5-5~), libreadline6 (>= 6.0), libtinfo5, libusb-0.1-4 (>= 2:0.1.12)
+Installed-Size: 1066
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Milan Kupcevic <milan@debian.org>
+Architecture: i386
+Version: 6.2-5
+Depends: libc6 (>= 2.15), libelf1 (>= 0.142), libftdi1 (>= 0.20), libreadline6 (>= 6.0), libusb-0.1-4 (>= 2:0.1.12)
 Suggests: avrdude-doc
-Filename: pool/main/a/avrdude/avrdude_5.10-4_armhf.deb
-Size: 202814
-MD5sum: 9f2902a03818bf05a6ac0999665ec4a8
-SHA1: 007904ae3a4e47b62f9559eb698119002c65f01f
-SHA256: 3078aaae64e448be7c5a4bfc5c00981902dcab1ec702b05aba44e6136464ba0f
+Filename: pool/main/a/avrdude/avrdude_6.2-5_i386.deb
+Size: 296578
+MD5sum: a5a8d8efa197810bd5fe6b75a7874b75
+SHA1: 642118f67c74a272720d32b9691693470b3fae75
+SHA256: 85ce196bdf5f480527db06ed26739949375905789d129c8dd777824034ba2726
 Description: software for programming Atmel AVR microcontrollers
  AVRDUDE is an open source utility to download/upload/manipulate the
  ROM and EEPROM contents of AVR microcontrollers using the in-system
