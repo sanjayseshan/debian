@@ -1,0 +1,77 @@
+Package: avrdude
+Priority: extra
+Section: electronics
+Installed-Size: 1032
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Milan Kupcevic <milan@debian.org>
+Architecture: amd64
+Version: 6.2-5
+Depends: libc6 (>= 2.15), libelf1 (>= 0.142), libftdi1 (>= 0.20), libreadline6 (>= 6.0), libusb-0.1-4 (>= 2:0.1.12)
+Suggests: avrdude-doc
+Filename: pool/main/a/avrdude/avrdude_6.2-5_amd64.deb
+Size: 291214
+MD5sum: 97fb8f0afd840241860bebb1e45946e9
+SHA1: 8de18d44dd895cecefbfc1b40163151a215261c2
+SHA256: 73bf97ddac31befacf225abc97f9b552bc857890b0a7f71d34ed61437b39f87e
+Description: software for programming Atmel AVR microcontrollers
+ AVRDUDE is an open source utility to download/upload/manipulate the
+ ROM and EEPROM contents of AVR microcontrollers using the in-system
+ programming technique (ISP).
+Homepage: http://savannah.nongnu.org/projects/avrdude/
+
+Package: brickpi-base
+Priority: required
+Section: base
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.0
+Depends: raspberrypi-bootloader (>= 1.0.0), brickpi-boot (>= 1.0.0), python-pip (>= 1.0.0), libi2c-dev (>= 1.0.0), python-serial (>= 1.0.0), python-rpi.gpio (>= 1.0.0), i2c-tools (>= 1.0.0), python-smbus (>= 1.0.0), arduino (>= 1.0.0), minicom (>= 1.0.0), libnss-mdns (>= 1.0.0), python-dev (>= 1.0.0)
+Filename: pool/main/b/brickpi-base/BrickPiMain_1.0_all.deb
+Size: 3830
+MD5sum: 2ea0217978aa8a911de887fb2186a004
+SHA1: 14533db982ee2cdbba461c01f822dc0940ba0f15
+SHA256: 25dba0ef9654fce7233cbca740c0fe6b35d98b83918b3261c9827b38a22245cf
+Description: Installs the base files for the BrickPi
+
+Package: brickpi-boot
+Priority: required
+Section: base
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.0
+Depends: raspberrypi-bootloader (>= 1.0.0)
+Filename: pool/main/b/brickpi-boot/BrickPiBoot_1.0_all.deb
+Size: 2384
+MD5sum: 47d67789061889d67f1a4a25310f618a
+SHA1: e5ac36784c8388f63e62a2f22d1df3289467d423
+SHA256: 5f74139f27213ca456d53cbc7eb29214ec520fb3e85771750d4fde17c609fb3d
+Description: Installs the required raspberrypi bootloader files for the brickpi to work
+
+Package: brickpi-python
+Priority: required
+Section: base
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.1
+Depends: python2.7 (>= 1.0.0)
+Filename: pool/main/b/brickpi-python/Python-BrickPi_1.0_all.deb
+Size: 18624
+MD5sum: 0d5378fbdfcbe3fda7d430fc8c2c2fef
+SHA1: 52ee1ca4c40473c27071201e563a1fc8a92aad45
+SHA256: 6eca412423b58125dc1eeaa992008025fb230ca4e10d6cb7ae36c2dab0f4f6c4
+Description: Installs the BrickPi Python Modules
+
+Package: ev3lessons-archive-keyring
+Priority: required
+Section: base
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.0
+Depends: apt (>= 1.0.0)
+Filename: pool/main/e/ev3lessons-archive-keyring/ev3lessons-archive-keyring_1.0_all.deb
+Size: 1998
+MD5sum: d5cbff7ddd4fed0b541b7f8963f307e0
+SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
+SHA256: d91d5e002d8056dd9534f31f0f3b77470a04b65869b365aa9b0e547294fae3be
+Description: Installs the ev3lessons gpg key
+
