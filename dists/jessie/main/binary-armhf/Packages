@@ -18,6 +18,20 @@ Description: software for programming Atmel AVR microcontrollers
  programming technique (ISP).
 Homepage: http://savannah.nongnu.org/projects/avrdude/
 
+Package: brickpi-base
+Priority: required
+Section: base
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.0
+Depends: raspberrypi-bootloader (>= 1.0.0), brickpi-boot (>= 1.0.0), python-pip (>= 1.0.0), libi2c-dev (>= 1.0.0), python-serial (>= 1.0.0), python-rpi.gpio (>= 1.0.0), i2c-tools (>= 1.0.0), python-smbus (>= 1.0.0), arduino (>= 1.0.0), minicom (>= 1.0.0), libnss-mdns (>= 1.0.0), python-dev (>= 1.0.0)
+Filename: pool/main/b/brickpi-base/BrickPiMain_1.0_all.deb
+Size: 3830
+MD5sum: 2ea0217978aa8a911de887fb2186a004
+SHA1: 14533db982ee2cdbba461c01f822dc0940ba0f15
+SHA256: 25dba0ef9654fce7233cbca740c0fe6b35d98b83918b3261c9827b38a22245cf
+Description: Installs the base files for the BrickPi
+
 Package: brickpi-boot
 Priority: required
 Section: base
