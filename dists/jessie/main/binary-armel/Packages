@@ -80,12 +80,12 @@ Section: brickpi
 Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Architecture: all
 Version: 1.0
-Depends: python2.7 (>= 0.0.1), python2 (>= 0.0.1)
+Depends: python2.7 (>= 0.0.1)
 Filename: pool/main/f/filemanager-cli/FileManager_1.0_all.deb
-Size: 182070
-MD5sum: 2bdcdd668db99ca11a4e40374da8e61f
-SHA1: c838c966d71c5bc3b74d458d99c7d2795df2ba51
-SHA256: 80f7ff6165fe5d73fac5c9460706b589a11360df090e14868a42e5808cb80773
+Size: 182064
+MD5sum: d4d37932a391096699b146756c950be6
+SHA1: 74dee5da3d4b6206ddd712df9dd5f6a6c35fa65d
+SHA256: a2d5d4c81f59cbcc526aebf08182df5d7594b9361b855400ccb84f1662c5b7bc
 Description: Installs a python based file manager (for BrickPi/ev3)
 
 Package: python-rpi.gpio
