@@ -74,6 +74,20 @@ SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
 SHA256: d91d5e002d8056dd9534f31f0f3b77470a04b65869b365aa9b0e547294fae3be
 Description: Installs the ev3lessons gpg key
 
+Package: filemanager-cli
+Priority: normal
+Section: brickpi
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.0
+Depends: python2.7 (>= 0.0.1), python2 (>= 0.0.1)
+Filename: pool/main/f/filemanager-cli/FileManager_1.0_all.deb
+Size: 182070
+MD5sum: 2bdcdd668db99ca11a4e40374da8e61f
+SHA1: c838c966d71c5bc3b74d458d99c7d2795df2ba51
+SHA256: 80f7ff6165fe5d73fac5c9460706b589a11360df090e14868a42e5808cb80773
+Description: Installs a python based file manager (for BrickPi/ev3)
+
 Package: raspberrypi-bootloader
 Priority: required
 Section: bootloader
