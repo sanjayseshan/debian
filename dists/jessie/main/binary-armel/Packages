@@ -74,3 +74,52 @@ SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
 SHA256: d91d5e002d8056dd9534f31f0f3b77470a04b65869b365aa9b0e547294fae3be
 Description: Installs the ev3lessons gpg key
 
+Package: python-rpi.gpio
+Priority: optional
+Section: python
+Installed-Size: 123
+Maintainer: Ben Croston <ben@croston.org>
+Architecture: armel
+Source: rpi.gpio
+Version: 0.3.1a-1
+Depends: libc6 (>= 2.4), python2.7 | python2.6, python (>= 2.6.6-7~), python (<< 2.8)
+Filename: pool/main/r/rpi.gpio/python-rpi.gpio_0.3.1a-1_armel.deb
+Size: 10860
+MD5sum: 421112ff08013724f42b9bde166e3fee
+SHA1: 7a43e8eee688ad2b93e001d3b4bcb36fa01e040d
+SHA256: c5bed7d9fddf49f285310cc4c086f1de82171235f76033c10c09a2af41a642d4
+Description: Python GPIO module for Raspberry Pi
+ This is the RPi.GPIO Python module, for supporting GPIO on a
+ Raspberry Pi
+Homepage: http://code.google.com/p/raspberry-gpio-python/
+
+Package: raspberrypi-bootloader
+Priority: required
+Section: bootloader
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.0
+Filename: pool/main/r/raspberrypi-bootloader/raspberrypi-bootloader_1.0_arm64.deb
+Size: 7684016
+MD5sum: 318cbf8e5e097e9ecdea6c875f5377c8
+SHA1: 6234b650c30e418d8e47371354684b8a23dfa14f
+SHA256: 7735567d9d1cd72edefd9bea0d2c996acb0a413429e3005bea5881ca6e3fde1d
+Description: Installs the required raspberrypi bootloader files a arm64 based system
+
+Package: raspi-config
+Priority: extra
+Section: utils
+Installed-Size: 102
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Architecture: all
+Version: 20160527
+Depends: whiptail, parted, lua5.1, alsa-utils
+Recommends: triggerhappy
+Filename: pool/main/r/raspi-config/raspi-config_20160527_all.deb
+Size: 16748
+MD5sum: f5000d313ca406e2d8c2201c4d47984c
+SHA1: 748db1a618f0af08aa6a1bfe53c130ca1337f909
+SHA256: 7183fff5a7275d9d9ec96acd99f40afd6135c323daef9caf5594adc1d82b8128
+Description: Raspberry Pi configuration tool
+ A simple configuration tool for common Raspberry Pi administrative tasks
+

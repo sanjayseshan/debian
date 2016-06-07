@@ -74,3 +74,96 @@ SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
 SHA256: d91d5e002d8056dd9534f31f0f3b77470a04b65869b365aa9b0e547294fae3be
 Description: Installs the ev3lessons gpg key
 
+Package: libnss-mdns
+Priority: optional
+Section: admin
+Installed-Size: 86
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Source: nss-mdns
+Version: 0.10-6
+Replaces: lib32nss-mdns (<< 0.10-6)
+Depends: libc6 (>= 2.4), base-files (>= 3.1.10), avahi-daemon (>= 0.6.16-1)
+Pre-Depends: multiarch-support
+Suggests: avahi-autoipd | zeroconf
+Breaks: lib32nss-mdns (<< 0.10-6)
+Filename: pool/main/n/nss-mdns/libnss-mdns_0.10-6_armhf.deb
+Size: 22218
+MD5sum: d0ac49f3482fb5a06662bd4232cb71c4
+SHA1: 05928d5ca2f308357b3df2dd28600b3113f09292
+SHA256: 08bbae2ebe07113044b85accb463ca79637b767b7b3fb5b442162254fa4814dd
+Description: NSS module for Multicast DNS name resolution
+ nss-mdns is a plugin for the GNU Name Service Switch (NSS) functionality
+ of the GNU C Library (glibc) providing host name resolution via Multicast
+ DNS (using Zeroconf, aka Apple Bonjour / Apple Rendezvous ), effectively
+ allowing name resolution by common Unix/Linux programs in the ad-hoc mDNS
+ domain .local.
+Multi-Arch: same
+
+Package: python-rpi.gpio
+Priority: optional
+Section: python
+Installed-Size: 101
+Maintainer: Ben Croston <ben@croston.org>
+Architecture: armhf
+Source: rpi.gpio
+Version: 0.6.2~jessie-1
+Depends: libc6 (>= 2.7), python (<< 2.8), python (>= 2.7~), python:any (>= 2.7.5-5~)
+Filename: pool/main/r/rpi.gpio/python-rpi.gpio_0.6.2~jessie-1_armhf.deb
+Size: 23286
+MD5sum: e54c35f9970f71d2bc87dc90f1df3610
+SHA1: e5a79ae173fcf97733ffcd228688d0481ba329dc
+SHA256: 1d0da11f5cd7b716f294fc69a42ac89a306630185ea4cfb382425600645a4b55
+Description: Python GPIO module for Raspberry Pi
+ This is the RPi.GPIO Python module, for supporting GPIO on a
+ Raspberry Pi
+Homepage: http://sourceforge.net/projects/raspberry-gpio-python/
+
+Package: raspberrypi-bootloader
+Priority: extra
+Section: admin
+Installed-Size: 11979
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Architecture: armhf
+Source: raspberrypi-firmware
+Version: 1.20160523-1
+Depends: raspberrypi-kernel
+Filename: pool/main/r/raspberrypi-firmware/raspberrypi-bootloader_1.20160523-1_armhf.deb
+Size: 3148468
+MD5sum: 036587331240e95f23f4e296054368ac
+SHA1: f975012d3ecd6b8147d48f5e3a56e6c366b1e68f
+SHA256: 0a60357bf922f15a03a506ef78fe8561c1df639849620b1d5ef61e2f8241f7f0
+Description: Raspberry Pi bootloader
+ This package contains the Raspberry Pi firmware and bootloader.
+Homepage: https://github.com/raspberrypi/firmware
+
+Package: raspberrypi-bootloader
+Priority: required
+Section: bootloader
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
+Version: 1.0
+Filename: pool/main/r/raspberrypi-bootloader/raspberrypi-bootloader_1.0_arm64.deb
+Size: 7684016
+MD5sum: 318cbf8e5e097e9ecdea6c875f5377c8
+SHA1: 6234b650c30e418d8e47371354684b8a23dfa14f
+SHA256: 7735567d9d1cd72edefd9bea0d2c996acb0a413429e3005bea5881ca6e3fde1d
+Description: Installs the required raspberrypi bootloader files a arm64 based system
+
+Package: raspi-config
+Priority: extra
+Section: utils
+Installed-Size: 102
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Architecture: all
+Version: 20160527
+Depends: whiptail, parted, lua5.1, alsa-utils
+Recommends: triggerhappy
+Filename: pool/main/r/raspi-config/raspi-config_20160527_all.deb
+Size: 16748
+MD5sum: f5000d313ca406e2d8c2201c4d47984c
+SHA1: 748db1a618f0af08aa6a1bfe53c130ca1337f909
+SHA256: 7183fff5a7275d9d9ec96acd99f40afd6135c323daef9caf5594adc1d82b8128
+Description: Raspberry Pi configuration tool
+ A simple configuration tool for common Raspberry Pi administrative tasks
+
