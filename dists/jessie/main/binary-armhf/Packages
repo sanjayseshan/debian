@@ -167,3 +167,19 @@ SHA256: 7183fff5a7275d9d9ec96acd99f40afd6135c323daef9caf5594adc1d82b8128
 Description: Raspberry Pi configuration tool
  A simple configuration tool for common Raspberry Pi administrative tasks
 
+Package: wiringpi
+Priority: optional
+Section: libraries
+Maintainer: Gordon Henderson <projects@drogon.net>
+Architecture: armhf
+Version: 2.32
+Depends: libc6
+Filename: pool/main/w/wiringpi/wiringpi_2.32_armhf.deb
+Size: 43908
+MD5sum: 12c4ca642b81b33242661f9e8abdb59e
+SHA1: f7f37a1767d28678d85a033fae3b9e031c57976b
+SHA256: 404a25ed50fbc4a0e5e278d86306bfd496afdf9b666b2d4a128be3eb55f6e5e1
+Description: The wiringPi libraries, headers and gpio command
+  Libraries to allow GPIO access on a Raspberry Pi from C and C++
+  programs as well as from the command-line
+
