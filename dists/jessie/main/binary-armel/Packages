@@ -79,13 +79,27 @@ Priority: normal
 Section: brickpi
 Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Architecture: all
+Version: 1.1
+Depends: python2.7 (>= 0.0.1)
+Filename: pool/main/f/filemanager-cli/FileManager_1.1_all.deb
+Size: 182104
+MD5sum: 3765517b16ce14b5cecd20c6947135ad
+SHA1: bcb82eabfe8268d2913d7287ceeaccb5a4eb3042
+SHA256: ee023cf1da919317a5e14be657b67d52681f9ce2b27554214927493298805fb2
+Description: Installs a python based file manager (for BrickPi/ev3)
+
+Package: filemanager-cli
+Priority: normal
+Section: brickpi
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Architecture: all
 Version: 1.0
 Depends: python2.7 (>= 0.0.1)
 Filename: pool/main/f/filemanager-cli/FileManager_1.0_all.deb
-Size: 182064
-MD5sum: d4d37932a391096699b146756c950be6
-SHA1: 74dee5da3d4b6206ddd712df9dd5f6a6c35fa65d
-SHA256: a2d5d4c81f59cbcc526aebf08182df5d7594b9361b855400ccb84f1662c5b7bc
+Size: 182108
+MD5sum: 9517e85e2ca888f7f7e6e91e087fd768
+SHA1: 454f70b4186a0b3d2128caaadf95c7205c800e72
+SHA256: dd52442e5db905447ffc089eb764912e774e674fefbaebe140d3b5b0185be03f
 Description: Installs a python based file manager (for BrickPi/ev3)
 
 Package: python-rpi.gpio
