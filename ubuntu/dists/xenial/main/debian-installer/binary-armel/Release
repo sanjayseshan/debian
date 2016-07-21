@@ -1,0 +1,5 @@
+Origin: . xenial
+Label: . xenial
+Archive: xenial
+Architecture: armel
+Component: main
