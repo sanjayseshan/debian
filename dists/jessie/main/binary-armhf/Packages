@@ -102,6 +102,54 @@ SHA1: 454f70b4186a0b3d2128caaadf95c7205c800e72
 SHA256: dd52442e5db905447ffc089eb764912e774e674fefbaebe140d3b5b0185be03f
 Description: Installs a python based file manager (for BrickPi/ev3)
 
+Package: libgcrypt11-dev
+Priority: extra
+Section: oldlibs
+Installed-Size: 81
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: all
+Source: libgcrypt20 (1.6.5-2)
+Version: 1.5.4-3+really1.6.5-2
+Depends: libgcrypt20-dev (>= 1.6.5)
+Breaks: libgnutls-dev (<< 2.12.23-18)
+Filename: pool/main/libg/libgcrypt20/libgcrypt11-dev_1.5.4-3+really1.6.5-2_all.deb
+Size: 67014
+MD5sum: ec759df8e3f92dcbc76abda81eb24b43
+SHA1: b359811398e4558f0b17e2b0476e0613d5199f35
+SHA256: c1e4163091c1df8f056e25391464f19ae6af47b36fd9fd0317802afb0500b1b1
+Description: transitional libgcrypt11-dev package
+ This is a transitional dummy package to ease the migration from
+ libgcrypt11-dev to libgcrypt20-dev. You can safely remove this package.
+Homepage: http://directory.fsf.org/project/libgcrypt/
+
+Package: libgcrypt20-doc
+Priority: optional
+Section: doc
+Installed-Size: 1521
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: all
+Source: libgcrypt20
+Version: 1.6.5-2
+Replaces: libgcrypt-doc, libgcrypt11-doc, libgcrypt7-doc
+Suggests: libgcrypt20-dev
+Conflicts: libgcrypt-doc, libgcrypt11-doc, libgcrypt7-doc
+Filename: pool/main/libg/libgcrypt20/libgcrypt20-doc_1.6.5-2_all.deb
+Size: 797244
+MD5sum: aadbf9e54318d8805486a2334a8b5936
+SHA1: f43c61d9cb2a52100a027a871aeb833b76d53d35
+SHA256: d6fa58d306480c494eec7f865ba2f13a763e68b6a99e3b131c93abb25b22b000
+Description: LGPL Crypto library - documentation
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ .
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
+ Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
+ .
+ This package contains developer documentation.
+Homepage: http://directory.fsf.org/project/libgcrypt/
+
 Package: libnss-mdns
 Priority: optional
 Section: admin

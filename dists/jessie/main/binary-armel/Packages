@@ -1,3 +1,41 @@
+Package: acl
+Priority: optional
+Section: utils
+Installed-Size: 184
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Version: 2.2.52-3
+Depends: libacl1 (= 2.2.52-3), libattr1 (>= 1:2.4.46-8), libc6 (>= 2.4)
+Filename: pool/main/a/acl/acl_2.2.52-3_armel.deb
+Size: 55542
+MD5sum: 76b59ed89ac68cdb67cac98525ca3fcb
+SHA1: fc142cf606a8292eeb13be846b46c1b656af3378
+SHA256: a4c9318a85e24e2ab0f3fdbc261e17a476cc6eb69f292dac0a7322c679f2e8e2
+Description: Access control list utilities
+ This package contains the getfacl and setfacl utilities needed for
+ manipulating access control lists.
+Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/acl/
+
+Package: acl-dbgsym
+Priority: extra
+Section: debug
+Installed-Size: 88
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Source: acl
+Version: 2.2.52-3
+Depends: acl (= 2.2.52-3)
+Filename: pool/main/a/acl/acl-dbgsym_2.2.52-3_armel.deb
+Size: 56930
+MD5sum: 4ab7b68f4c57cac610b2227c799868f6
+SHA1: 0c0b9a8ff6c941de160f1914b77b392967575292
+SHA256: 49bc4348eeeeb89799302d1fb7b4389220a192a2ca062500123ac2ba3c5f5911
+Description: Debug symbols for acl
+Homepage: http://savannah.nongnu.org/projects/acl/
+Auto-Built-Package: debug-symbols
+Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
+
 Package: avrdude
 Priority: extra
 Section: electronics
@@ -101,6 +139,275 @@ MD5sum: 9517e85e2ca888f7f7e6e91e087fd768
 SHA1: 454f70b4186a0b3d2128caaadf95c7205c800e72
 SHA256: dd52442e5db905447ffc089eb764912e774e674fefbaebe140d3b5b0185be03f
 Description: Installs a python based file manager (for BrickPi/ev3)
+
+Package: libacl1
+Priority: required
+Section: libs
+Installed-Size: 52
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Source: acl
+Version: 2.2.52-3
+Depends: libattr1 (>= 1:2.4.46-8), libc6 (>= 2.4)
+Conflicts: acl (<< 2.0.0), libacl1-kerberos4kth
+Filename: pool/main/a/acl/libacl1_2.2.52-3_armel.deb
+Size: 25310
+MD5sum: 121b33a3327273c0058273699446f0a0
+SHA1: ddcdf9f68b65903faffb694db8fa19c2a0dc2e71
+SHA256: 3b6632739285bb8be609e1cd85ba58f146b43ce466844d02edfbb3902ac46c0a
+Description: Access control list shared library
+ This package contains the libacl.so dynamic library containing
+ the POSIX 1003.1e draft standard 17 functions for manipulating
+ access control lists.
+Multi-Arch: same
+Homepage: http://savannah.nongnu.org/projects/acl/
+
+Package: libacl1-dbgsym
+Priority: extra
+Section: debug
+Installed-Size: 61
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Source: acl
+Version: 2.2.52-3
+Depends: libacl1 (= 2.2.52-3)
+Filename: pool/main/a/acl/libacl1-dbgsym_2.2.52-3_armel.deb
+Size: 43244
+MD5sum: 9d9bd25fe53653e0c909d66c6d5accdf
+SHA1: 42ec382754f491ed336e28caf3013cea20d95074
+SHA256: 84b835b463be6ef6bceb08f827ed0e7f9809b1f1efac1a5717044997a0f734c5
+Description: Debug symbols for libacl1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Build-Ids: f73bd69ebb49aef92e232cd776879278f363d2d6
+Homepage: http://savannah.nongnu.org/projects/acl/
+
+Package: libacl1-dev
+Priority: extra
+Section: libdevel
+Installed-Size: 190
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Source: acl
+Version: 2.2.52-3
+Replaces: acl-dev
+Provides: acl-dev
+Depends: libc6-dev | libc-dev, libacl1 (= 2.2.52-3), libattr1-dev (>= 1:2.4.46-8)
+Conflicts: acl (<< 2.0.0), acl-dev, kerberos4kth-dev (<< 1.2.2-4)
+Filename: pool/main/a/acl/libacl1-dev_2.2.52-3_armel.deb
+Size: 84424
+MD5sum: 50da8cc078fa96881f5bbfcf573f7cb0
+SHA1: 8aa0fcb7f47a4d48cc263493833c6a1454d34728
+SHA256: 78ee260b0b1951c3a13bc0e522d181352fa6c8afcfe2e09f1e1f99c2bd5b71fe
+Description: Access control list static libraries and headers
+ This package contains the static libraries and header files needed
+ for developing programs which make use of the access control list
+ programming interface defined in POSIX 1003.1e draft standard 17.
+Homepage: http://savannah.nongnu.org/projects/acl/
+
+Package: libgcrypt11-dev
+Priority: extra
+Section: oldlibs
+Installed-Size: 81
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: all
+Source: libgcrypt20 (1.6.5-2)
+Version: 1.5.4-3+really1.6.5-2
+Depends: libgcrypt20-dev (>= 1.6.5)
+Breaks: libgnutls-dev (<< 2.12.23-18)
+Filename: pool/main/libg/libgcrypt20/libgcrypt11-dev_1.5.4-3+really1.6.5-2_all.deb
+Size: 67014
+MD5sum: ec759df8e3f92dcbc76abda81eb24b43
+SHA1: b359811398e4558f0b17e2b0476e0613d5199f35
+SHA256: c1e4163091c1df8f056e25391464f19ae6af47b36fd9fd0317802afb0500b1b1
+Description: transitional libgcrypt11-dev package
+ This is a transitional dummy package to ease the migration from
+ libgcrypt11-dev to libgcrypt20-dev. You can safely remove this package.
+Homepage: http://directory.fsf.org/project/libgcrypt/
+
+Package: libgcrypt20
+Priority: standard
+Section: libs
+Installed-Size: 739
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Version: 1.6.5-2
+Depends: libc6 (>= 2.15), libgpg-error0 (>= 1.14)
+Suggests: rng-tools
+Filename: pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2_armel.deb
+Size: 344314
+MD5sum: 1ead117f5d7420dfbc46c70dc7f0ac4b
+SHA1: 9db0eb9002524e66c9174625a0c97c6d078606dc
+SHA256: 44ca305737bab3b23fc3e97950a22ad6cdd712bcfe3f460fff41a67dc3ddd6ee
+Description: LGPL Crypto library - runtime library
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ .
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
+ Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
+Homepage: http://directory.fsf.org/project/libgcrypt/
+Multi-Arch: same
+
+Package: libgcrypt20-dbgsym
+Priority: extra
+Section: debug
+Installed-Size: 706
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Source: libgcrypt20
+Version: 1.6.5-2
+Replaces: libgcrypt20-dbg (<< 1.6.4-4~)
+Depends: libgcrypt20 (= 1.6.5-2)
+Breaks: libgcrypt20-dbg (<< 1.6.4-4~)
+Filename: pool/main/libg/libgcrypt20/libgcrypt20-dbgsym_1.6.5-2_armel.deb
+Size: 623510
+MD5sum: 8a08a40a9df85dbc6f5270934de30ff9
+SHA1: 42f40f92810e61174715b842cd373a1cc3712ba5
+SHA256: 05f48eed4ae0235d0dd1f6dba1103ad25dbdb3fccd959bcfbb809e2dc7262842
+Description: Debug symbols for libgcrypt20
+Homepage: http://directory.fsf.org/project/libgcrypt/
+Auto-Built-Package: debug-symbols
+Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
+Multi-Arch: same
+
+Package: libgcrypt20-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 1146
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Source: libgcrypt20
+Version: 1.6.5-2
+Provides: libgcrypt-dev
+Depends: libgcrypt20 (= 1.6.5-2), libc6-dev | libc-dev, libgpg-error-dev
+Suggests: libgcrypt20-doc
+Conflicts: libgcrypt-dev, libgcrypt11-dev (<< 1.5.4-3+really1.6.2-4)
+Filename: pool/main/libg/libgcrypt20/libgcrypt20-dev_1.6.5-2_armel.deb
+Size: 394582
+MD5sum: 312f00f525249b07aad6f1fd238492c4
+SHA1: 15526dc21a1d0ad18e140b35a2cf440b54970060
+SHA256: 9eda84a1966189491b442b45800012f26484a899e5b11ce5e76fb0378295b648
+Description: LGPL Crypto library - development files
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ .
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
+ Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
+ .
+ This package contains header files and libraries for static linking.
+Homepage: http://directory.fsf.org/project/libgcrypt/
+
+Package: libgcrypt20-dev-dbgsym
+Priority: extra
+Section: debug
+Installed-Size: 60
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Source: libgcrypt20
+Version: 1.6.5-2
+Replaces: libgcrypt20-dbg (<< 1.6.4-4~)
+Depends: libgcrypt20-dev (= 1.6.5-2)
+Breaks: libgcrypt20-dbg (<< 1.6.4-4~)
+Filename: pool/main/libg/libgcrypt20/libgcrypt20-dev-dbgsym_1.6.5-2_armel.deb
+Size: 33072
+MD5sum: 67a2d951d54347b51555e9830acfb6dc
+SHA1: ada7303bd1459d631970c0fa933deed377940223
+SHA256: 1f359e58bb8b30774777b5a8554a9ff1ad6c86d29ac3fdc5cb6d7e9c98047e5a
+Description: Debug symbols for libgcrypt20-dev
+Auto-Built-Package: debug-symbols
+Homepage: http://directory.fsf.org/project/libgcrypt/
+Build-Ids: 1c7854596e49bd8866e90d4f14cf3df03423e174 a32fa291e2ecff0ed7d3caa4456aec682f4f4470 bee3d6ac808abb9ec627728eac2c0e9ae830ffce
+
+Package: libgcrypt20-doc
+Priority: optional
+Section: doc
+Installed-Size: 1521
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: all
+Source: libgcrypt20
+Version: 1.6.5-2
+Replaces: libgcrypt-doc, libgcrypt11-doc, libgcrypt7-doc
+Suggests: libgcrypt20-dev
+Conflicts: libgcrypt-doc, libgcrypt11-doc, libgcrypt7-doc
+Filename: pool/main/libg/libgcrypt20/libgcrypt20-doc_1.6.5-2_all.deb
+Size: 797244
+MD5sum: aadbf9e54318d8805486a2334a8b5936
+SHA1: f43c61d9cb2a52100a027a871aeb833b76d53d35
+SHA256: d6fa58d306480c494eec7f865ba2f13a763e68b6a99e3b131c93abb25b22b000
+Description: LGPL Crypto library - documentation
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ .
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
+ Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
+ .
+ This package contains developer documentation.
+Homepage: http://directory.fsf.org/project/libgcrypt/
+
+Package: linux-headers-4.4.15-13-ev3dev-ev3+
+Priority: optional
+Section: kernel
+Installed-Size: 45442
+Maintainer: Anonymous <root@C3-D2>
+Architecture: armel
+Source: linux-4.4.15-13-ev3dev-ev3+
+Version: 1
+Provides: linux-headers, linux-headers-2.6
+Filename: pool/main/l/linux-4.4.15-13-ev3dev-ev3+/linux-headers-4.4.15-13-ev3dev-ev3+_1_armel.deb
+Size: 7057364
+MD5sum: c17feb17f9d9e4cfecc23e82328d595a
+SHA1: c2e6cea0d0badc0af3703e46b9c62d6081d57dec
+SHA256: 7f7d1a9077d87c0d95b4f797ceafb8dcd64442179ba8f3c2ee2e119cd09c9ac8
+Description: Linux kernel headers for 4.4.15-13-ev3dev-ev3+ on armel
+ This package provides kernel header files for 4.4.15-13-ev3dev-ev3+ on armel
+ .
+ This is useful for people who need to build external modules
+Homepage: http://www.kernel.org/
+
+Package: linux-image-4.4.15-13-ev3dev-ev3+
+Priority: optional
+Section: kernel
+Installed-Size: 11239
+Maintainer: Anonymous <root@C3-D2>
+Architecture: armel
+Source: linux-4.4.15-13-ev3dev-ev3+
+Version: 1
+Provides: linux-image, linux-image-2.6, linux-modules-4.4.15-13-ev3dev-ev3+
+Suggests: linux-firmware-image-4.4.15-13-ev3dev-ev3+
+Filename: pool/main/l/linux-4.4.15-13-ev3dev-ev3+/linux-image-4.4.15-13-ev3dev-ev3+_1_armel.deb
+Size: 4805220
+MD5sum: 3f9026cabfcd32e3ccaa63f15b4f2660
+SHA1: 7ba5a9cf890c34980f39c0b12f065375eb36fbfc
+SHA256: a09e005d77b9981a0a28cd643765b9d4dbfefa73fe6449956d123f9b1b3f82e1
+Description: Linux kernel, version 4.4.15-13-ev3dev-ev3+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.4.15-13-ev3dev-ev3+.
+Homepage: http://www.kernel.org/
+
+Package: linux-libc-dev
+Priority: optional
+Section: devel
+Installed-Size: 4011
+Maintainer: Anonymous <root@C3-D2>
+Architecture: armel
+Source: linux-4.4.15-13-ev3dev-ev3+
+Version: 1
+Provides: linux-kernel-headers
+Filename: pool/main/l/linux-4.4.15-13-ev3dev-ev3+/linux-libc-dev_1_armel.deb
+Size: 797180
+MD5sum: d2cf90549b5486580ad13da342be471c
+SHA1: 45d746c5c4bb1f406e2d183b7e9101a3f5839e70
+SHA256: d7e8faa0c9ceb17a2d75aa7ec5a3eb830da196bf421d96c41738c8cfdb2fb855
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+Homepage: http://www.kernel.org/
 
 Package: python-rpi.gpio
 Priority: optional
