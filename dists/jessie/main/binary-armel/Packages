@@ -14,8 +14,8 @@ SHA256: a4c9318a85e24e2ab0f3fdbc261e17a476cc6eb69f292dac0a7322c679f2e8e2
 Description: Access control list utilities
  This package contains the getfacl and setfacl utilities needed for
  manipulating access control lists.
-Multi-Arch: foreign
 Homepage: http://savannah.nongnu.org/projects/acl/
+Multi-Arch: foreign
 
 Package: acl-dbgsym
 Priority: extra
@@ -32,9 +32,9 @@ MD5sum: 4ab7b68f4c57cac610b2227c799868f6
 SHA1: 0c0b9a8ff6c941de160f1914b77b392967575292
 SHA256: 49bc4348eeeeb89799302d1fb7b4389220a192a2ca062500123ac2ba3c5f5911
 Description: Debug symbols for acl
-Homepage: http://savannah.nongnu.org/projects/acl/
-Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
 Auto-Built-Package: debug-symbols
+Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
+Homepage: http://savannah.nongnu.org/projects/acl/
 
 Package: adduser
 Priority: important
@@ -207,9 +207,9 @@ Description: Debian package development tools
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
 Homepage: https://wiki.debian.org/Teams/Dpkg
-Origin: debian
-Bugs: debbugs://bugs.debian.org
 Multi-Arch: foreign
+Bugs: debbugs://bugs.debian.org
+Origin: debian
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -343,10 +343,10 @@ MD5sum: 9d9bd25fe53653e0c909d66c6d5accdf
 SHA1: 42ec382754f491ed336e28caf3013cea20d95074
 SHA256: 84b835b463be6ef6bceb08f827ed0e7f9809b1f1efac1a5717044997a0f734c5
 Description: Debug symbols for libacl1
-Build-Ids: f73bd69ebb49aef92e232cd776879278f363d2d6
-Auto-Built-Package: debug-symbols
-Homepage: http://savannah.nongnu.org/projects/acl/
 Multi-Arch: same
+Auto-Built-Package: debug-symbols
+Build-Ids: f73bd69ebb49aef92e232cd776879278f363d2d6
+Homepage: http://savannah.nongnu.org/projects/acl/
 
 Package: libacl1-dev
 Priority: extra
@@ -393,8 +393,8 @@ Description: Dynamic library for security auditing - common files
  .
  This package contains the libaudit.conf configuration file and the associated
  manpage.
-Homepage: http://people.redhat.com/sgrubb/audit/
 Multi-Arch: foreign
+Homepage: http://people.redhat.com/sgrubb/audit/
 
 Package: libdpkg-perl
 Priority: optional
@@ -445,10 +445,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Origin: debian
 Bugs: debbugs://bugs.debian.org
-Multi-Arch: foreign
 Homepage: https://wiki.debian.org/Teams/Dpkg
+Origin: debian
+Multi-Arch: foreign
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -512,9 +512,9 @@ MD5sum: 8a08a40a9df85dbc6f5270934de30ff9
 SHA1: 42f40f92810e61174715b842cd373a1cc3712ba5
 SHA256: 05f48eed4ae0235d0dd1f6dba1103ad25dbdb3fccd959bcfbb809e2dc7262842
 Description: Debug symbols for libgcrypt20
-Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
 Multi-Arch: same
 Homepage: http://directory.fsf.org/project/libgcrypt/
+Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
 Auto-Built-Package: debug-symbols
 
 Package: libgcrypt20-dev
@@ -636,8 +636,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Multi-Arch: foreign
 Homepage: http://pam.sourceforge.net/
+Multi-Arch: foreign
 
 Package: libsemanage-common
 Priority: optional
@@ -667,8 +667,8 @@ Description: Common files for SELinux policy management libraries
  of many kinds of mandatory access control policies, including those
  based on the concepts of Type Enforcement, Role-based Access
  Control, and Multi-level Security.
-Multi-Arch: foreign
 Homepage: http://userspace.selinuxproject.org/
+Multi-Arch: foreign
 
 Package: libtext-wrapi18n-perl
 Priority: required
@@ -804,8 +804,8 @@ Description: Linux Standard Base 4.1 init script functionality
  This package only includes the init-functions shell library, which
  may be used by other packages' initialization scripts for console
  logging and other purposes.
-Multi-Arch: foreign
 Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
+Multi-Arch: foreign
 
 Package: lsb-invalid-mta
 Priority: extra
@@ -875,8 +875,8 @@ Description: Linux Standard Base version reporting utility
  While it is intended for use by LSB packages, this command may also
  be useful for programmatically distinguishing between a pure Debian
  installation and derived distributions.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 Multi-Arch: foreign
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 
 Package: makedev
 Priority: extra
@@ -1067,8 +1067,8 @@ Description: System-V-like runlevel change mechanism
  This package provides support for the System-V like system
  for booting, changing runlevels, and shutting down,
  configured through symbolic links in /etc/rc?.d/.
-Multi-Arch: foreign
 Homepage: http://savannah.nongnu.org/projects/sysvinit
+Multi-Arch: foreign
 
 Package: tzdata
 Priority: required
@@ -1091,8 +1091,8 @@ Description: time zone and daylight-saving time data
  globe. It is updated periodically to reflect changes made by
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
-Multi-Arch: foreign
 Homepage: http://www.iana.org/time-zones
+Multi-Arch: foreign
 
 Package: util-linux-locales
 Priority: optional
