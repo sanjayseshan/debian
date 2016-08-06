@@ -34,8 +34,8 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Multi-Arch: foreign
 Homepage: http://alioth.debian.org/projects/adduser/
+Multi-Arch: foreign
 
 Package: avrdude
 Priority: extra
@@ -170,9 +170,9 @@ Description: Debian package development tools
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
 Multi-Arch: foreign
+Bugs: debbugs://bugs.debian.org
 Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
-Bugs: debbugs://bugs.debian.org
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -344,9 +344,9 @@ Description: Dpkg perl modules
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
 Origin: debian
-Multi-Arch: foreign
 Bugs: debbugs://bugs.debian.org
 Homepage: https://wiki.debian.org/Teams/Dpkg
+Multi-Arch: foreign
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -437,8 +437,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Multi-Arch: foreign
 Homepage: http://pam.sourceforge.net/
+Multi-Arch: foreign
 
 Package: libsemanage-common
 Priority: optional
@@ -468,8 +468,8 @@ Description: Common files for SELinux policy management libraries
  of many kinds of mandatory access control policies, including those
  based on the concepts of Type Enforcement, Role-based Access
  Control, and Multi-level Security.
-Homepage: http://userspace.selinuxproject.org/
 Multi-Arch: foreign
+Homepage: http://userspace.selinuxproject.org/
 
 Package: libtext-wrapi18n-perl
 Priority: required
@@ -668,8 +668,8 @@ Description: basic terminal type definitions
  This package contains terminfo data files to support the most common types of
  terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
  vt52, and xterm.
-Homepage: http://invisible-island.net/ncurses/
 Multi-Arch: foreign
+Homepage: http://invisible-island.net/ncurses/
 
 Package: raspberrypi-bootloader
 Priority: required

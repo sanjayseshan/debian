@@ -34,8 +34,8 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Multi-Arch: foreign
 Homepage: http://alioth.debian.org/projects/adduser/
+Multi-Arch: foreign
 
 Package: avrdude
 Priority: extra
@@ -168,10 +168,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Bugs: debbugs://bugs.debian.org
 Origin: debian
-Multi-Arch: foreign
 Homepage: https://wiki.debian.org/Teams/Dpkg
+Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -342,10 +342,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Bugs: debbugs://bugs.debian.org
-Homepage: https://wiki.debian.org/Teams/Dpkg
 Origin: debian
+Homepage: https://wiki.debian.org/Teams/Dpkg
 Multi-Arch: foreign
+Bugs: debbugs://bugs.debian.org
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -436,8 +436,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Homepage: http://pam.sourceforge.net/
 Multi-Arch: foreign
+Homepage: http://pam.sourceforge.net/
 
 Package: libsemanage-common
 Priority: optional
@@ -545,8 +545,8 @@ Description: Linux Standard Base 4.1 init script functionality
  This package only includes the init-functions shell library, which
  may be used by other packages' initialization scripts for console
  logging and other purposes.
-Multi-Arch: foreign
 Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
+Multi-Arch: foreign
 
 Package: lsb-invalid-mta
 Priority: extra
@@ -813,8 +813,8 @@ Description: time zone and daylight-saving time data
  globe. It is updated periodically to reflect changes made by
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
-Homepage: http://www.iana.org/time-zones
 Multi-Arch: foreign
+Homepage: http://www.iana.org/time-zones
 
 Package: util-linux-locales
 Priority: optional

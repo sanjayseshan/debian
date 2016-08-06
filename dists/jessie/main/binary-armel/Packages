@@ -32,9 +32,9 @@ MD5sum: 4ab7b68f4c57cac610b2227c799868f6
 SHA1: 0c0b9a8ff6c941de160f1914b77b392967575292
 SHA256: 49bc4348eeeeb89799302d1fb7b4389220a192a2ca062500123ac2ba3c5f5911
 Description: Debug symbols for acl
-Auto-Built-Package: debug-symbols
 Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
 Homepage: http://savannah.nongnu.org/projects/acl/
+Auto-Built-Package: debug-symbols
 
 Package: adduser
 Priority: important
@@ -206,10 +206,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Homepage: https://wiki.debian.org/Teams/Dpkg
+Origin: debian
 Multi-Arch: foreign
 Bugs: debbugs://bugs.debian.org
-Origin: debian
+Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -325,8 +325,8 @@ Description: Access control list shared library
  This package contains the libacl.so dynamic library containing
  the POSIX 1003.1e draft standard 17 functions for manipulating
  access control lists.
-Multi-Arch: same
 Homepage: http://savannah.nongnu.org/projects/acl/
+Multi-Arch: same
 
 Package: libacl1-dbgsym
 Priority: extra
@@ -393,8 +393,8 @@ Description: Dynamic library for security auditing - common files
  .
  This package contains the libaudit.conf configuration file and the associated
  manpage.
-Multi-Arch: foreign
 Homepage: http://people.redhat.com/sgrubb/audit/
+Multi-Arch: foreign
 
 Package: libdpkg-perl
 Priority: optional
@@ -445,10 +445,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
 Homepage: https://wiki.debian.org/Teams/Dpkg
 Origin: debian
-Multi-Arch: foreign
+Bugs: debbugs://bugs.debian.org
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -492,8 +492,8 @@ Description: LGPL Crypto library - runtime library
  Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
  Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
  Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
-Multi-Arch: same
 Homepage: http://directory.fsf.org/project/libgcrypt/
+Multi-Arch: same
 
 Package: libgcrypt20-dbgsym
 Priority: extra
@@ -512,10 +512,10 @@ MD5sum: 8a08a40a9df85dbc6f5270934de30ff9
 SHA1: 42f40f92810e61174715b842cd373a1cc3712ba5
 SHA256: 05f48eed4ae0235d0dd1f6dba1103ad25dbdb3fccd959bcfbb809e2dc7262842
 Description: Debug symbols for libgcrypt20
-Multi-Arch: same
-Homepage: http://directory.fsf.org/project/libgcrypt/
 Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
 Auto-Built-Package: debug-symbols
+Homepage: http://directory.fsf.org/project/libgcrypt/
+Multi-Arch: same
 
 Package: libgcrypt20-dev
 Priority: optional
@@ -564,8 +564,8 @@ SHA1: ada7303bd1459d631970c0fa933deed377940223
 SHA256: 1f359e58bb8b30774777b5a8554a9ff1ad6c86d29ac3fdc5cb6d7e9c98047e5a
 Description: Debug symbols for libgcrypt20-dev
 Homepage: http://directory.fsf.org/project/libgcrypt/
-Build-Ids: 1c7854596e49bd8866e90d4f14cf3df03423e174 a32fa291e2ecff0ed7d3caa4456aec682f4f4470 bee3d6ac808abb9ec627728eac2c0e9ae830ffce
 Auto-Built-Package: debug-symbols
+Build-Ids: 1c7854596e49bd8866e90d4f14cf3df03423e174 a32fa291e2ecff0ed7d3caa4456aec682f4f4470 bee3d6ac808abb9ec627728eac2c0e9ae830ffce
 
 Package: libgcrypt20-doc
 Priority: optional
@@ -636,8 +636,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Homepage: http://pam.sourceforge.net/
 Multi-Arch: foreign
+Homepage: http://pam.sourceforge.net/
 
 Package: libsemanage-common
 Priority: optional
@@ -926,8 +926,8 @@ Description: basic terminal type definitions
  This package contains terminfo data files to support the most common types of
  terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
  vt52, and xterm.
-Multi-Arch: foreign
 Homepage: http://invisible-island.net/ncurses/
+Multi-Arch: foreign
 
 Package: python-rpi.gpio
 Priority: optional
@@ -1067,8 +1067,8 @@ Description: System-V-like runlevel change mechanism
  This package provides support for the System-V like system
  for booting, changing runlevels, and shutting down,
  configured through symbolic links in /etc/rc?.d/.
-Homepage: http://savannah.nongnu.org/projects/sysvinit
 Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/sysvinit
 
 Package: tzdata
 Priority: required
@@ -1091,8 +1091,8 @@ Description: time zone and daylight-saving time data
  globe. It is updated periodically to reflect changes made by
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
-Homepage: http://www.iana.org/time-zones
 Multi-Arch: foreign
+Homepage: http://www.iana.org/time-zones
 
 Package: util-linux-locales
 Priority: optional
