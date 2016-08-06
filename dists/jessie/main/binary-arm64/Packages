@@ -168,10 +168,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Homepage: https://wiki.debian.org/Teams/Dpkg
-Multi-Arch: foreign
-Bugs: debbugs://bugs.debian.org
 Origin: debian
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -342,10 +342,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Origin: debian
 Bugs: debbugs://bugs.debian.org
 Multi-Arch: foreign
-Origin: debian
-Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -436,8 +436,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Multi-Arch: foreign
 Homepage: http://pam.sourceforge.net/
+Multi-Arch: foreign
 
 Package: libsemanage-common
 Priority: optional
@@ -616,8 +616,8 @@ Description: Linux Standard Base version reporting utility
  While it is intended for use by LSB packages, this command may also
  be useful for programmatically distinguishing between a pure Debian
  installation and derived distributions.
-Multi-Arch: foreign
 Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
+Multi-Arch: foreign
 
 Package: makedev
 Priority: extra
@@ -789,8 +789,8 @@ Description: System-V-like runlevel change mechanism
  This package provides support for the System-V like system
  for booting, changing runlevels, and shutting down,
  configured through symbolic links in /etc/rc?.d/.
-Homepage: http://savannah.nongnu.org/projects/sysvinit
 Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/sysvinit
 
 Package: tzdata
 Priority: required

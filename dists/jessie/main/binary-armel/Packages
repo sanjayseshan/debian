@@ -32,9 +32,9 @@ MD5sum: 4ab7b68f4c57cac610b2227c799868f6
 SHA1: 0c0b9a8ff6c941de160f1914b77b392967575292
 SHA256: 49bc4348eeeeb89799302d1fb7b4389220a192a2ca062500123ac2ba3c5f5911
 Description: Debug symbols for acl
-Auto-Built-Package: debug-symbols
-Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
 Homepage: http://savannah.nongnu.org/projects/acl/
+Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
+Auto-Built-Package: debug-symbols
 
 Package: adduser
 Priority: important
@@ -72,8 +72,8 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Multi-Arch: foreign
 Homepage: http://alioth.debian.org/projects/adduser/
+Multi-Arch: foreign
 
 Package: avrdude
 Priority: extra
@@ -208,8 +208,8 @@ Description: Debian package development tools
  for example, most packages need make and the C compiler gcc.
 Bugs: debbugs://bugs.debian.org
 Homepage: https://wiki.debian.org/Teams/Dpkg
-Origin: debian
 Multi-Arch: foreign
+Origin: debian
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -343,10 +343,10 @@ MD5sum: 9d9bd25fe53653e0c909d66c6d5accdf
 SHA1: 42ec382754f491ed336e28caf3013cea20d95074
 SHA256: 84b835b463be6ef6bceb08f827ed0e7f9809b1f1efac1a5717044997a0f734c5
 Description: Debug symbols for libacl1
-Auto-Built-Package: debug-symbols
-Multi-Arch: same
 Homepage: http://savannah.nongnu.org/projects/acl/
 Build-Ids: f73bd69ebb49aef92e232cd776879278f363d2d6
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
 
 Package: libacl1-dev
 Priority: extra
@@ -512,10 +512,10 @@ MD5sum: 8a08a40a9df85dbc6f5270934de30ff9
 SHA1: 42f40f92810e61174715b842cd373a1cc3712ba5
 SHA256: 05f48eed4ae0235d0dd1f6dba1103ad25dbdb3fccd959bcfbb809e2dc7262842
 Description: Debug symbols for libgcrypt20
-Multi-Arch: same
 Auto-Built-Package: debug-symbols
-Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
+Multi-Arch: same
 Homepage: http://directory.fsf.org/project/libgcrypt/
+Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
 
 Package: libgcrypt20-dev
 Priority: optional
@@ -636,8 +636,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Homepage: http://pam.sourceforge.net/
 Multi-Arch: foreign
+Homepage: http://pam.sourceforge.net/
 
 Package: libsemanage-common
 Priority: optional
@@ -804,8 +804,8 @@ Description: Linux Standard Base 4.1 init script functionality
  This package only includes the init-functions shell library, which
  may be used by other packages' initialization scripts for console
  logging and other purposes.
-Multi-Arch: foreign
 Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
+Multi-Arch: foreign
 
 Package: lsb-invalid-mta
 Priority: extra
@@ -875,8 +875,8 @@ Description: Linux Standard Base version reporting utility
  While it is intended for use by LSB packages, this command may also
  be useful for programmatically distinguishing between a pure Debian
  installation and derived distributions.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 Multi-Arch: foreign
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 
 Package: makedev
 Priority: extra
