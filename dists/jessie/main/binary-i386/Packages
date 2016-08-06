@@ -34,8 +34,8 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Homepage: http://alioth.debian.org/projects/adduser/
 Multi-Arch: foreign
+Homepage: http://alioth.debian.org/projects/adduser/
 
 Package: avrdude
 Priority: extra
@@ -169,9 +169,9 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Multi-Arch: foreign
-Bugs: debbugs://bugs.debian.org
 Origin: debian
+Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
 Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: ev3lessons-archive-keyring
@@ -291,8 +291,8 @@ Description: Dynamic library for security auditing - common files
  .
  This package contains the libaudit.conf configuration file and the associated
  manpage.
-Multi-Arch: foreign
 Homepage: http://people.redhat.com/sgrubb/audit/
+Multi-Arch: foreign
 
 Package: libdpkg-perl
 Priority: optional
@@ -343,10 +343,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Origin: debian
 Bugs: debbugs://bugs.debian.org
-Homepage: https://wiki.debian.org/Teams/Dpkg
 Multi-Arch: foreign
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Origin: debian
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -437,8 +437,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Homepage: http://pam.sourceforge.net/
 Multi-Arch: foreign
+Homepage: http://pam.sourceforge.net/
 
 Package: libsemanage-common
 Priority: optional
@@ -468,8 +468,8 @@ Description: Common files for SELinux policy management libraries
  of many kinds of mandatory access control policies, including those
  based on the concepts of Type Enforcement, Role-based Access
  Control, and Multi-level Security.
-Multi-Arch: foreign
 Homepage: http://userspace.selinuxproject.org/
+Multi-Arch: foreign
 
 Package: libtext-wrapi18n-perl
 Priority: required
@@ -617,8 +617,8 @@ Description: Linux Standard Base version reporting utility
  While it is intended for use by LSB packages, this command may also
  be useful for programmatically distinguishing between a pure Debian
  installation and derived distributions.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 Multi-Arch: foreign
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 
 Package: makedev
 Priority: extra
@@ -668,8 +668,8 @@ Description: basic terminal type definitions
  This package contains terminfo data files to support the most common types of
  terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
  vt52, and xterm.
-Multi-Arch: foreign
 Homepage: http://invisible-island.net/ncurses/
+Multi-Arch: foreign
 
 Package: raspberrypi-bootloader
 Priority: required
@@ -790,8 +790,8 @@ Description: System-V-like runlevel change mechanism
  This package provides support for the System-V like system
  for booting, changing runlevels, and shutting down,
  configured through symbolic links in /etc/rc?.d/.
-Multi-Arch: foreign
 Homepage: http://savannah.nongnu.org/projects/sysvinit
+Multi-Arch: foreign
 
 Package: tzdata
 Priority: required
@@ -814,8 +814,8 @@ Description: time zone and daylight-saving time data
  globe. It is updated periodically to reflect changes made by
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
-Homepage: http://www.iana.org/time-zones
 Multi-Arch: foreign
+Homepage: http://www.iana.org/time-zones
 
 Package: util-linux-locales
 Priority: optional

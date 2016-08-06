@@ -34,8 +34,8 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Homepage: http://alioth.debian.org/projects/adduser/
 Multi-Arch: foreign
+Homepage: http://alioth.debian.org/projects/adduser/
 
 Package: avrdude
 Priority: extra
@@ -168,10 +168,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
-Bugs: debbugs://bugs.debian.org
 Multi-Arch: foreign
+Bugs: debbugs://bugs.debian.org
+Origin: debian
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -290,8 +290,8 @@ Description: Dynamic library for security auditing - common files
  .
  This package contains the libaudit.conf configuration file and the associated
  manpage.
-Homepage: http://people.redhat.com/sgrubb/audit/
 Multi-Arch: foreign
+Homepage: http://people.redhat.com/sgrubb/audit/
 
 Package: libdpkg-perl
 Priority: optional
@@ -342,10 +342,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
+Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
 Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
-Multi-Arch: foreign
-Bugs: debbugs://bugs.debian.org
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -467,8 +467,8 @@ Description: Common files for SELinux policy management libraries
  of many kinds of mandatory access control policies, including those
  based on the concepts of Type Enforcement, Role-based Access
  Control, and Multi-level Security.
-Homepage: http://userspace.selinuxproject.org/
 Multi-Arch: foreign
+Homepage: http://userspace.selinuxproject.org/
 
 Package: libtext-wrapi18n-perl
 Priority: required
@@ -667,8 +667,8 @@ Description: basic terminal type definitions
  This package contains terminfo data files to support the most common types of
  terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
  vt52, and xterm.
-Homepage: http://invisible-island.net/ncurses/
 Multi-Arch: foreign
+Homepage: http://invisible-island.net/ncurses/
 
 Package: raspberrypi-bootloader
 Priority: required

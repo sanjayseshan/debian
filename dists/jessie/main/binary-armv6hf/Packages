@@ -53,8 +53,8 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Homepage: http://alioth.debian.org/projects/adduser/
 Multi-Arch: foreign
+Homepage: http://alioth.debian.org/projects/adduser/
 
 Package: apt
 Priority: important
@@ -107,8 +107,8 @@ Description: Utilities for manipulating filesystem extended attributes
  objects, in particular getfattr(1) and setfattr(1).
  An attr(1) command is also provided which is largely compatible
  with the SGI IRIX tool of the same name.
-Homepage: http://savannah.nongnu.org/projects/attr/
 Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/attr/
 
 Package: audispd-plugins
 Priority: extra
@@ -349,8 +349,8 @@ Description: GNU cpio -- a program to manage archives of files
  GNU cpio is a tool for creating and extracting archives, or copying
  files from one place to another.  It handles a number of cpio formats
  as well as reading and writing tar files.
-Multi-Arch: foreign
 Homepage: http://www.gnu.org/software/cpio/
+Multi-Arch: foreign
 
 Package: cryptsetup
 Priority: optional
@@ -551,10 +551,10 @@ Description: Debian package management system
  installation and removal of Debian software packages.
  .
  For Debian package development tools, install dpkg-dev.
-Homepage: https://wiki.debian.org/Teams/Dpkg
+Multi-Arch: foreign
 Origin: debian
 Bugs: debbugs://bugs.debian.org
-Multi-Arch: foreign
+Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: dpkg-dev
 Priority: optional
@@ -580,10 +580,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Bugs: debbugs://bugs.debian.org
-Homepage: https://wiki.debian.org/Teams/Dpkg
 Multi-Arch: foreign
 Origin: debian
+Bugs: debbugs://bugs.debian.org
+Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: dselect
 Priority: optional
@@ -608,9 +608,9 @@ Description: Debian package management front-end
  .
  Many users find dselect intimidating and new users may prefer to use
  apt-based user interfaces.
-Origin: debian
-Multi-Arch: foreign
 Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
+Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: e2fslibs
@@ -789,8 +789,8 @@ Description: GNU privacy guard - signature verification tool
  signatures.  It is smaller than the full-blown gnupg and uses a
  different (and simpler) way to check that the public keys used to
  make the signature are trustworthy.
-Homepage: http://www.gnupg.org
 Multi-Arch: foreign
+Homepage: http://www.gnupg.org
 
 Package: grep
 Essential: yes
@@ -941,8 +941,8 @@ SHA256: d39b963a36ccf4e261fd6f2a1ed6df15adf93f050c1860d92578d84ad93b5221
 Description: scripts for initializing and shutting down the system
  The scripts in this package initialize a standard Debian
  system at boot time and shut it down at halt or reboot time.
-Multi-Arch: foreign
 Homepage: http://savannah.nongnu.org/projects/sysvinit
+Multi-Arch: foreign
 
 Package: klibc-utils
 Priority: optional
@@ -1092,8 +1092,8 @@ Description: Extended attribute static libraries and headers
  Currently only ext2, ext3, JFS and XFS support extended attributes.
  The SGI IRIX compatibility API built above the Linux system calls is
  used by programs such as xfsdump(8), xfsrestore(8) and xfs_fsr(8).
-Multi-Arch: same
 Homepage: http://savannah.nongnu.org/projects/attr/
+Multi-Arch: same
 
 Package: libaudit-common
 Priority: optional
@@ -1183,8 +1183,8 @@ Description: Header files and static library for the libauparse0 library
  The audit-libs parse package contains the dynamic libraries needed for
  applications to use the audit framework. It is used to monitor systems for
  security related events.
-Homepage: http://people.redhat.com/sgrubb/audit/
 Multi-Arch: same
+Homepage: http://people.redhat.com/sgrubb/audit/
 
 Package: libauparse0
 Priority: optional
@@ -1209,8 +1209,8 @@ Description: Dynamic library for parsing security auditing
  security related events.
  .
  This package contains the libauparse0 library.
-Multi-Arch: same
 Homepage: http://people.redhat.com/sgrubb/audit/
+Multi-Arch: same
 
 Package: libblkid-dev
 Priority: optional
@@ -1291,8 +1291,8 @@ Description: high-quality block-sorting file compressor library - runtime
  .
  The archive file format of bzip2 (.bz2) is incompatible with that of its
  predecessor, bzip (.bz).
-Homepage: http://www.bzip.org/
 Multi-Arch: same
+Homepage: http://www.bzip.org/
 
 Package: libc-bin
 Essential: yes
@@ -1345,8 +1345,8 @@ Description: GNU C Library: Shared libraries
  Contains the standard libraries that are used by nearly all programs on
  the system. This package includes shared versions of the standard C library
  and the standard math library, as well as many others.
-Homepage: http://www.gnu.org/software/libc/libc.html
 Multi-Arch: same
+Homepage: http://www.gnu.org/software/libc/libc.html
 
 Package: libcap-dev
 Priority: optional
@@ -1393,8 +1393,8 @@ Description: POSIX 1003.1e capabilities (library)
  powerful root privilege into a set of distinct privileges.
  .
  This package contains the shared library.
-Homepage: http://sites.google.com/site/fullycapable/
 Multi-Arch: same
+Homepage: http://sites.google.com/site/fullycapable/
 
 Package: libcap2-bin
 Priority: optional
@@ -1419,8 +1419,8 @@ Description: POSIX 1003.1e capabilities (utilities)
  powerful root privilege into a set of distinct privileges.
  .
  This package contains additional utilities.
-Homepage: http://sites.google.com/site/fullycapable/
 Multi-Arch: foreign
+Homepage: http://sites.google.com/site/fullycapable/
 
 Package: libcap2-dbg
 Priority: extra
@@ -1466,8 +1466,8 @@ Description: common error description library
  libcomerr is an attempt to present a common error-handling mechanism to
  manipulate the most common form of error code in a fashion that does not
  have the problems identified with mechanisms commonly in use.
-Homepage: http://e2fsprogs.sourceforge.net
 Multi-Arch: same
+Homepage: http://e2fsprogs.sourceforge.net
 
 Package: libcryptsetup-dev
 Priority: optional
@@ -1569,8 +1569,8 @@ Description: simple interprocess messaging system (library)
  It comes with several bindings, including GLib, Python, Qt and Java.
  .
  The daemon can be found in the dbus package.
-Multi-Arch: same
 Homepage: http://dbus.freedesktop.org/
+Multi-Arch: same
 
 Package: libdebconfclient0
 Priority: optional
@@ -1699,9 +1699,9 @@ Description: Debian package management static library
  .
  Note though, that the API is to be considered volatile, and might change
  at any time, use at your own risk.
-Origin: debian
 Bugs: debbugs://bugs.debian.org
 Homepage: https://wiki.debian.org/Teams/Dpkg
+Origin: debian
 
 Package: libdpkg-perl
 Priority: optional
@@ -1752,10 +1752,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Multi-Arch: foreign
 Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
 Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
 
 Package: libdrm2
 Priority: optional
@@ -2001,8 +2001,8 @@ SHA1: d64463c24e441153ae458b851f3c8ee5d170abd9
 SHA256: 5c37c6bea339a12540c6b097ce3c37aacc64582e6d09c5e5c5663562b79f6f19
 Description: LVM2 command library
  This package contains the lvm2cmd shared library.
-Multi-Arch: same
 Homepage: http://sources.redhat.com/lvm2/
+Multi-Arch: same
 
 Package: liblzma-dev
 Priority: optional
@@ -2075,8 +2075,8 @@ Description: XZ-format compression library
  The native format of liblzma is XZ; it also supports raw (headerless)
  streams and the older LZMA format used by lzma. (For 7-Zip's related
  format, use the p7zip package instead.)
-Homepage: http://tukaani.org/xz/
 Multi-Arch: same
+Homepage: http://tukaani.org/xz/
 
 Package: libmount-dev
 Priority: optional
@@ -2139,8 +2139,8 @@ Description: shared libraries for terminal handling
  .
  This package contains the shared libraries necessary to run programs
  compiled with ncurses.
-Homepage: http://invisible-island.net/ncurses/
 Multi-Arch: same
+Homepage: http://invisible-island.net/ncurses/
 
 Package: libncursesw5
 Priority: important
@@ -2233,8 +2233,8 @@ Description: POSIX 1003.1e capabilities (PAM module)
  .
  This package contains the PAM module for enforcing capabilities on users and
  groups at PAM session start time.
-Multi-Arch: same
 Homepage: http://sites.google.com/site/fullycapable/
+Multi-Arch: same
 
 Package: libpam-modules
 Priority: required
@@ -2585,8 +2585,8 @@ Description: Common files for SELinux policy management libraries
  of many kinds of mandatory access control policies, including those
  based on the concepts of Type Enforcement, Role-based Access
  Control, and Multi-level Security.
-Multi-Arch: foreign
 Homepage: http://userspace.selinuxproject.org/
+Multi-Arch: foreign
 
 Package: libsemanage1
 Priority: optional
@@ -2681,9 +2681,9 @@ Description: S-Lang programming library - runtime version
  information. It is only necessary for programs that use this library (such
  as jed and slrn). If you plan on doing development with S-Lang, you will
  need the companion -dev package as well.
+Multi-Arch: same
 Built-Using: unicode-data (= 7.0-2)
 Homepage: http://www.jedsoft.org/slang/
-Multi-Arch: same
 
 Package: libsmartcols-dev
 Priority: optional
@@ -2746,8 +2746,8 @@ Description: command-line interface parsing library
  vector, and then dispatch it to a handler function.
  .
  It was originally inspired by the Multics SubSystem library.
-Homepage: http://e2fsprogs.sourceforge.net
 Multi-Arch: same
+Homepage: http://e2fsprogs.sourceforge.net
 
 Package: libstdc++6
 Priority: important
@@ -2886,8 +2886,8 @@ Description: shared low-level terminfo library for terminal handling
  updating character screens with reasonable optimization.
  .
  This package contains the shared low-level terminfo library.
-Multi-Arch: same
 Homepage: http://invisible-island.net/ncurses/
+Multi-Arch: same
 
 Package: libudev1
 Priority: important
@@ -2906,8 +2906,8 @@ SHA1: e3d7b278778b4939981abf5ea3e3bff051770e00
 SHA256: ea9b860b0c121a91d77c84ae7d92b089dc808ba161e6c7e83c5ffee780757646
 Description: libudev shared library
  This library provides access to udev device information.
-Multi-Arch: same
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Multi-Arch: same
 
 Package: libusb++-0.1-4c2
 Priority: optional
@@ -2931,8 +2931,8 @@ Description: userspace C++ USB programming library
  Library for programming USB applications without the knowledge
  of Linux kernel internals. This is only for programs which use
  the C++ interface.
-Multi-Arch: same
 Homepage: http://www.linux-usb.org/
+Multi-Arch: same
 
 Package: libusb++-dev
 Priority: optional
@@ -2973,8 +2973,8 @@ SHA256: b4ea4f16a0944276957989f47719069ce39dd3c47d97bab7b3338ff9d9152586
 Description: userspace USB programming library
  Library for programming USB applications without the knowledge
  of Linux kernel internals.
-Multi-Arch: same
 Homepage: http://www.linux-usb.org/
+Multi-Arch: same
 
 Package: libusb-dev
 Priority: optional
@@ -3100,8 +3100,8 @@ Description: Linux Standard Base 4.1 init script functionality
  This package only includes the init-functions shell library, which
  may be used by other packages' initialization scripts for console
  logging and other purposes.
-Multi-Arch: foreign
 Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
+Multi-Arch: foreign
 
 Package: lsb-core
 Priority: extra
@@ -3403,8 +3403,8 @@ Description: Linux Standard Base version reporting utility
  While it is intended for use by LSB packages, this command may also
  be useful for programmatically distinguishing between a pure Debian
  installation and derived distributions.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 Multi-Arch: foreign
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 
 Package: lsb-security
 Priority: extra
@@ -3461,8 +3461,8 @@ Description: Linux Logical Volume Manager
  by grouping arbitrary disks into volume groups. The total capacity of
  volume groups can be allocated to logical volumes, which are accessed as
  regular block devices.
-Multi-Arch: foreign
 Homepage: http://sources.redhat.com/lvm2/
+Multi-Arch: foreign
 
 Package: makedev
 Priority: extra
@@ -3531,6 +3531,38 @@ Description: filesystem mounting tool
  first.
 Multi-Arch: foreign
 
+Package: nano
+Priority: important
+Section: editors
+Installed-Size: 1324
+Maintainer: Jordi Mallach <jordi@debian.org>
+Architecture: armv6hf
+Version: 2.2.6-3
+Replaces: pico
+Provides: editor
+Depends: dpkg (>= 1.15.4) | install-info, libc6 (>= 2.11), libncursesw5 (>= 5.6+20070908), libtinfo5
+Suggests: spell
+Conflicts: pico
+Breaks: alpine-pico (<= 2.00+dfsg-5)
+Filename: pool/main/n/nano/nano_2.2.6-3__armv6hf.deb
+Size: 351110
+MD5sum: 617c139d90bbbca61772dcaa68705083
+SHA1: 5db343866c51e0d69f45ca2fed1cd01340340722
+SHA256: 38235037c9bb8b39dd71c1099f6c6aae1ac8575f445b388c3575aea3824ae23d
+Description: small, friendly text editor inspired by Pico
+ GNU nano is an easy-to-use text editor originally designed as a replacement
+ for Pico, the ncurses-based editor from the non-free mailer package Pine
+ (itself now available under the Apache License as Alpine).
+ .
+ However, nano also implements many features missing in pico, including:
+  - feature toggles;
+  - interactive search and replace (with regular expression support);
+  - go to line (and column) command;
+  - auto-indentation and color syntax-highlighting;
+  - filename tab-completion and support for multiple buffers;
+  - full internationalization support.
+Homepage: http://www.nano-editor.org/
+
 Package: ncurses-base
 Essential: yes
 Priority: required
@@ -3555,8 +3587,8 @@ Description: basic terminal type definitions
  This package contains terminfo data files to support the most common types of
  terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
  vt52, and xterm.
-Multi-Arch: foreign
 Homepage: http://invisible-island.net/ncurses/
+Multi-Arch: foreign
 
 Package: ncurses-bin
 Essential: yes
@@ -3712,8 +3744,8 @@ Description: /proc file system utilities
  .
  It contains free, kill, pkill, pgrep, pmap, ps, pwdx, skill, slabtop,
  snice, sysctl, tload, top, uptime, vmstat, w, and watch.
-Homepage: http://gitorious.org/procps
 Multi-Arch: foreign
+Homepage: http://gitorious.org/procps
 
 Package: python-audit
 Priority: extra
@@ -3960,8 +3992,8 @@ Description: System-V-like runlevel change mechanism
  This package provides support for the System-V like system
  for booting, changing runlevels, and shutting down,
  configured through symbolic links in /etc/rc?.d/.
-Homepage: http://savannah.nongnu.org/projects/sysvinit
 Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/sysvinit
 
 Package: sysvinit-utils
 Essential: yes
@@ -4058,8 +4090,8 @@ SHA256: d38e550a7bc7d8490b41a1913e2bf3b476062c607f223722cc059ac008d070d0
 Description: /dev/ and hotplug management daemon
  udev is a daemon which dynamically creates and removes device nodes from
  /dev/, handles hotplug events and loads drivers at boot time.
-Multi-Arch: foreign
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Multi-Arch: foreign
 
 Package: uidmap
 Priority: optional
@@ -4283,8 +4315,8 @@ SHA256: 88853c4d8a73d7e91cbde628bdc68c29157d7448aa84fc12f5f8b5379f23186a
 Description: compression library - runtime
  zlib is a library implementing the deflate compression method found
  in gzip and PKZIP.  This package includes the shared library.
-Homepage: http://zlib.net/
 Multi-Arch: same
+Homepage: http://zlib.net/
 
 Package: zlib1g-dbg
 Priority: extra

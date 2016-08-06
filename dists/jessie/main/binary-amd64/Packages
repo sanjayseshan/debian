@@ -169,10 +169,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Origin: debian
-Multi-Arch: foreign
 Homepage: https://wiki.debian.org/Teams/Dpkg
 Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
+Origin: debian
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -291,8 +291,8 @@ Description: Dynamic library for security auditing - common files
  .
  This package contains the libaudit.conf configuration file and the associated
  manpage.
-Multi-Arch: foreign
 Homepage: http://people.redhat.com/sgrubb/audit/
+Multi-Arch: foreign
 
 Package: libdpkg-perl
 Priority: optional
@@ -344,9 +344,9 @@ Description: Dpkg perl modules
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
 Bugs: debbugs://bugs.debian.org
-Homepage: https://wiki.debian.org/Teams/Dpkg
-Origin: debian
 Multi-Arch: foreign
+Origin: debian
+Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -617,8 +617,8 @@ Description: Linux Standard Base version reporting utility
  While it is intended for use by LSB packages, this command may also
  be useful for programmatically distinguishing between a pure Debian
  installation and derived distributions.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 Multi-Arch: foreign
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 
 Package: makedev
 Priority: extra
