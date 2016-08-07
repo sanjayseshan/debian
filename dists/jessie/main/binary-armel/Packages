@@ -14,8 +14,8 @@ SHA256: a4c9318a85e24e2ab0f3fdbc261e17a476cc6eb69f292dac0a7322c679f2e8e2
 Description: Access control list utilities
  This package contains the getfacl and setfacl utilities needed for
  manipulating access control lists.
-Homepage: http://savannah.nongnu.org/projects/acl/
 Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/acl/
 
 Package: acl-dbgsym
 Priority: extra
@@ -32,8 +32,8 @@ MD5sum: 4ab7b68f4c57cac610b2227c799868f6
 SHA1: 0c0b9a8ff6c941de160f1914b77b392967575292
 SHA256: 49bc4348eeeeb89799302d1fb7b4389220a192a2ca062500123ac2ba3c5f5911
 Description: Debug symbols for acl
-Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
 Homepage: http://savannah.nongnu.org/projects/acl/
+Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
 Auto-Built-Package: debug-symbols
 
 Package: adduser
@@ -206,10 +206,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Homepage: https://wiki.debian.org/Teams/Dpkg
-Multi-Arch: foreign
 Bugs: debbugs://bugs.debian.org
+Homepage: https://wiki.debian.org/Teams/Dpkg
 Origin: debian
+Multi-Arch: foreign
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -325,8 +325,8 @@ Description: Access control list shared library
  This package contains the libacl.so dynamic library containing
  the POSIX 1003.1e draft standard 17 functions for manipulating
  access control lists.
-Multi-Arch: same
 Homepage: http://savannah.nongnu.org/projects/acl/
+Multi-Arch: same
 
 Package: libacl1-dbgsym
 Priority: extra
@@ -343,9 +343,9 @@ MD5sum: 9d9bd25fe53653e0c909d66c6d5accdf
 SHA1: 42ec382754f491ed336e28caf3013cea20d95074
 SHA256: 84b835b463be6ef6bceb08f827ed0e7f9809b1f1efac1a5717044997a0f734c5
 Description: Debug symbols for libacl1
-Multi-Arch: same
 Auto-Built-Package: debug-symbols
 Build-Ids: f73bd69ebb49aef92e232cd776879278f363d2d6
+Multi-Arch: same
 Homepage: http://savannah.nongnu.org/projects/acl/
 
 Package: libacl1-dev
@@ -445,10 +445,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Homepage: https://wiki.debian.org/Teams/Dpkg
 Bugs: debbugs://bugs.debian.org
-Origin: debian
 Multi-Arch: foreign
+Origin: debian
+Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: libgcrypt11-dev
 Priority: extra
@@ -512,10 +512,10 @@ MD5sum: 8a08a40a9df85dbc6f5270934de30ff9
 SHA1: 42f40f92810e61174715b842cd373a1cc3712ba5
 SHA256: 05f48eed4ae0235d0dd1f6dba1103ad25dbdb3fccd959bcfbb809e2dc7262842
 Description: Debug symbols for libgcrypt20
-Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
-Multi-Arch: same
-Auto-Built-Package: debug-symbols
 Homepage: http://directory.fsf.org/project/libgcrypt/
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
 
 Package: libgcrypt20-dev
 Priority: optional
@@ -563,9 +563,9 @@ MD5sum: 67a2d951d54347b51555e9830acfb6dc
 SHA1: ada7303bd1459d631970c0fa933deed377940223
 SHA256: 1f359e58bb8b30774777b5a8554a9ff1ad6c86d29ac3fdc5cb6d7e9c98047e5a
 Description: Debug symbols for libgcrypt20-dev
-Auto-Built-Package: debug-symbols
-Build-Ids: 1c7854596e49bd8866e90d4f14cf3df03423e174 a32fa291e2ecff0ed7d3caa4456aec682f4f4470 bee3d6ac808abb9ec627728eac2c0e9ae830ffce
 Homepage: http://directory.fsf.org/project/libgcrypt/
+Build-Ids: 1c7854596e49bd8866e90d4f14cf3df03423e174 a32fa291e2ecff0ed7d3caa4456aec682f4f4470 bee3d6ac808abb9ec627728eac2c0e9ae830ffce
+Auto-Built-Package: debug-symbols
 
 Package: libgcrypt20-doc
 Priority: optional
@@ -804,8 +804,8 @@ Description: Linux Standard Base 4.1 init script functionality
  This package only includes the init-functions shell library, which
  may be used by other packages' initialization scripts for console
  logging and other purposes.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 Multi-Arch: foreign
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 
 Package: lsb-invalid-mta
 Priority: extra
