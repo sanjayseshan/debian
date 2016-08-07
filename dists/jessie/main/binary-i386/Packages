@@ -34,8 +34,8 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Homepage: http://alioth.debian.org/projects/adduser/
 Multi-Arch: foreign
+Homepage: http://alioth.debian.org/projects/adduser/
 
 Package: avrdude
 Priority: extra
@@ -169,10 +169,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Homepage: https://wiki.debian.org/Teams/Dpkg
 Bugs: debbugs://bugs.debian.org
 Multi-Arch: foreign
 Origin: debian
+Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -344,9 +344,9 @@ Description: Dpkg perl modules
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
 Homepage: https://wiki.debian.org/Teams/Dpkg
+Bugs: debbugs://bugs.debian.org
 Multi-Arch: foreign
 Origin: debian
-Bugs: debbugs://bugs.debian.org
 
 Package: libgcrypt11-dev
 Priority: extra

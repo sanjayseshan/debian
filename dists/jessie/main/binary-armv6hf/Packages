@@ -88,6 +88,30 @@ Description: commandline package manager
   * apt-config as an interface to the configuration settings
   * apt-key as an interface to manage authentication keys
 
+Package: apt-utils
+Priority: important
+Section: admin
+Installed-Size: 910
+Maintainer: APT Development Team <deity@lists.debian.org>
+Architecture: armv6hf
+Source: apt
+Version: 1.0.9.8.3
+Depends: apt, libapt-inst1.5 (>= 0.9.15.4), libapt-pkg4.12 (>= 0.9.16), libc6 (>= 2.4), libdb5.3, libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.9)
+Filename: pool/main/a/apt/apt-utils_1.0.9.8.3__armv6hf.deb
+Size: 353876
+MD5sum: 7890fd6e5a30c36b595eb2db4933b7cb
+SHA1: 4b3b3c1829a39135e647c8ac523d3855616d6235
+SHA256: f1c1f3e956bf0ccf5832d4b18779ae7e86b31c53f6f9fbd1c5b87778e6d261cf
+Description: package management related utility programs
+ This package contains some less used commandline utilities related
+ to package management with APT.
+ .
+  * apt-extracttemplates is used by debconf to prompt for configuration
+    questions before installation.
+  * apt-ftparchive is used to create Packages and other index files
+    needed to publish an archive of debian packages
+  * apt-sortpkgs is a Packages/Sources file normalizer.
+
 Package: attr
 Priority: optional
 Section: utils
@@ -107,8 +131,8 @@ Description: Utilities for manipulating filesystem extended attributes
  objects, in particular getfattr(1) and setfattr(1).
  An attr(1) command is also provided which is largely compatible
  with the SGI IRIX tool of the same name.
-Homepage: http://savannah.nongnu.org/projects/attr/
 Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/attr/
 
 Package: audispd-plugins
 Priority: extra
@@ -207,8 +231,8 @@ Description: GNU Bourne Again SHell
  .
  The Programmable Completion Code, by Ian Macdonald, is now found in
  the bash-completion package.
-Multi-Arch: foreign
 Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Multi-Arch: foreign
 
 Package: brickpi-base
 Priority: normal
@@ -308,11 +332,11 @@ Version: 8.23-4
 Replaces: mktemp, realpath, timeout
 Pre-Depends: libacl1 (>= 2.2.51-8), libattr1 (>= 1:2.4.46-8), libc6 (>= 2.17), libselinux1 (>= 2.1.13)
 Conflicts: timeout
-Filename: pool/main/c/coreutils/coreutils_8.23-4_armv6hf.deb
-Size: 2590598
-MD5sum: f6eeef59df3bbf1bc5bc0b9b965ece2b
-SHA1: 39a93226926976b469474dad322e438d44d4e61b
-SHA256: 415fd68d18bb77be1152e2550181b5d435049868aabc262847a743286b936751
+Filename: pool/main/c/coreutils/coreutils_8.23-4__armv6hf.deb
+Size: 2590604
+MD5sum: 4777f236f1901225847bf969f24211b1
+SHA1: 77f838d426cf32eff6cabee71a4c45ffb3d0c0a8
+SHA256: 97a100fd4cceaf8c2034880abaf9994b52af004bf427a027ecb50c5ab3e35100
 Description: GNU core utilities
  This package contains the basic file, shell and text manipulation
  utilities which are expected to exist on every operating system.
@@ -433,6 +457,40 @@ Description: POSIX-compliant shell
  failures), it is used as the default system shell on Debian systems.
 Homepage: http://gondor.apana.org.au/~herbert/dash/
 
+Package: dbus
+Priority: standard
+Section: admin
+Installed-Size: 749
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armv6hf
+Version: 1.8.20-0+deb8u1
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.17), libcap-ng0, libdbus-1-3 (>= 1.7.6), libexpat1 (>= 2.0.1), libselinux1 (>= 2.0.65), libsystemd0, adduser, lsb-base (>= 3.2-14)
+Suggests: dbus-x11
+Filename: pool/main/d/dbus/dbus_1.8.20-0+deb8u1__armv6hf.deb
+Size: 245620
+MD5sum: 70aa2c48d688a14a7d80986af8c30971
+SHA1: b866dd9fc00c38e98a235a61926deb4946ad5977
+SHA256: f647efd655b9c2c6a030a0403d28a993d92f807c949496d641a11aec607dd71c
+Description: simple interprocess messaging system (daemon and utilities)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ This package contains the D-Bus daemon and related utilities.
+ .
+ The client-side library can be found in the libdbus-1-3 package, as it is no
+ longer contained in this package.
+Multi-Arch: foreign
+Homepage: http://dbus.freedesktop.org/
+
 Package: debconf
 Priority: important
 Section: admin
@@ -477,6 +535,32 @@ Description: full internationalization support for debconf
  translations into all available languages, support for using translated
  debconf templates, and support for proper display of multibyte character
  sets.
+
+Package: debianutils
+Essential: yes
+Priority: required
+Section: utils
+Installed-Size: 135
+Maintainer: Clint Adams <clint@debian.org>
+Architecture: armv6hf
+Version: 4.4
+Replaces: manpages-pl (<< 1:0.5)
+Depends: sensible-utils
+Pre-Depends: libc6 (>= 2.15)
+Filename: pool/main/d/debianutils/debianutils_4.4__armv6hf.deb
+Size: 101836
+MD5sum: 65885c70a357f363559ba7df88ec69c1
+SHA1: 835dd73a71e8f08b900524445ae315b2b14427f0
+SHA256: 3a97d372bd82edb6f70b9a136343353cbf92c9e0ca660b82013f01e7bc4a2ba8
+Description: Miscellaneous utilities specific to Debian
+ This package provides a number of small utilities which are used
+ primarily by the installation scripts of Debian packages, although
+ you may use them directly.
+ .
+ The specific utilities included are:
+ add-shell installkernel ischroot remove-shell run-parts savelog
+ tempfile which
+Multi-Arch: foreign
 
 Package: dmeventd
 Priority: optional
@@ -525,14 +609,14 @@ Description: Linux Kernel Device Mapper userspace library
  raid, and other drivers that create "virtual" block devices.
  .
  This package contains a utility for modifying device mappings.
-Homepage: http://sources.redhat.com/lvm2/
 Multi-Arch: foreign
+Homepage: http://sources.redhat.com/lvm2/
 
 Package: dpkg
 Essential: yes
 Priority: required
 Section: admin
-Installed-Size: 6997
+Installed-Size: 6435
 Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
 Architecture: armv6hf
 Version: 1.17.27
@@ -541,20 +625,20 @@ Pre-Depends: libbz2-1.0, libc6 (>= 2.11), liblzma5 (>= 5.1.1alpha+20120614), lib
 Suggests: apt
 Conflicts: ada-mode (<< 3.6-3+rm), ada-reference-manual (<< 20021112web-4~), asn1-mode (<< 2.7-7~), bogosort (<< 0.4.2-3~), cl-yacc (<< 0.3-3~), cpp-4.1-doc (<< 4.1.2.nf2-4~), cpp-4.2-doc (<< 4.2.4.nf1-4~), gcc-4.1-doc (<< 4.1.2.nf2-4~), gcc-4.2-doc (<< 4.2.4.nf1-4~), gcj-4.1-doc (<< 4.1.2.nf2-4~), gcj-4.2-doc (<< 4.2.4.nf1-4~), gfortran-4.1-doc (<< 4.1.2.nf2-4~), gfortran-4.2-doc (<< 4.2.4.nf1-4~), ggz-docs (<< 0.0.14.1-2~), glame (<< 2.0.1-6~), gnat-4.1-doc (<< 4.1.2.nf2-4~), gnat-4.2-doc (<< 4.2.4.nf1-4~), gtalk (<< 0.99.10-16~), libalogg-dev (<< 1.3.7-2~), libgtk1.2-doc (<< 1.2.10-19~), libnettle-dev (<< 2~), liborbit-dev (<< 0.5.17-12~), libreadline5-dev (<< 5.2-8~), librep-doc (<< 0.90~), mmucl (<< 1.5.2-3~), nxml-mode (<< 20041004-9~), octave2.1-info (<< 1:2.1.73-19+rm), octave3.0-info (<< 1:3.0.5-7+rm), octave3.2-info (<< 3.2.4-12+rm), polgen-doc (<< 1.3-3+rm), r6rs-doc (<< 1.0-2~), serveez-doc (<< 0.1.5-3~), slat (<< 2.0-6~), texlive-base-bin-doc (<< 2007.dfsg.2-9~), ttcn-el (<< 0.6.9-2~), ulog-acctd (<< 0.4.3-3~), xconq-doc (<< 7.4.1-5~), zenirc (<< 2.112.dfsg-1~)
 Breaks: apt (<< 0.7.7~), apt-cudf (<< 3.3~beta1-3~), aptitude (<< 0.4.7-1~), auctex (<< 11.87-3+deb8u1~), ccache (<< 3.1.10-1~), cups (<< 1.7.5-10~), debian-security-support (<< 2014.10.26~), distcc (<< 3.1-6.1~), doc-base (<< 0.10.5~), dpkg-dev (<< 1.15.8), fontconfig (<< 2.11.0-6.2~), fusionforge-plugin-mediawiki (<< 5.3.2+20141104-3~), gap-core (<< 4r7p5-2~), gitweb (<< 1:2.1.4-2.1~), grace (<< 1:5.1.24-3~), gxine (<< 0.5.908-3.1~), hoogle (<< 4.2.33-4~), icecc (<< 1.0.1-2~), install-info (<< 5.1.dfsg.1-3~), libapache2-mod-php5 (<< 5.6.4+dfsg-3~), libapache2-mod-php5filter (<< 5.6.4+dfsg-3~), libdpkg-perl (<< 1.15.8), libjs-protoaculous (<< 5~), man-db (<< 2.6.3-6~), mcollective (<< 2.6.0+dfsg-2.1~), php5-fpm (<< 5.6.4+dfsg-3~), pypy (<< 2.4.0+dfsg-3~), readahead-fedora (<< 2:1.5.6-5.2~), wordpress (<< 4.1+dfsg-1~), xfonts-traditional (<< 1.7~), xine-ui (<< 0.99.9-1.2~)
-Filename: pool/main/d/dpkg/dpkg_1.17.27_armv6hf.deb
-Size: 2931164
-MD5sum: 792d0aa8ae9756b6dcad925c9d302da4
-SHA1: d114651325e63c737ce61e7477e5620627dcb5b0
-SHA256: fe5832e695864fa3268636494ab83b3bbeb8d92c7259e8590fe39e54a293ed21
+Filename: pool/main/d/dpkg/dpkg_1.17.27__armv6hf.deb
+Size: 2926076
+MD5sum: 1e57af462dd63b31687ffb82581552e3
+SHA1: 66a4941183900815998f6fbd0046352bf20d28ab
+SHA256: 7ec4b23ddc1cd9428b3325d3a9bea59150ef001b9096c4b98a7259169161196b
 Description: Debian package management system
  This package provides the low-level infrastructure for handling the
  installation and removal of Debian software packages.
  .
  For Debian package development tools, install dpkg-dev.
-Origin: debian
 Multi-Arch: foreign
-Bugs: debbugs://bugs.debian.org
+Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
+Bugs: debbugs://bugs.debian.org
 
 Package: dpkg-dev
 Priority: optional
@@ -580,9 +664,9 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Bugs: debbugs://bugs.debian.org
 Homepage: https://wiki.debian.org/Teams/Dpkg
 Multi-Arch: foreign
+Bugs: debbugs://bugs.debian.org
 Origin: debian
 
 Package: dselect
@@ -608,10 +692,10 @@ Description: Debian package management front-end
  .
  Many users find dselect intimidating and new users may prefer to use
  apt-based user interfaces.
-Origin: debian
-Bugs: debbugs://bugs.debian.org
-Multi-Arch: foreign
 Homepage: https://wiki.debian.org/Teams/Dpkg
+Origin: debian
+Multi-Arch: foreign
+Bugs: debbugs://bugs.debian.org
 
 Package: e2fslibs
 Priority: required
@@ -761,8 +845,8 @@ Description: GNU awk, a pattern scanning and processing language
  Weinberger, with the additional features defined in the System V Release
  4 version of UNIX awk. Gawk also provides more recent Bell Labs awk
  extensions, and some GNU-specific extensions.
-Multi-Arch: foreign
 Homepage: http://www.gnu.org/software/gawk/
+Multi-Arch: foreign
 
 Package: gnupg
 Priority: important
@@ -793,8 +877,8 @@ Description: GNU privacy guard - a free PGP replacement
  The gnupg package is built without libcurl. So it does not support
  HKPS keyservers. Install the gnupg-curl package if you want to use
  the keyserver helper tools built with libcurl and supporting HKPS.
-Multi-Arch: foreign
 Homepage: http://www.gnupg.org
+Multi-Arch: foreign
 
 Package: gpgv
 Priority: important
@@ -818,8 +902,8 @@ Description: GNU privacy guard - signature verification tool
  signatures.  It is smaller than the full-blown gnupg and uses a
  different (and simpler) way to check that the public keys used to
  make the signature are trustworthy.
-Homepage: http://www.gnupg.org
 Multi-Arch: foreign
+Homepage: http://www.gnupg.org
 
 Package: grep
 Essential: yes
@@ -1028,16 +1112,37 @@ Version: 2.2.52-2
 Depends: libattr1 (>= 1:2.4.46-8), libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Conflicts: acl (<< 2.0.0), libacl1-kerberos4kth
-Filename: pool/main/a/acl/libacl1_2.2.52-2_armv6hf.deb
-Size: 24886
-MD5sum: 81542ef015668840a74f8b70f4cd97ce
-SHA1: 1e92b4bede45f130d1bb7705d8ccd9681396bb25
-SHA256: 742dd7c1a9a405dbd357f3dfe9bf2945c26a9a7ea6f7e1ef2950b599eb8f25c3
+Filename: pool/main/a/acl/libacl1_2.2.52-2__armv6hf.deb
+Size: 24894
+MD5sum: c356e637ee54f50aca86edf902d9f749
+SHA1: ff44077f97b6cad5da4d4ef048a7cc0518dc40a2
+SHA256: 600e19603be9678279569a97d828f550ff8bd91501cd546f4731856ab2e27e48
 Description: Access control list shared library
  This package contains the libacl.so dynamic library containing
  the POSIX 1003.1e draft standard 17 functions for manipulating
  access control lists.
 Homepage: http://savannah.nongnu.org/projects/acl/
+Multi-Arch: same
+
+Package: libapt-inst1.5
+Priority: important
+Section: libs
+Installed-Size: 340
+Maintainer: APT Development Team <deity@lists.debian.org>
+Architecture: armv6hf
+Source: apt
+Version: 1.0.9.8.3
+Depends: libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
+Pre-Depends: multiarch-support
+Filename: pool/main/a/apt/libapt-inst1.5_1.0.9.8.3__armv6hf.deb
+Size: 164108
+MD5sum: 12278e261f77f9033934dd14f56ad510
+SHA1: b3cb061ed5a826562da27af862cdc93844ce0d23
+SHA256: 79325ab2f630a9691789403b6af1f15cb86666481d89b70243a0412e89f58943
+Description: deb package format runtime library
+ This library provides methods to query and extract information
+ from deb packages. This includes the control data and the package
+ file content.
 Multi-Arch: same
 
 Package: libapt-pkg4.12
@@ -1051,11 +1156,11 @@ Version: 1.0.9.8.3
 Depends: libbz2-1.0, libc6 (>= 2.15), libgcc1 (>= 1:4.4.0), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 4.9), zlib1g (>= 1:1.2.3.4)
 Pre-Depends: multiarch-support
 Breaks: apt (<< 0.9.4~), libapt-inst1.5 (<< 0.9.9~)
-Filename: pool/main/a/apt/libapt-pkg4.12_1.0.9.8.3_armv6hf.deb
-Size: 692060
-MD5sum: 306fe71de146bcded8cf5fb3b4735bbf
-SHA1: 65945a2d1053b91211b4e6ffcfc6c47b580f60f7
-SHA256: 4d9af56cf31afcd55c16d12e3534b8bb23dfe64db9da57ab38c8db808d5a2977
+Filename: pool/main/a/apt/libapt-pkg4.12_1.0.9.8.3__armv6hf.deb
+Size: 692064
+MD5sum: 7d750ac5ce155bf66680fac171693f2e
+SHA1: c7e73ac0d6550d1c0cf798f1b5e15922fd1ed728
+SHA256: b8234f492d17f9ef6271cddad201fca03e9f734f8fc5ccc8eb15803dbf18852b
 Description: package management runtime library
  This library provides the common functionality for searching and
  managing packages as well as information about packages.
@@ -1076,7 +1181,7 @@ Multi-Arch: same
 Package: libattr1
 Priority: required
 Section: libs
-Installed-Size: 60
+Installed-Size: 29
 Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
 Architecture: armv6hf
 Source: attr
@@ -1084,11 +1189,11 @@ Version: 1:2.4.47-2
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Conflicts: attr (<< 2.0.0)
-Filename: pool/main/a/attr/libattr1_2.4.47-2_armv6hf.deb
-Size: 17066
-MD5sum: 26917939080b7552f4d1c250dd26afc3
-SHA1: 5c6ef38a3b6c831e995869530c4f5323cb1c109c
-SHA256: 5fb4604ad0d93ac372f8b45562ad81d90251c94b350e5d900a0e30e91c723a35
+Filename: pool/main/a/attr/libattr1_1%3a2.4.47-2__armv6hf.deb
+Size: 16752
+MD5sum: 0d5a26eb43ef443ccd6e466bcb20665d
+SHA1: 98ea8bd5a96b476129175045c20d2ada41a0613a
+SHA256: d118baab2c577f8324db258d4b7f9f096a64312789ca81059df0e2baaa8b8cd0
 Description: Extended attribute shared library
  Contains the runtime environment required by programs that make use
  of extended attributes.
@@ -1121,8 +1226,8 @@ Description: Extended attribute static libraries and headers
  Currently only ext2, ext3, JFS and XFS support extended attributes.
  The SGI IRIX compatibility API built above the Linux system calls is
  used by programs such as xfsdump(8), xfsrestore(8) and xfs_fsr(8).
-Homepage: http://savannah.nongnu.org/projects/attr/
 Multi-Arch: same
+Homepage: http://savannah.nongnu.org/projects/attr/
 
 Package: libaudit-common
 Priority: optional
@@ -1167,24 +1272,24 @@ Description: Header files and static library for security auditing
  The audit-libs-devel package contains the static libraries and header
  files needed for developing applications that need to use the audit
  framework libraries.
-Homepage: http://people.redhat.com/sgrubb/audit/
 Multi-Arch: same
+Homepage: http://people.redhat.com/sgrubb/audit/
 
 Package: libaudit1
 Priority: optional
 Section: libs
-Installed-Size: 144
+Installed-Size: 112
 Maintainer: Laurent Bigonville <bigon@debian.org>
 Architecture: armv6hf
 Source: audit
 Version: 1:2.4-1
 Depends: libaudit-common (>= 1:2.4-1), libc6 (>= 2.8)
 Pre-Depends: multiarch-support
-Filename: pool/main/a/audit/libaudit1_2.4-1_armv6hf.deb
-Size: 41710
-MD5sum: 2014b5776f1c36ee5a04d9ab40075700
-SHA1: e4e1726b81c51198535a92ba0002058c54abaec5
-SHA256: 749a6886e70d18cbcbc7cc940bb7653e067ebfe8736cf7950793865e375db72c
+Filename: pool/main/a/audit/libaudit1_1%3a2.4-1__armv6hf.deb
+Size: 40610
+MD5sum: 79e616c7badb2780f506983ec6cfe867
+SHA1: 4853695eeae2ae6d98b052f99cb0b33ac7523082
+SHA256: 7c120253b55084962b1b10b815ab1d67636b184bc3ae21fe55d5b349385ae93d
 Description: Dynamic library for security auditing
  The audit-libs package contains the dynamic libraries needed for
  applications to use the audit framework. It is used to monitor systems for
@@ -1238,8 +1343,8 @@ Description: Dynamic library for parsing security auditing
  security related events.
  .
  This package contains the libauparse0 library.
-Homepage: http://people.redhat.com/sgrubb/audit/
 Multi-Arch: same
+Homepage: http://people.redhat.com/sgrubb/audit/
 
 Package: libblkid-dev
 Priority: optional
@@ -1269,18 +1374,18 @@ Multi-Arch: same
 Package: libblkid1
 Priority: required
 Section: libs
-Installed-Size: 319
+Installed-Size: 288
 Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
 Architecture: armv6hf
 Source: util-linux
 Version: 2.25.2-6
 Depends: libc6 (>= 2.17), libuuid1 (>= 2.16)
 Pre-Depends: multiarch-support
-Filename: pool/main/u/util-linux/libblkid1_2.25.2-6_armv6hf.deb
-Size: 146194
-MD5sum: 2dd0cd6ec7cc565083067c06932641b9
-SHA1: 3a83686af298a0b7d5f4c7361953a011f817d099
-SHA256: f16509384155a3d9a0e8808cde43caff9e42f8efb35a70d4003062ecfeb03254
+Filename: pool/main/u/util-linux/libblkid1_2.25.2-6__armv6hf.deb
+Size: 144986
+MD5sum: 840cba28e9eedc3c7822e805479ed8db
+SHA1: 318f15d08c4ccc9ffc55342faa3202cafc265561
+SHA256: c5fb11a30eac100ed8171da8ab12f242d6f919c9bbfba86b6b6d83d610bca9fc
 Description: block device id library
  The blkid library which allows system programs like fsck and
  mount to quickly and easily find block devices by filesystem UUID and
@@ -1299,11 +1404,11 @@ Source: bzip2
 Version: 1.0.6-7
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
-Filename: pool/main/b/bzip2/libbz2-1.0_1.0.6-7_armv6hf.deb
-Size: 41312
-MD5sum: c8113b1435fb83f19bdbbf9a373e4f77
-SHA1: 01d5f93c2d47af0430d03bd9c8dd49be22123f24
-SHA256: 069eb4c0ea9070caf5e591bd7d75297bab421886bd9d54660130e4ba7282d174
+Filename: pool/main/b/bzip2/libbz2-1.0_1.0.6-7__armv6hf.deb
+Size: 41318
+MD5sum: f45843d3f5e4713b96dc3cfd0835bb49
+SHA1: a6bf73b28cddf47673fec17600029ac97d72d977
+SHA256: 092bdd4f3439914cfb91d3066a95aa4470112f5de54dfcf686bcfa3e580d3aa8
 Description: high-quality block-sorting file compressor library - runtime
  This package contains libbzip2 which is used by the bzip2 compressor.
  .
@@ -1374,8 +1479,8 @@ Description: GNU C Library: Shared libraries
  Contains the standard libraries that are used by nearly all programs on
  the system. This package includes shared versions of the standard C library
  and the standard math library, as well as many others.
-Multi-Arch: same
 Homepage: http://www.gnu.org/software/libc/libc.html
+Multi-Arch: same
 
 Package: libcap-dev
 Priority: optional
@@ -1402,28 +1507,56 @@ Description: POSIX 1003.1e capabilities (development)
 Homepage: http://sites.google.com/site/fullycapable/
 Multi-Arch: same
 
+Package: libcap-ng0
+Priority: optional
+Section: libs
+Installed-Size: 23
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Architecture: armv6hf
+Source: libcap-ng
+Version: 0.7.4-2
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Filename: pool/main/libc/libcap-ng/libcap-ng0_0.7.4-2__armv6hf.deb
+Size: 11694
+MD5sum: ffe3d49ab11a1ba02a010c2275abb7a9
+SHA1: 9b6a61579dae09a35df7078ee96be7fdbe2c1541
+SHA256: fcc38483ef9f4e0507f30064be271b3762f5a5d09879eb2c373d6c44915727c7
+Description: An alternate POSIX capabilities library
+ This library implements the user-space interfaces to the POSIX
+ 1003.1e capabilities available in Linux kernels.  These capabilities are
+ a partitioning of the all powerful root privilege into a set of distinct
+ privileges.
+ .
+ The libcap-ng library is intended to make programming with POSIX
+ capabilities much easier than the traditional libcap library.
+ .
+ This package contains header files and libraries for libcap-ng.
+Homepage: http://people.redhat.com/sgrubb/libcap-ng
+Multi-Arch: same
+
 Package: libcap2
 Priority: standard
 Section: libs
-Installed-Size: 60
+Installed-Size: 24
 Maintainer: Christian Kastner <debian@kvr.at>
 Architecture: armv6hf
 Version: 1:2.24-8
 Depends: libattr1 (>= 1:2.4.46-8), libc6 (>= 2.8)
 Pre-Depends: multiarch-support
-Filename: pool/main/libc/libcap2/libcap2_2.24-8_armv6hf.deb
-Size: 14958
-MD5sum: ffa0edfd5c557bd51fc82b411bd74edd
-SHA1: 3390bc51aa7b0aade1220614195d72b74dbdccba
-SHA256: e450b9f48f621adfbd39283a03ab98de19e5ebce1f0152d65288049844592d73
+Filename: pool/main/libc/libcap2/libcap2_1%3a2.24-8__armv6hf.deb
+Size: 13764
+MD5sum: a179c98e8b9de50e45b45e7a378eca1f
+SHA1: df082516e5d80afab4822ca2d908a14fcbf10304
+SHA256: 716a4390c7801fc96048ca47ea6a5591f56d948fa587fe7b6dd13b71fe744848
 Description: POSIX 1003.1e capabilities (library)
  Libcap implements the user-space interfaces to the POSIX 1003.1e capabilities
  available in Linux kernels. These capabilities are a partitioning of the all
  powerful root privilege into a set of distinct privileges.
  .
  This package contains the shared library.
-Multi-Arch: same
 Homepage: http://sites.google.com/site/fullycapable/
+Multi-Arch: same
 
 Package: libcap2-bin
 Priority: optional
@@ -1471,8 +1604,8 @@ Description: POSIX 1003.1e capabilities (debug)
  powerful root privilege into a set of distinct privileges.
  .
  This package contains the debugging symbols.
-Homepage: http://sites.google.com/site/fullycapable/
 Multi-Arch: same
+Homepage: http://sites.google.com/site/fullycapable/
 
 Package: libcomerr2
 Priority: required
@@ -1519,8 +1652,8 @@ Description: disk encryption support - development files
  Setup (LUKS) support.
  .
  This package provides the libcryptsetup development files.
-Multi-Arch: same
 Homepage: http://code.google.com/p/cryptsetup/
+Multi-Arch: same
 
 Package: libcryptsetup4
 Priority: optional
@@ -1543,8 +1676,8 @@ Description: disk encryption support - shared library
  Setup (LUKS) support.
  .
  This package provides the libcryptsetup shared library.
-Multi-Arch: same
 Homepage: http://code.google.com/p/cryptsetup/
+Multi-Arch: same
 
 Package: libdb5.3
 Priority: standard
@@ -1556,16 +1689,16 @@ Source: db5.3
 Version: 5.3.28-9
 Depends: libc6 (>= 2.17)
 Pre-Depends: multiarch-support
-Filename: pool/main/d/db5.3/libdb5.3_5.3.28-9_armv6hf.deb
-Size: 573656
-MD5sum: f754702faa8c73c5ebdf9dda97c09c17
-SHA1: ebed2883be506aaf997a7128c714a46e1f277767
-SHA256: 49a116e5682949c8445752504903434b6db03298ddb873cd612e38aa10e1faf5
+Filename: pool/main/d/db5.3/libdb5.3_5.3.28-9__armv6hf.deb
+Size: 573660
+MD5sum: 5164092e64ed58f310da80f16e9220d0
+SHA1: 295b832ef1ae42cddf5568096223506bb3ac308b
+SHA256: 9257e96389afc5c17de60ef8d67d2589541ef52a3b11d8232bf5eab7baca494c
 Description: Berkeley v5.3 Database Libraries [runtime]
  This is the runtime package for programs that use the v5.3 Berkeley
  database library.
-Multi-Arch: same
 Homepage: http://www.oracle.com/technology/software/products/berkeley-db/index.html
+Multi-Arch: same
 
 Package: libdbus-1-3
 Priority: optional
@@ -1579,11 +1712,11 @@ Depends: libc6 (>= 2.17)
 Pre-Depends: multiarch-support
 Recommends: dbus
 Breaks: kde-window-manager (<< 4:4.4.5-9), kdebase-workspace-bin (<< 4:4.4.5-9)
-Filename: pool/main/d/dbus/libdbus-1-3_1.8.20-0+deb8u1_armv6hf.deb
-Size: 146614
-MD5sum: 3d93e79eba89d9cbd4b1f41eeebdf3ef
-SHA1: 0e28ae9fa7f77062a3b87c4de29e8c028915f811
-SHA256: 18ce752b96793a27b775db8a36b7f44c44dc5e82f4da134e9a4f85b04999fe87
+Filename: pool/main/d/dbus/libdbus-1-3_1.8.20-0+deb8u1__armv6hf.deb
+Size: 146622
+MD5sum: 4b3b36b97b82e41827688b1c12e6f8eb
+SHA1: e519e9903fbefbbb24229ba6f404bb4e40ad71f9
+SHA256: 2d30ef29880f2e0c79af51fe08a60e422c0582d90f2d2eed96546fd94ab59fc5
 Description: simple interprocess messaging system (library)
  D-Bus is a message bus, used for sending messages between applications.
  Conceptually, it fits somewhere in between raw sockets and CORBA in
@@ -1611,11 +1744,11 @@ Source: cdebconf
 Version: 0.192
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
-Filename: pool/main/c/cdebconf/libdebconfclient0_0.192_armv6hf.deb
-Size: 45574
-MD5sum: 00b37d43abb33201801609d848f8161c
-SHA1: a282e385084f98a602daea833fa6730594a61e5f
-SHA256: aeae8426278ccc40f73d813e35fe19be9f71f85b6ae6c4851e8409eee7cedebf
+Filename: pool/main/c/cdebconf/libdebconfclient0_0.192__armv6hf.deb
+Size: 45578
+MD5sum: b674713c98e0a95070dac3d2b5c8df27
+SHA1: 7b9da6cc70ba01867e998f0f5c99209088df51b7
+SHA256: 8ebc655d399fb9a233fbd01ca03b78a54bdcc14745fca6d95b589ac77602cc4e
 Description: Debian Configuration Management System (C-implementation library)
  Debconf is a configuration management system for Debian packages. It is
  used by some packages to prompt you for information before they are
@@ -1705,8 +1838,8 @@ Description: Linux Kernel Device Mapper userspace library
  This package contains the (user-space) shared library for accessing the
  device-mapper; it allows usage of the device-mapper through a clean,
  consistent interface (as opposed to through kernel ioctls).
-Homepage: http://sources.redhat.com/lvm2/
 Multi-Arch: same
+Homepage: http://sources.redhat.com/lvm2/
 
 Package: libdpkg-dev
 Priority: optional
@@ -1728,8 +1861,8 @@ Description: Debian package management static library
  .
  Note though, that the API is to be considered volatile, and might change
  at any time, use at your own risk.
-Origin: debian
 Bugs: debbugs://bugs.debian.org
+Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: libdpkg-perl
@@ -1782,8 +1915,8 @@ Description: Dpkg perl modules
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
 Bugs: debbugs://bugs.debian.org
-Origin: debian
 Multi-Arch: foreign
+Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: libdrm2
@@ -1809,6 +1942,54 @@ Description: Userspace interface to kernel DRM services -- runtime
  OpenGL drivers.
  .
  This package provides the runtime environment for libdrm.
+Multi-Arch: same
+
+Package: libexpat1
+Priority: optional
+Section: libs
+Installed-Size: 286
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: armv6hf
+Source: expat
+Version: 2.1.0-6+deb8u3
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Pre-Depends: multiarch-support
+Conflicts: wink (<= 1.5.1060-4)
+Filename: pool/main/e/expat/libexpat1_2.1.0-6+deb8u3__armv6hf.deb
+Size: 59326
+MD5sum: 6405ed2a2da47e88f7bbb52c6c211d25
+SHA1: c9f51160988eb4789fbb3ef82a7ae5beee10a242
+SHA256: 6bfc49b9a93d1899600bb9d9ca75054368bd301c6aede37abcbd1b9018dbc005
+Description: XML parsing C library - runtime library
+ This package contains the runtime, shared library of expat, the C
+ library for parsing XML. Expat is a stream-oriented parser in
+ which an application registers handlers for things the parser
+ might find in the XML document (like start tags).
+Multi-Arch: same
+Homepage: http://expat.sourceforge.net
+
+Package: libgcc1
+Priority: required
+Section: libs
+Installed-Size: 156
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armv6hf
+Source: gcc-4.9 (4.9.2-10)
+Version: 1:4.9.2-10
+Provides: libgcc1-armv6hf
+Depends: gcc-4.9-base (= 4.9.2-10), libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: pool/main/g/gcc-4.9/libgcc1_1%3a4.9.2-10__armv6hf.deb
+Size: 34278
+MD5sum: 40e8d72b7c2cfb4e14b4b4d502ae1852
+SHA1: 105752d98458c65b418eaf28aecb8fba9904f5dc
+SHA256: b021db81049ac3aa9fff91fb8a875b0caeac5bff59dbcca6a6bf8eb400838af9
+Description: GCC support library
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+Homepage: http://gcc.gnu.org/
 Multi-Arch: same
 
 Package: libgcrypt11-dev
@@ -1841,11 +2022,11 @@ Version: 1.6.3-2+deb8u1
 Depends: libc6 (>= 2.15), libgpg-error0 (>= 1.14)
 Pre-Depends: multiarch-support
 Suggests: rng-tools
-Filename: pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1_armv6hf.deb
-Size: 332368
-MD5sum: 4bd565ebfb9966bdade14f239f671256
-SHA1: e105467635a7484794c6b19515a85cfe0b219a8e
-SHA256: 1f05c9a96cebd72d64192d6ff88dedda5e12daebe06795af35aca9cf2dc3d3a0
+Filename: pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1__armv6hf.deb
+Size: 332374
+MD5sum: 4c8d946fc5ad0528d0a427ef86f91d84
+SHA1: 8a527c18d98adba62c68c71d3561d6af2c546cbf
+SHA256: c938199f321db013f6358f027201fc2c8ed96ba9709940cb27c4ff15318ee8ca
 Description: LGPL Crypto library - runtime library
  libgcrypt contains cryptographic functions.  Many important free
  ciphers, hash algorithms and public key signing algorithms have been
@@ -1895,17 +2076,40 @@ Source: libgpg-error
 Version: 1.17-3
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
-Filename: pool/main/libg/libgpg-error/libgpg-error0_1.17-3_armv6hf.deb
-Size: 89566
-MD5sum: c999a1c4e05872c019dd175fa99631ca
-SHA1: 59b5b2177fd6d81df61ff336d03e314a9b7789ad
-SHA256: 3f5b5634d82bc5cc1ae27d6a8d24693b8a772a5ad8d3c8c05bc6a643aa264031
+Filename: pool/main/libg/libgpg-error/libgpg-error0_1.17-3__armv6hf.deb
+Size: 89574
+MD5sum: 67a193be89fcf9893603c8b67b7ab0d9
+SHA1: 268d452c8685f0eb614af0f8b72b86f574dab0a5
+SHA256: 0b6bced23ba7b4e86af385e47e1c5d234880c18516669294b4fd677181a39ec8
 Description: library for common error values and messages in GnuPG components
  Library that defines common error values for all GnuPG
  components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
  pinentry, SmartCard Daemon and possibly more in the future.
 Homepage: http://www.gnupg.org/related_software/libgpg-error/
 Multi-Arch: same
+
+Package: libgpm2
+Priority: standard
+Section: libs
+Installed-Size: 43
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armv6hf
+Source: gpm
+Version: 1.20.4-6.1
+Depends: libc6 (>= 2.7)
+Pre-Depends: multiarch-support
+Suggests: gpm
+Filename: pool/main/g/gpm/libgpm2_1.20.4-6.1__armv6hf.deb
+Size: 34904
+MD5sum: 7da39f403f6218c134482fab3e69465a
+SHA1: 2604f45b90df0ccd91a25912ff17dcf650eed671
+SHA256: c24dee09c27589028e1d80f70fb97106932b17841c7efb4dc09cc0684444d9aa
+Description: General Purpose Mouse - shared library
+ This package provides a library that handles mouse requests
+ and delivers them to applications. See the description for the 'gpm'
+ package for more information.
+Multi-Arch: same
+Homepage: http://www.nico.schottelius.org/software/gpm/
 
 Package: libklibc
 Priority: optional
@@ -1937,11 +2141,11 @@ Source: kmod
 Version: 18-3
 Depends: libc6 (>= 2.17)
 Pre-Depends: multiarch-support
-Filename: pool/main/k/kmod/libkmod2_18-3_armv6hf.deb
-Size: 39212
-MD5sum: 0b780d034319c852124603827e056844
-SHA1: a0928867b9563b43060f1b7c4025d2fff07bbb3a
-SHA256: 969c1e1335e5b6d34f5ddec7c43bc8b12c5a02ca30960a791ffec613dea7d934
+Filename: pool/main/k/kmod/libkmod2_18-3__armv6hf.deb
+Size: 39218
+MD5sum: f0f03195bb8f5e9f2fbad4589f7d96a7
+SHA1: 6183f3af9abcfb8f0681cc5354564d426974f0ce
+SHA256: 728a5bebc8729648ff7a75dc252fc0d122737c82d2bdb683fa4b6966c6f90bd0
 Description: libkmod shared library
  This library provides an API for insertion, removal, configuration and
  listing of kernel modules.
@@ -1957,11 +2161,11 @@ Source: liblocale-gettext-perl (1.05-8)
 Version: 1.05-8+b1
 Depends: libc6 (>= 2.4)
 Pre-Depends: perl-base (>= 5.20.0-4), perlapi-5.20.0
-Filename: pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-8+b1_armv6hf.deb
-Size: 18286
-MD5sum: e5a37a6f92d6bf81e928761b9bc75f6c
-SHA1: 95e2cd0ff2480850cd7741990646da24c267990d
-SHA256: ea106ecafc763b72c7358a316396b45e011631518a9e34fa06b5749ab61d5b46
+Filename: pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-8+b1__armv6hf.deb
+Size: 18292
+MD5sum: bb6a250f7160352875298bd44fd34f0e
+SHA1: 68f6fe744d31c3b72656489300620d1146e2596f
+SHA256: 4e7c3a1aa41e045fcd8e07ca0f7b96a60afa2b26bb5130b8f79b095b8e3e2660
 Description: module using libc functions for internationalization in Perl
  The gettext module permits access from perl to the gettext() family of
  functions for retrieving message strings from databases constructed
@@ -2010,8 +2214,8 @@ Description: LVM2 application library
  This package contains the lvm2app shared library. It allows easier access
  to the basic LVM objects and provides functions to enumerate, create or
  modify them.
-Homepage: http://sources.redhat.com/lvm2/
 Multi-Arch: same
+Homepage: http://sources.redhat.com/lvm2/
 
 Package: liblvm2cmd2.02
 Priority: optional
@@ -2030,8 +2234,8 @@ SHA1: d64463c24e441153ae458b851f3c8ee5d170abd9
 SHA256: 5c37c6bea339a12540c6b097ce3c37aacc64582e6d09c5e5c5663562b79f6f19
 Description: LVM2 command library
  This package contains the lvm2cmd shared library.
-Multi-Arch: same
 Homepage: http://sources.redhat.com/lvm2/
+Multi-Arch: same
 
 Package: liblzma-dev
 Priority: optional
@@ -2057,8 +2261,8 @@ Description: XZ-format compression library - development files
  streams and the older LZMA format used by lzma. (For 7-Zip's related
  format, use the p7zip package instead.) This package provides the
  development library needed to build programs using liblzma.
-Homepage: http://tukaani.org/xz/
 Multi-Arch: same
+Homepage: http://tukaani.org/xz/
 
 Package: liblzma-doc
 Priority: optional
@@ -2084,18 +2288,18 @@ Homepage: http://tukaani.org/xz/
 Package: liblzma5
 Priority: required
 Section: libs
-Installed-Size: 288
+Installed-Size: 292
 Maintainer: Jonathan Nieder <jrnieder@gmail.com>
 Architecture: armv6hf
 Source: xz-utils
 Version: 5.1.1alpha+20120614-2
-Depends: libc6 (>= 2.4)
+Depends: libc6 (>= 2.13-28)
 Pre-Depends: multiarch-support
-Filename: pool/main/x/xz-utils/liblzma5_5.1.1alpha+20120614-2_armv6hf.deb
-Size: 186444
-MD5sum: 0ca0991c857fe95246b5207f2499247c
-SHA1: b90bdc10e3132f28c6ece998020777a9bca489ba
-SHA256: 1e7efb167beebd12e65e35d04317292c389f590cd6bbae3975308c5bd18fb2fe
+Filename: pool/main/x/xz-utils/liblzma5_5.1.1alpha+20120614-2__armv6hf.deb
+Size: 197794
+MD5sum: 441a6fcdf48957123524fc0abe28765a
+SHA1: ab89034e6df67c01a362e910dd5bffa3b2535cfc
+SHA256: 00667f2b1972ffd46ae916d6984c8fa82d5646e3375a3cee33971e92e449f472
 Description: XZ-format compression library
  XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
  compression format, which provides memory-hungry but powerful
@@ -2104,8 +2308,8 @@ Description: XZ-format compression library
  The native format of liblzma is XZ; it also supports raw (headerless)
  streams and the older LZMA format used by lzma. (For 7-Zip's related
  format, use the p7zip package instead.)
-Homepage: http://tukaani.org/xz/
 Multi-Arch: same
+Homepage: http://tukaani.org/xz/
 
 Package: libmount-dev
 Priority: optional
@@ -2130,18 +2334,18 @@ Multi-Arch: same
 Package: libmount1
 Priority: required
 Section: libs
-Installed-Size: 350
+Installed-Size: 318
 Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
 Architecture: armv6hf
 Source: util-linux
 Version: 2.25.2-6
 Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.17), libselinux1 (>= 1.32)
 Pre-Depends: multiarch-support
-Filename: pool/main/u/util-linux/libmount1_2.25.2-6_armv6hf.deb
-Size: 149680
-MD5sum: 2e2f4efecc0fbe4744f4d1a6dee4d52a
-SHA1: fb9c815663a0c13a61b0d6e9a097c84b010cd983
-SHA256: fc08bfdfcb3be3b38952799d6ca1a7cfe4d8d3da65bd175dcf6b55f1fd96061d
+Filename: pool/main/u/util-linux/libmount1_2.25.2-6__armv6hf.deb
+Size: 146772
+MD5sum: 9798761b77741abba2a9d732fd046a58
+SHA1: 5c37e2f6f59d377aa3f0f7e10d0963963653c51a
+SHA256: c41cbab9aa5469044dba1566f444efdd2c3601641a2c2d5891b99facd2c687f1
 Description: device mounting library
  The device mounting library, used by mount and umount helpers.
 Multi-Arch: same
@@ -2157,11 +2361,11 @@ Version: 5.9+20140913-1
 Depends: libtinfo5 (= 5.9+20140913-1), libc6 (>= 2.15)
 Pre-Depends: multiarch-support, libtinfo5 (>= 5.9-3)
 Recommends: libgpm2
-Filename: pool/main/n/ncurses/libncurses5_5.9+20140913-1_armv6hf.deb
-Size: 72890
-MD5sum: 5c1a39dd633c8e4ee008e724800e040f
-SHA1: a16841d3b72d33bee3c61bb02c3634edb1204ed5
-SHA256: 8b4f9dd8779314d9c9ac426dec41f050a04c7ae11f0d06ceb93ef00cc15b9ea6
+Filename: pool/main/n/ncurses/libncurses5_5.9+20140913-1__armv6hf.deb
+Size: 72896
+MD5sum: 1a11a6487d328f063e866d946a96b79a
+SHA1: 7f7797c254e1eda20e49ca421531cb355c8e83c8
+SHA256: b3f78cb058bf87edfc13a527e2183628739e305194f0b45063bf1ea926199e93
 Description: shared libraries for terminal handling
  The ncurses library routines are a terminal-independent method of
  updating character screens with reasonable optimization.
@@ -2182,19 +2386,19 @@ Version: 5.9+20140913-1
 Depends: libtinfo5 (= 5.9+20140913-1), libc6 (>= 2.15)
 Pre-Depends: multiarch-support
 Recommends: libgpm2
-Filename: pool/main/n/ncurses/libncursesw5_5.9+20140913-1_armv6hf.deb
-Size: 94558
-MD5sum: a459ca54cb4f195d7666f7556164490e
-SHA1: 11643299efeb26130906b3674d857493f4ea7b0b
-SHA256: 3a524a7af25d08ec78ac55b543acf92edb96d2e5158de791e659d03bd6140fcb
+Filename: pool/main/n/ncurses/libncursesw5_5.9+20140913-1__armv6hf.deb
+Size: 94564
+MD5sum: 5f1e202eb6092c97dec7c654992b4e43
+SHA1: 249edf28338ee6d7907674c0b172c6e0ddfaa172
+SHA256: f558e46d3f35a36afea63c28bcf5b0cf9348b72cae4e03deae119c16a837ba14
 Description: shared libraries for terminal handling (wide character support)
  The ncurses library routines are a terminal-independent method of
  updating character screens with reasonable optimization.
  .
  This package contains the shared libraries necessary to run programs
  compiled with ncursesw, which includes support for wide characters.
-Homepage: http://invisible-island.net/ncurses/
 Multi-Arch: same
+Homepage: http://invisible-island.net/ncurses/
 
 Package: libnih-dbus1
 Priority: optional
@@ -2277,11 +2481,11 @@ Replaces: libpam-umask, libpam0g-util
 Provides: libpam-mkhomedir, libpam-motd, libpam-umask
 Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.15), libdb5.3, libpam0g (>= 1.1.3-2), libselinux1 (>= 2.1.9), debconf (>= 0.5) | debconf-2.0, libpam-modules-bin (= 1.1.8-3.1+deb8u1)
 Conflicts: libpam-mkhomedir, libpam-motd, libpam-umask
-Filename: pool/main/p/pam/libpam-modules_1.1.8-3.1+deb8u1_armv6hf.deb
-Size: 279476
-MD5sum: d816544638847da8b8081c7f812fde28
-SHA1: d75915e94f8356d04845ac5dffe077c944cae358
-SHA256: 44447a7d1f7db16a3de1ed12421e09f14da3367bcb18211f46664c281faf1648
+Filename: pool/main/p/pam/libpam-modules_1.1.8-3.1+deb8u1__armv6hf.deb
+Size: 279480
+MD5sum: ebbe60466e2c303d9bc03a5cb67d57a2
+SHA1: 8e00e9a5354014b1926bc0fdf50894f8316b4f09
+SHA256: 45c68ccd8a682bbd4433087a8ff808c21ec7b32ac504acfe1ce3cf35409aa933
 Description: Pluggable Authentication Modules for PAM
  This package completes the set of modules for PAM. It includes the
   pam_unix.so module as well as some specialty modules.
@@ -2306,8 +2510,8 @@ SHA256: 0bbae76367518e28790e35be4bdbc0ad0d898f9b07126f1d982f5580d4a66b76
 Description: Pluggable Authentication Modules for PAM - helper binaries
  This package contains helper binaries used by the standard set of PAM
  modules in the libpam-modules package.
-Multi-Arch: foreign
 Homepage: http://pam.sourceforge.net/
+Multi-Arch: foreign
 
 Package: libpam-runtime
 Priority: required
@@ -2329,8 +2533,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Multi-Arch: foreign
 Homepage: http://pam.sourceforge.net/
+Multi-Arch: foreign
 
 Package: libpam0g
 Priority: required
@@ -2344,11 +2548,11 @@ Replaces: libpam0g-util
 Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.8), debconf (>= 0.5) | debconf-2.0
 Pre-Depends: multiarch-support
 Suggests: libpam-doc
-Filename: pool/main/p/pam/libpam0g_1.1.8-3.1+deb8u1_armv6hf.deb
-Size: 101780
-MD5sum: b431221fca92fce57a511fa17bfc5e62
-SHA1: 4a8e26a7825f5e9e8fd83764f66259bc6588ab7c
-SHA256: ef3abbb573d260e95cdfebead1f69fa42cd730d87435d094dbad398f8c51150f
+Filename: pool/main/p/pam/libpam0g_1.1.8-3.1+deb8u1__armv6hf.deb
+Size: 101786
+MD5sum: 3a2ed5fa697a1146f741a8856b44e7e3
+SHA1: 98e8ea8bc74a7d4bf7bd9ee95e737a685b4cae03
+SHA256: 07d594a6d4c3d89417a8cb26affd5123dbd1fa6858ef1a95fe17654a90dbc5e9
 Description: Pluggable Authentication Modules library
  Contains the shared library for Linux-PAM, a library that enables the
  local system administrator to choose how applications authenticate users.
@@ -2356,13 +2560,13 @@ Description: Pluggable Authentication Modules library
  it is possible to switch between the authentication mechanism(s) it uses.
  One may entirely upgrade the local authentication system without touching
  the applications themselves.
-Multi-Arch: same
 Homepage: http://pam.sourceforge.net/
+Multi-Arch: same
 
 Package: libpcre3
 Priority: important
 Section: libs
-Installed-Size: 628
+Installed-Size: 572
 Maintainer: Mark Baker <mark@mnb.org.uk>
 Architecture: armv6hf
 Source: pcre3
@@ -2371,11 +2575,11 @@ Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Conflicts: libpcre3-dev (<= 4.3-3)
 Breaks: approx (<< 4.4-1~), cduce (<< 0.5.3-2~), cmigrep (<< 1.5-7~), galax (<< 1.1-7~), libpcre-ocaml (<< 6.0.1~), liquidsoap (<< 0.9.2-3~), ocsigen (<< 1.3.3-1~)
-Filename: pool/main/p/pcre3/libpcre3_8.35-3.3+deb8u4_armv6hf.deb
-Size: 299884
-MD5sum: 03baabf36c7f14ebd705fe65128bad98
-SHA1: e10b0f9f95dda5cd8d5b7e115714cb740ddb2267
-SHA256: 9fc1efa765c3142476672e7169dcab6dddd9289add480215acd8222ddf0d9b04
+Filename: pool/main/p/pcre3/libpcre3_2%3a8.35-3.3+deb8u4__armv6hf.deb
+Size: 300308
+MD5sum: f16cb22564826daa59c394f60401852b
+SHA1: 44cd2aeac55fac66af7780572e27dd28e7800421
+SHA256: 9cd0a5299848f742bba1c6fb4e7b53f6e2e64ce1717ca9d4407582c17357ffaa
 Description: Perl 5 Compatible Regular Expression Library - runtime files
  This is a library of functions to support regular expressions whose syntax
  and semantics are as close as possible to those of the Perl 5 language.
@@ -2463,11 +2667,11 @@ Replaces: libpng12-dev (<= 1.2.8rel-7)
 Depends: libc6 (>= 2.11), zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
 Conflicts: libpng12-dev (<= 1.2.8rel-7), mzscheme (<= 1:209-5), pngcrush (<= 1.5.10-2), pngmeta (<= 1.11-3), povray-3.5 (<= 3.5.0c-10), qemacs (<= 0.3.1-5)
-Filename: pool/main/libp/libpng/libpng12-0_1.2.50-2+deb8u2_armv6hf.deb
-Size: 160616
-MD5sum: d3e4e75aca7354299436a01439e7cd9a
-SHA1: 45ede2636447a5f4a18f1a3254c25961321bee20
-SHA256: 123ec29320f57f3275132a0fb4bdea0ae398102e3702d2a7a74c6b0a07b24860
+Filename: pool/main/libp/libpng/libpng12-0_1.2.50-2+deb8u2__armv6hf.deb
+Size: 160622
+MD5sum: 4ef23c7c70783ac7f82b82fadf51f2dc
+SHA1: 5297ce518381acfea3379d24ae41a7560adb2933
+SHA256: ffb7d509b934d3838011e014148385ddca1f8307fee8a23657a52f6b27b93bbd
 Description: PNG library - runtime
  libpng is a library implementing an interface for reading and writing
  PNG (Portable Network Graphics) format files.
@@ -2480,7 +2684,7 @@ Homepage: http://libpng.org/pub/png/libpng.html
 Package: libprocps3
 Priority: important
 Section: libs
-Installed-Size: 123
+Installed-Size: 91
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: armv6hf
 Source: procps
@@ -2488,19 +2692,19 @@ Version: 2:3.3.9-9
 Replaces: procps (<< 1:3.3.2-1)
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
-Filename: pool/main/p/procps/libprocps3_3.3.9-9_armv6hf.deb
-Size: 53480
-MD5sum: 41ab9fdae01a3d5e66b3be1abadf76a2
-SHA1: b0e1f2864ab1932d061bf2171a15d911e2685511
-SHA256: c92f193ab43b684bfe28b016a288be3257d8625da3b49522e3d59014b2018dd0
+Filename: pool/main/p/procps/libprocps3_2%3a3.3.9-9__armv6hf.deb
+Size: 53500
+MD5sum: 3fa5811ef62b6f91ccb9b53b2053fd1d
+SHA1: 7708d7656202809fa3a626008403a11a695e768c
+SHA256: 7d98f998286303a45b8c6f82c0c05ba926afa0057ed31311f67b45d6b9670bde
 Description: library for accessing process information from /proc
  The libprocps library is a way of accessing information out of the /proc
  filesystem.
  .
  This package contains the shared libraries necessary to run programs
  compilied with libprocps.
-Multi-Arch: same
 Homepage: http://gitorious.org/procps
+Multi-Arch: same
 
 Package: libprocps3-dev
 Priority: optional
@@ -2534,11 +2738,11 @@ Source: readline6
 Version: 6.3-8
 Depends: readline-common, libc6 (>= 2.15), libtinfo5
 Pre-Depends: multiarch-support
-Filename: pool/main/r/readline6/libreadline6_6.3-8_armv6hf.deb
-Size: 117434
-MD5sum: 4b3b6afcd11b0ea9390d94e205c7333f
-SHA1: 950bd675950174366974e0354161705d40f48c63
-SHA256: dee3666a78f9074be4511a4fc68bfe6d7e3e0a0c6442aabf300b57ce84c0a0df
+Filename: pool/main/r/readline6/libreadline6_6.3-8__armv6hf.deb
+Size: 117438
+MD5sum: 1a4f107a4974f82ae53ca09a92c19e79
+SHA1: b355bca84cd6210a41b2a365232261896549dc9e
+SHA256: 1714afd3df5b8ae84ce1d4109ce9022d0c913f2748881b050e55ab0ae11c4905
 Description: GNU readline and history libraries, run-time libraries
  The GNU readline library aids in the consistency of user interface
  across discrete programs that need to provide a command line
@@ -2558,11 +2762,11 @@ Source: libselinux
 Version: 2.3-2
 Depends: libc6 (>= 2.8), libpcre3 (>= 8.10)
 Pre-Depends: multiarch-support
-Filename: pool/main/libs/libselinux/libselinux1_2.3-2_armv6hf.deb
-Size: 78206
-MD5sum: 92da79c4699e97ae2820e066762f24d1
-SHA1: c31497e2562cf3902fb853b1eed0133bc076d508
-SHA256: c3dfd905b4d2f7cb630df8a50c2e8a94885602005c63768a9c14f2f7a25f4670
+Filename: pool/main/libs/libselinux/libselinux1_2.3-2__armv6hf.deb
+Size: 78210
+MD5sum: a84fe59f85a065dbdd0c60277d4287a0
+SHA1: 32ef13dec6b0249c5973138e4c8263b946ccd886
+SHA256: e41abc42ef6b04ed8b982ddbd374f70c95df6832d3013595c18d63ba21cb518b
 Description: SELinux runtime shared libraries
  This package provides the shared libraries for Security-enhanced
  Linux that provides interfaces (e.g. library functions for the
@@ -2627,11 +2831,11 @@ Source: libsemanage
 Version: 2.3-1
 Depends: libsemanage-common (= 2.3-1), libaudit1 (>= 1:2.2.1), libbz2-1.0, libc6 (>= 2.8), libselinux1 (>= 2.1.12), libsepol1 (>= 2.1.4), libustr-1.0-1 (>= 1.0.4)
 Pre-Depends: multiarch-support
-Filename: pool/main/libs/libsemanage/libsemanage1_2.3-1_armv6hf.deb
-Size: 73944
-MD5sum: 025f59484154247ae8b42d73467365ef
-SHA1: e4242e49b28304de7c1359f41072712b61b02e61
-SHA256: f39dc59a42dc33f1b1dd6be7e547785d12eeb7feacb79d61b9518af6b5b0706e
+Filename: pool/main/libs/libsemanage/libsemanage1_2.3-1__armv6hf.deb
+Size: 73948
+MD5sum: 207952f3e0db8dea0bec2bd6649105a0
+SHA1: b97613a732466c938f5949f5956d0bb09fd8b14a
+SHA256: 7394ec9d0015d3b88028cc1ed77d502057ab4ae2e591364b768216d082e83a8f
 Description: SELinux policy management library
  This package provides the shared libraries for SELinux policy management.
  It uses libsepol for binary policy manipulation and libselinux for
@@ -2663,11 +2867,11 @@ Source: libsepol
 Version: 2.3-2
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
-Filename: pool/main/libs/libsepol/libsepol1_2.3-2_armv6hf.deb
-Size: 107746
-MD5sum: ec32cdbfd42c9604288cd50daafea07a
-SHA1: c29b556bdfad19e9acc97797f818a3e0ec3b6c7e
-SHA256: ed24038e04078cffecd4613e79cac79985522ea51d4b8009e15cc3bf2e580dfb
+Filename: pool/main/libs/libsepol/libsepol1_2.3-2__armv6hf.deb
+Size: 107750
+MD5sum: 593be4a904bc64daf461c24e13e47223
+SHA1: 9b20e4f08b4971be7af877b023d2da326d6af184
+SHA256: 7082e53787b2c540db5c959ffe9f4c030e3e1cfcd2e06d85a4b0bd390003aa5f
 Description: SELinux library for manipulating binary security policies
  Security-enhanced Linux is a patch of the Linux kernel and a number
  of utilities with enhanced security functionality designed to add
@@ -2683,8 +2887,8 @@ Description: SELinux library for manipulating binary security policies
  It is used by checkpolicy (the policy compiler) and similar tools, as well
  as by programs like load_policy that need to perform specific transformations
  on binary policies such as customizing policy boolean settings.
-Multi-Arch: same
 Homepage: http://userspace.selinuxproject.org/
+Multi-Arch: same
 
 Package: libslang2
 Priority: important
@@ -2697,11 +2901,11 @@ Version: 2.3.0-2
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Recommends: libpng12-0
-Filename: pool/main/s/slang2/libslang2_2.3.0-2_armv6hf.deb
-Size: 440832
-MD5sum: 2b8b83e9b953f4665b10d6af20bbec92
-SHA1: 3824e6de73a26bea4f8e578f61cfe7c148cf8026
-SHA256: 782ec3c815213e7c0785720754b7d88b6c419fc7df0d8cc6e2bba6e759ebac6c
+Filename: pool/main/s/slang2/libslang2_2.3.0-2__armv6hf.deb
+Size: 440836
+MD5sum: 95d947bf5b787f8269a702845480fd8c
+SHA1: 2440fa1f42362fe6891e02caf3fd679262af0698
+SHA256: e8d2a88ac7590e9b996b3e7bcbf21203ebd6cc399ef84b95804e6eff5956e118
 Description: S-Lang programming library - runtime version
  S-Lang is a C programmer's library that includes routines for the rapid
  development of sophisticated, user friendly, multi-platform applications.
@@ -2711,8 +2915,8 @@ Description: S-Lang programming library - runtime version
  as jed and slrn). If you plan on doing development with S-Lang, you will
  need the companion -dev package as well.
 Built-Using: unicode-data (= 7.0-2)
-Homepage: http://www.jedsoft.org/slang/
 Multi-Arch: same
+Homepage: http://www.jedsoft.org/slang/
 
 Package: libsmartcols-dev
 Priority: optional
@@ -2737,18 +2941,18 @@ Multi-Arch: same
 Package: libsmartcols1
 Priority: required
 Section: libs
-Installed-Size: 219
+Installed-Size: 187
 Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
 Architecture: armv6hf
 Source: util-linux
 Version: 2.25.2-6
 Depends: libc6 (>= 2.17)
 Pre-Depends: multiarch-support
-Filename: pool/main/u/util-linux/libsmartcols1_2.25.2-6_armv6hf.deb
-Size: 102538
-MD5sum: fcef90e2adbc565820ca15733174bf5f
-SHA1: fc5208edc82479a4b5199dbe097b08e293e73153
-SHA256: 0f5d84785afbca5d780f16ec334c577556383821ea40df98c2f8d0e405ca0f6e
+Filename: pool/main/u/util-linux/libsmartcols1_2.25.2-6__armv6hf.deb
+Size: 101780
+MD5sum: 1c39f3fe3d1a123366d51e3de0ac51d5
+SHA1: 399f9f025c0d4c7693ee31a6859f15bc40c2ad33
+SHA256: 7bde8fc5dec468de71ab489b42cdd968e472f612a40b6efc0ef7d943aee37951
 Description: smart column output alignment library
  The smart column output alignment library, used by fdisk utilities.
 Multi-Arch: same
@@ -2792,11 +2996,11 @@ Depends: gcc-4.9-base (= 4.9.2-10), libc6 (>= 2.18), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Conflicts: scim (<< 1.4.2-1)
 Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
-Filename: pool/main/g/gcc-4.9/libstdc++6_4.9.2-10_armv6hf.deb
-Size: 207282
-MD5sum: 58f19abf749916efbff8da781cf7ed86
-SHA1: 737916f8c1533af59821c233a7226097bded6120
-SHA256: 24caec0beea1a5bbc4b815d635feaa7dfbf665366982dd56fb05238de6992ef4
+Filename: pool/main/g/gcc-4.9/libstdc++6_4.9.2-10__armv6hf.deb
+Size: 207288
+MD5sum: aedf0bd7edfb36cea30b46b2a281031c
+SHA1: 42642e2a1ef52ae09df0f2969ff5d52f527ff5d3
+SHA256: 1c7ba34f7aa4c6b185bc96ab9be9aaad10b7b23f60fa03a4a9ad91f918f1e450
 Description: GNU Standard C++ Library v3
  This package contains an additional runtime library for C++ programs
  built with the GNU compiler.
@@ -2816,15 +3020,15 @@ Architecture: armv6hf
 Source: systemd
 Version: 215-17+deb8u4
 Pre-Depends: libc6 (>= 2.9), libgcrypt20 (>= 1.6.1), liblzma5 (>= 5.1.1alpha+20120614), multiarch-support
-Filename: pool/main/s/systemd/libsystemd0_215-17+deb8u4_armv6hf.deb
-Size: 83076
-MD5sum: 7e3b1d148b9eb2ce1eda154e6b70fa0d
-SHA1: 949b5033e0f8727376025bfd693d0a81079f591e
-SHA256: d3ca14d51b646fc4437f89c632ce49c48f40f7a1dcdf70cfc3d741a7449680e1
+Filename: pool/main/s/systemd/libsystemd0_215-17+deb8u4__armv6hf.deb
+Size: 83078
+MD5sum: 05b80bdf4ac65c9cb26e9f34bc6d31fa
+SHA1: 57b562ef74b95f846944054c2c66d89d307b38f5
+SHA256: d96956a84d5dcce4b3409847adb4fb924248cf378102bed3dad251fb0f375bd4
 Description: systemd utility library
  The libsystemd0 library provides interfaces to various systemd components.
-Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
 
 Package: libtext-charwidth-perl
 Priority: required
@@ -2835,11 +3039,11 @@ Architecture: armv6hf
 Source: libtext-charwidth-perl (0.04-7)
 Version: 0.04-7+b4
 Depends: libc6 (>= 2.4), perl-base (>= 5.20.0-4), perlapi-5.20.0
-Filename: pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7+b4_armv6hf.deb
-Size: 10048
-MD5sum: f4857406d3ab34d62d771619b76d8e65
-SHA1: d178ab33c33f4ab696d5effdb552256ae7305b8f
-SHA256: d1ae386bdfd365c2b7b587ac885238cb4d6fb5894cd9586c63969210624906d5
+Filename: pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7+b4__armv6hf.deb
+Size: 10054
+MD5sum: c9fb3bbafcb7539290c3f3ecf7bf5f4f
+SHA1: ef153f88073202394c369bbc687b8e75f6eaea27
+SHA256: c77dd1ea47ed705dda493064b2a01d313830cb3fad18f7717e86781b402989be
 Description: get display widths of characters on the terminal
  This module permits perl software to get the display widths of characters
  and strings on the terminal, using wcwidth() and wcswidth() from libc.
@@ -2856,11 +3060,11 @@ Architecture: armv6hf
 Source: libtext-iconv-perl (1.7-5)
 Version: 1.7-5+b5
 Depends: libc6 (>= 2.4), perl-base (>= 5.20.0-4), perlapi-5.20.0
-Filename: pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5+b5_armv6hf.deb
-Size: 15406
-MD5sum: 6a5152ebef51f71ca7bba43ae41723fb
-SHA1: 9d8ba1a38547b80f370235c88cb61e5fc390a672
-SHA256: de79cabf01770e85ee2d20e2871c1279ad8fcefb6b8cddea5f8e3aec71a6be82
+Filename: pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5+b5__armv6hf.deb
+Size: 15410
+MD5sum: f8b0934586ad7d628f9e3af3e92d0a35
+SHA1: 62ff7977ddf83f872a61483de41c062b57b6130e
+SHA256: e95b83e7a5577beed08838a3f964494df03241b6700b2ac959b0fbc519ef3f55
 Description: converts between character sets in Perl
  The iconv() family of functions from XPG4 defines an API for converting
  between character sets (e.g. UTF-8 to Latin1, EBCDIC to ASCII). They
@@ -2905,18 +3109,18 @@ Replaces: libncurses5 (<< 5.9-3)
 Depends: libc6 (>= 2.15)
 Pre-Depends: multiarch-support
 Breaks: dialog (<< 1.2-20130523)
-Filename: pool/main/n/ncurses/libtinfo5_5.9+20140913-1_armv6hf.deb
-Size: 268512
-MD5sum: 53d1d15f0a9d04f7f25134c6dd294290
-SHA1: 1207df8f21d58b618f303d92a6808c426210cb9e
-SHA256: 3a06be6b6910ba3e5726412e3dff179a40071b74cff66f7b7df1442c82d02d22
+Filename: pool/main/n/ncurses/libtinfo5_5.9+20140913-1__armv6hf.deb
+Size: 268518
+MD5sum: 85cfe49a99895c29b9e27be541aa97c5
+SHA1: d018c03f33454452abf6abab27e5b7408f1789ac
+SHA256: 20e7cbb254c59d87472c17a76694c345a1f6dd19dd61062b5e2c68ef588ce49e
 Description: shared low-level terminfo library for terminal handling
  The ncurses library routines are a terminal-independent method of
  updating character screens with reasonable optimization.
  .
  This package contains the shared low-level terminfo library.
-Multi-Arch: same
 Homepage: http://invisible-island.net/ncurses/
+Multi-Arch: same
 
 Package: libudev1
 Priority: important
@@ -2928,11 +3132,11 @@ Source: systemd
 Version: 215-17+deb8u4
 Depends: libc6 (>= 2.17)
 Pre-Depends: multiarch-support
-Filename: pool/main/s/systemd/libudev1_215-17+deb8u4_armv6hf.deb
-Size: 50936
-MD5sum: d4162067d7a24d8c13c2f807f8945d3c
-SHA1: e3d7b278778b4939981abf5ea3e3bff051770e00
-SHA256: ea9b860b0c121a91d77c84ae7d92b089dc808ba161e6c7e83c5ffee780757646
+Filename: pool/main/s/systemd/libudev1_215-17+deb8u4__armv6hf.deb
+Size: 50938
+MD5sum: 519c77ef429461fb32e3fd7ad420af24
+SHA1: a2a2fe0ff15e36e134e41f65e00a7fc4bd18dd61
+SHA256: 052dd377a386557c10f8346e5aa80a9dfee61660e84c99a04696c47362c8bc39
 Description: libudev shared library
  This library provides access to udev device information.
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
@@ -2960,8 +3164,8 @@ Description: userspace C++ USB programming library
  Library for programming USB applications without the knowledge
  of Linux kernel internals. This is only for programs which use
  the C++ interface.
-Multi-Arch: same
 Homepage: http://www.linux-usb.org/
+Multi-Arch: same
 
 Package: libusb++-dev
 Priority: optional
@@ -3024,10 +3228,36 @@ Description: userspace USB programming library development files
  of Linux kernel internals.
 Homepage: http://www.linux-usb.org/
 
+Package: libustr-1.0-1
+Priority: optional
+Section: libs
+Installed-Size: 214
+Maintainer: Vaclav Ovsik <vaclav.ovsik@i.cz>
+Architecture: armv6hf
+Source: ustr
+Version: 1.0.4-3
+Depends: libc6 (>= 2.13-28), libgcc1 (>= 1:4.4.0)
+Pre-Depends: multiarch-support
+Filename: pool/main/u/ustr/libustr-1.0-1_1.0.4-3__armv6hf.deb
+Size: 70088
+MD5sum: c0ff92f2d5831bda16a5ab5054662b29
+SHA1: a09c1b03e7b3d72e675e75f91c3d41d70ad98cb9
+SHA256: f8bbcd913dcc7caae98e48e51906ff01b875a1a52228b4ce445def37100432ed
+Description: Micro string library: shared library
+ ustr (Micro string library) is a string API for C. It has tiny overhead over
+ just plain strdup(), is much safer, is easier to use, is faster for many
+ operations, can be used with read-only or automatically allocated data. You
+ don't even need to link to the library to use it (so there are no
+ dependencies).
+ .
+ This package contains the shared library for ustr.
+Homepage: http://www.and.org/ustr/
+Multi-Arch: same
+
 Package: libuuid1
 Priority: required
 Section: libs
-Installed-Size: 116
+Installed-Size: 84
 Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
 Architecture: armv6hf
 Source: util-linux
@@ -3036,11 +3266,11 @@ Replaces: e2fsprogs (<< 1.34-1)
 Depends: passwd, libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Recommends: uuid-runtime
-Filename: pool/main/u/util-linux/libuuid1_2.25.2-6_armv6hf.deb
-Size: 64310
-MD5sum: 0b2d7061ff21074736975dd56c840dc4
-SHA1: a696f11d68973ae720d9f02c5af83a028352bf85
-SHA256: 85788fb01126ae31e47695e7972c4cd591d2fa076d8f250d43adbfe449fe59f2
+Filename: pool/main/u/util-linux/libuuid1_2.25.2-6__armv6hf.deb
+Size: 63332
+MD5sum: 574fd34a7b39bb94efb03ca991910b06
+SHA1: 2e048befb31777cf3c0edf95d619c2e287038038
+SHA256: 1bafbb74090942a2e8c98b4b83fbd29e1a28dfd969179e2367b837c50cafeaa5
 Description: Universally Unique ID library
  The libuuid library generates and parses 128-bit universally unique
  ids (UUIDs).  A UUID is an identifier that is unique across both
@@ -3129,8 +3359,8 @@ Description: Linux Standard Base 4.1 init script functionality
  This package only includes the init-functions shell library, which
  may be used by other packages' initialization scripts for console
  logging and other purposes.
-Multi-Arch: foreign
 Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
+Multi-Arch: foreign
 
 Package: lsb-core
 Priority: extra
@@ -3432,8 +3662,8 @@ Description: Linux Standard Base version reporting utility
  While it is intended for use by LSB packages, this command may also
  be useful for programmatically distinguishing between a pure Debian
  installation and derived distributions.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 Multi-Arch: foreign
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 
 Package: lsb-security
 Priority: extra
@@ -3490,8 +3720,8 @@ Description: Linux Logical Volume Manager
  by grouping arbitrary disks into volume groups. The total capacity of
  volume groups can be allocated to logical volumes, which are accessed as
  regular block devices.
-Homepage: http://sources.redhat.com/lvm2/
 Multi-Arch: foreign
+Homepage: http://sources.redhat.com/lvm2/
 
 Package: makedev
 Priority: extra
@@ -3647,25 +3877,25 @@ Homepage: http://invisible-island.net/ncurses/
 Package: passwd
 Priority: required
 Section: admin
-Installed-Size: 2182
+Installed-Size: 1857
 Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
 Architecture: armv6hf
 Source: shadow
 Version: 1:4.2-3+deb8u1
 Replaces: manpages-tr (<< 1.0.5), manpages-zh (<< 1.5.1-1)
 Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.8), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libsemanage1 (>= 2.0.3), libpam-modules, debianutils (>= 2.15.2)
-Filename: pool/main/s/shadow/passwd_4.2-3+deb8u1_armv6hf.deb
-Size: 928276
-MD5sum: e9f974053d77c1d6ceb25ff78208425d
-SHA1: bb4a35562d82d3a6be50f57db6ca7ae28b2d2e49
-SHA256: 1ee7586449258f22998ca712134341f97fe566b09e9be8e2187ca556b348fb84
+Filename: pool/main/s/shadow/passwd_1%3a4.2-3+deb8u1__armv6hf.deb
+Size: 924522
+MD5sum: a9b27c795d650241d06d5249553d86f8
+SHA1: 5d0c14075d4e6c1d56f97b29886ca8e6e354f664
+SHA256: 2cde4a7cf758f90ef8db6ce316d18b68aedc4d44757d50ac3cebffde64361c72
 Description: change and administer password and group data
  This package includes passwd, chsh, chfn, and many other programs to
  maintain password and group data.
  .
  Shadow passwords are supported.  See /usr/share/doc/passwd/README.Debian
-Multi-Arch: foreign
 Homepage: http://pkg-shadow.alioth.debian.org/
+Multi-Arch: foreign
 
 Package: pcregrep
 Priority: optional
@@ -3705,11 +3935,11 @@ Pre-Depends: libc6 (>= 2.11), dpkg (>= 1.17.17)
 Suggests: perl
 Conflicts: defoma (<< 0.11.12), doc-base (<< 0.10.3), mono-gac (<< 2.10.8.1-3), safe-rm (<< 0.8), update-inetd (<< 4.41)
 Breaks: autoconf2.13 (<< 2.13-45), libalien-wxwidgets-perl (<< 0.65+dfsg-2), libanyevent-perl (<< 7.070-2), libcommon-sense-perl (<< 3.72-2~), libfile-path-perl (<< 2.09), libfile-spec-perl (<< 3.4801), libfile-temp-perl (<< 0.2304), libgtk2-perl-doc (<< 2:1.2491-4), libio-socket-ip-perl (<< 0.29), libjcode-perl (<< 2.13-3), libmarc-charset-perl (<< 1.2), libscalar-list-utils-perl (<< 1:1.38), libsocket-perl (<< 2.013), libxsloader-perl (<< 0.17), pdl (<< 1:2.007-4), perl (<< 5.20.0~)
-Filename: pool/main/p/perl/perl-base_5.20.2-3+deb8u6_armv6hf.deb
-Size: 1100938
-MD5sum: 862587a7da1ac74b605cd87e60495205
-SHA1: 6f1282576e8ae10c7b2138996b01637479136f0e
-SHA256: 39edd75a3726782c6d67b066e1f64874a23850831d279e21797777c945f5e0a3
+Filename: pool/main/p/perl/perl-base_5.20.2-3+deb8u6__armv6hf.deb
+Size: 1100944
+MD5sum: 43c793107393b09dcf20c80ac9b9a6e1
+SHA1: 98ac7d7cad6ff05a9bea68128fb54ab5bdf71eb4
+SHA256: b608fe0882f3e973674814afca4f8c730fc98ed2b0efb58c530c81b129aea70b
 Description: minimal Perl system
  Perl is a scripting language used in many system scripts and utilities.
  .
@@ -3751,7 +3981,7 @@ Homepage: http://www.freedesktop.org/wiki/Software/Plymouth
 Package: procps
 Priority: important
 Section: admin
-Installed-Size: 589
+Installed-Size: 494
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: armv6hf
 Version: 2:3.3.9-9
@@ -3760,11 +3990,11 @@ Depends: libc6 (>= 2.15), libncurses5 (>= 5.5-5~), libncursesw5 (>= 5.6+20070908
 Recommends: psmisc
 Conflicts: pgrep (<< 3.3-5), w-bassman (<< 1.0-3)
 Breaks: guymager (<= 0.5.9-1), open-vm-tools (<= 2011.12.20-562307-1), xmem (<= 1.20-27.1)
-Filename: pool/main/p/procps/procps_3.3.9-9_armv6hf.deb
-Size: 222300
-MD5sum: 7a5542fe501ba6d39f9673590ab2e60a
-SHA1: fd2e3f2bff7b23f3979538a1f1b884286fc27ce9
-SHA256: b843c57e46718cb8b6f8cff94ed2f63c9d6b17864d614c1302a7ff6eb4cba07e
+Filename: pool/main/p/procps/procps_2%3a3.3.9-9__armv6hf.deb
+Size: 218744
+MD5sum: dc1345096641f261aa9a1cf368c11028
+SHA1: 1c39b5f862d1d1b09b44703db5f74d84d9598449
+SHA256: 8be66843bde46e9238f720f16b0ef53ae5e98978b7a3d3c62c5374e3b712ea31
 Description: /proc file system utilities
  This package provides command line and full screen utilities for browsing
  procfs, a "pseudo" file system dynamically generated by the kernel to
@@ -3773,8 +4003,33 @@ Description: /proc file system utilities
  .
  It contains free, kill, pkill, pgrep, pmap, ps, pwdx, skill, slabtop,
  snice, sysctl, tload, top, uptime, vmstat, w, and watch.
-Multi-Arch: foreign
 Homepage: http://gitorious.org/procps
+Multi-Arch: foreign
+
+Package: psmisc
+Priority: optional
+Section: admin
+Installed-Size: 478
+Maintainer: Craig Small <csmall@debian.org>
+Architecture: armv6hf
+Version: 22.21-2
+Replaces: procps (<< 1:1.2)
+Depends: libc6 (>= 2.8), libtinfo5
+Filename: pool/main/p/psmisc/psmisc_22.21-2__armv6hf.deb
+Size: 116848
+MD5sum: 1a1fb21a15ba9127b9305cb89572020d
+SHA1: e38e8086e53285409571809f59b52966e1b0a0d2
+SHA256: 8e543dc7ac9e469fbc004339b9a95e6b6ff51eb1d9d7243f5af5d45a4e1d8e9b
+Description: utilities that use the proc file system
+ This package contains miscellaneous utilities that use the proc FS:
+ .
+  - fuser: identifies processes that are using files or sockets.
+  - killall: kills processes by name (e.g. "killall -HUP named").
+  - peekfd: shows the data traveling over a file descriptor.
+  - pstree: shows currently running processes as a tree.
+  - prtstat: print the contents of /proc/<pid>/stat
+Multi-Arch: foreign
+Homepage: http://psmisc.sf.net/
 
 Package: python-audit
 Priority: extra
@@ -3926,11 +4181,11 @@ Replaces: sysvinit-utils (<< 2.88dsf-52)
 Depends: libc6 (>= 2.15)
 Suggests: insserv, sysv-rc
 Breaks: sysvinit-utils (<< 2.88dsf-52)
-Filename: pool/main/s/startpar/startpar_0.59-3_armv6hf.deb
-Size: 20380
-MD5sum: 966669f83cce07b048f783ca079a5e10
-SHA1: b8e9270a72135019f757e7040d84515f5fc46701
-SHA256: 0b6d3779cce7b8b706475f3b60147386f0d14273c85abc955d3df051574ce0de
+Filename: pool/main/s/startpar/startpar_0.59-3__armv6hf.deb
+Size: 20384
+MD5sum: 87513f06ee57aa354ec7be64218dd566
+SHA1: 4117230b6ae14595a26f86f0110227ab50a24fa4
+SHA256: af6cc4969d936b008a9a5fba7727e2665047c6829234dab0800e6c0253b5bfb9
 Description: run processes in parallel and multiplex their output
  Used by the sysv-rc boot system executor to run init.d scripts in parallel
  while making sure the script output is not completely messed up.
@@ -4038,11 +4293,11 @@ Depends: libc6 (>= 2.7), libselinux1 (>= 1.32), startpar
 Suggests: bootlogd, sash
 Conflicts: chkconfig (<< 11.0-79.1-2), last, startpar (<< 0.58-2), sysvconfig
 Breaks: upstart (<< 1.5-0ubuntu5)
-Filename: pool/main/s/sysvinit/sysvinit-utils_2.88dsf-59_armv6hf.deb
-Size: 81968
-MD5sum: 57e773aebaf08d6347c9de2b3a424ef4
-SHA1: d2e9fd157d5f5c098614413131275d972dbe4578
-SHA256: b847ee83a3d553adba04f3736bc411a949b21eba4270792add9363621beb4914
+Filename: pool/main/s/sysvinit/sysvinit-utils_2.88dsf-59__armv6hf.deb
+Size: 81972
+MD5sum: fc42b5042b25b1699aaf0d7a01f0b9a4
+SHA1: 01401ab34287959134bd93a3d00cd5eb6f1769c2
+SHA256: 8582123792b6d116a26b3e62315b44893e59602b201f56bc5d4d9c1ea8fbc95d
 Description: System-V-like utilities
  This package contains the important System-V-like utilities.
  .
@@ -4063,11 +4318,11 @@ Pre-Depends: libacl1 (>= 2.2.51-8), libc6 (>= 2.17), libselinux1 (>= 1.32)
 Suggests: bzip2, ncompress, xz-utils, tar-scripts
 Conflicts: cpio (<= 2.4.2-38)
 Breaks: dpkg-dev (<< 1.14.26)
-Filename: pool/main/t/tar/tar_1.27.1-2_armv6hf.deb
-Size: 645488
-MD5sum: d3b8b521cfd0cd0416cd4b4e398e9435
-SHA1: cd51d8a1f52c53a52ebe200c37df907904c19970
-SHA256: b53ad0fe72cde8acfc7ba70b64c6480ddc19cc7f199625d341cc1cfa2c166aa3
+Filename: pool/main/t/tar/tar_1.27.1-2__armv6hf.deb
+Size: 645494
+MD5sum: 432fab0e1a7fc89995410c8f52f49e40
+SHA1: 1162fbee1cd88cd5364ea64da9ab4a320eac396a
+SHA256: e759480ca651e1ae565deb852c8784e6b300d9baa3263001b67f1c9a4ff1a040
 Description: GNU version of the tar archiving utility
  Tar is a program for packaging a set of files as a single archive in tar
  format.  The function it performs is conceptually similar to cpio, and to
@@ -4097,8 +4352,8 @@ Description: time zone and daylight-saving time data
  globe. It is updated periodically to reflect changes made by
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
-Multi-Arch: foreign
 Homepage: http://www.iana.org/time-zones
+Multi-Arch: foreign
 
 Package: udev
 Priority: important
@@ -4111,11 +4366,11 @@ Version: 215-17+deb8u4
 Depends: libacl1 (>= 2.2.51-8), libblkid1 (>= 2.19.1), libc6 (>= 2.17), libkmod2 (>= 5~), libselinux1 (>= 2.0.65), libudev1 (= 215-17+deb8u4), adduser, lsb-base (>= 3.0-6), util-linux (>= 2.16), procps
 Pre-Depends: debconf (>= 1.4.69) | debconf-2.0
 Breaks: consolekit (<< 0.4.6-1), kmod (<< 14), plymouth (<< 0.9.0-7), systemd (<< 215-1)
-Filename: pool/main/s/systemd/udev_215-17+deb8u4_armv6hf.deb
-Size: 819450
-MD5sum: bcdff1355deb5e72ce679198186d2f1e
-SHA1: 46fc85a890ea0bf9635ff76284e49123843f9458
-SHA256: d38e550a7bc7d8490b41a1913e2bf3b476062c607f223722cc059ac008d070d0
+Filename: pool/main/s/systemd/udev_215-17+deb8u4__armv6hf.deb
+Size: 819452
+MD5sum: d737831db7bd243eb764f75e8133533f
+SHA1: 3621b9f1a7c31d2553eca8b1ff3ec6034adc7228
+SHA256: ef1206d62910275a493f436808ed6469bb0a67fa254b64a33355a0186c411f17
 Description: /dev/ and hotplug management daemon
  udev is a daemon which dynamically creates and removes device nodes from
  /dev/, handles hotplug events and loads drivers at boot time.
@@ -4145,20 +4400,20 @@ Package: util-linux
 Essential: yes
 Priority: required
 Section: utils
-Installed-Size: 2556
+Installed-Size: 2442
 Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
 Architecture: armv6hf
 Version: 2.25.2-6
 Replaces: bash-completion (<< 1:2.1-3)
 Depends: initscripts, lsb-base (>= 3.0-6), tzdata (>= 2006c-2)
-Pre-Depends: libblkid1 (>= 2.25), libc6 (>= 2.15), libmount1 (>= 2.25), libncursesw5 (>= 5.6+20070908), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libslang2 (>= 2.2.4), libsmartcols1 (>= 2.25), libtinfo5, libudev1 (>= 183), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Pre-Depends: libblkid1 (>= 2.25), libc6 (>= 2.15), libmount1 (>= 2.25), libncurses5 (>= 5.5-5~), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libslang2 (>= 2.2.4), libsmartcols1 (>= 2.25), libtinfo5, libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
 Suggests: dosfstools, kbd | console-tools, util-linux-locales
 Breaks: bash-completion (<< 1:2.1-3), grml-debootstrap (<< 0.68)
-Filename: pool/main/u/util-linux/util-linux_2.25.2-6_armv6hf.deb
-Size: 795090
-MD5sum: 6ccf416d4b01608e4c618de2f92ccdc1
-SHA1: 72c89e4b9e92af7b7169c17805883c3ac0239b92
-SHA256: 0f9a0b8ec7efa2fa4574466aa29e32fe2c121d7dde8d81ed7be0fc0722247f41
+Filename: pool/main/u/util-linux/util-linux_2.25.2-6__armv6hf.deb
+Size: 792610
+MD5sum: 3d0fa031f9bd6f57198e284f9837cee5
+SHA1: f5b004e5cf0ab83cedea4cbfad270578597c3d18
+SHA256: 2413dd56d1c45ad5d67bdec2d3a8e73b99c32e3496951835124222cdba708f31
 Description: Miscellaneous system utilities
  This package contains a number of important utilities, most of which
  are oriented towards maintenance of your system.  Some of the more
@@ -4213,7 +4468,7 @@ Multi-Arch: same
 Package: uuid-runtime
 Priority: optional
 Section: utils
-Installed-Size: 183
+Installed-Size: 112
 Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
 Architecture: armv6hf
 Source: util-linux
@@ -4221,11 +4476,11 @@ Version: 2.25.2-6
 Replaces: e2fsprogs (<= 1.40.3-1ubuntu1)
 Depends: adduser, passwd, init-system-helpers (>= 1.18~), libc6 (>= 2.4), libsystemd0
 Pre-Depends: libuuid1 (>= 2.25-5~)
-Filename: pool/main/u/util-linux/uuid-runtime_2.25.2-6_armv6hf.deb
-Size: 73666
-MD5sum: 954ac3a73c3c72cc5641e850a004a3e2
-SHA1: 8d1fb8e5bce8e163e9a1c02622bc3a60f83e831b
-SHA256: aa4ef0057c1f7d3befa62653415b61fc3eca14fdbd702facba0961c5ca3c7369
+Filename: pool/main/u/util-linux/uuid-runtime_2.25.2-6__armv6hf.deb
+Size: 72312
+MD5sum: 6f2bedb0875d949810d3bd6eeb0f23e2
+SHA1: 29c4097505bbeaaccd44bdcfc0d167936aca62c2
+SHA256: de7cbdf6bacc0a6993721fffc76f2f318c9185d4ad66ed5ff131e96374aba49c
 Description: runtime components for the Universally Unique ID library
  The libuuid library generates and parses 128-bit universally unique
  ids (UUIDs).  A UUID is an identifier that is unique across both
@@ -4281,8 +4536,8 @@ Description: XZ-format compression utilities
   * limited random-access reading support;
   * improved support for multithreading (not used in xz-utils);
   * support for flushing the encoder.
-Multi-Arch: foreign
 Homepage: http://tukaani.org/xz/
+Multi-Arch: foreign
 
 Package: xzdec
 Priority: extra
@@ -4320,13 +4575,13 @@ Description: XZ-format compression utilities - tiny decompressors
  .
  For a full-featured xzcat command without these limitations, use
  the xz-utils package instead.
-Multi-Arch: foreign
 Homepage: http://tukaani.org/xz/
+Multi-Arch: foreign
 
 Package: zlib1g
 Priority: required
 Section: libs
-Installed-Size: 162
+Installed-Size: 131
 Maintainer: Mark Brown <broonie@debian.org>
 Architecture: armv6hf
 Source: zlib
@@ -4336,16 +4591,16 @@ Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Conflicts: zlib1 (<= 1:1.0.4-7)
 Breaks: libxml2 (<< 2.7.6.dfsg-2), texlive-binaries (<< 2009-12)
-Filename: pool/main/z/zlib/zlib1g_1.2.8.dfsg-2_armv6hf.deb
-Size: 82110
-MD5sum: c4d732802e6eb87512951c8e1a457329
-SHA1: bb6bae2cd4132664d26222a48511701fef160611
-SHA256: 88853c4d8a73d7e91cbde628bdc68c29157d7448aa84fc12f5f8b5379f23186a
+Filename: pool/main/z/zlib/zlib1g_1%3a1.2.8.dfsg-2__armv6hf.deb
+Size: 81090
+MD5sum: 9e47d84aca596d0627566711d8e995a4
+SHA1: 6596455f7902494977fbbe412701fd8dd7be39c6
+SHA256: 900a370612e2fe98c364645fd7a823d5bc9a3166400df2c5aeaa12022315a6be
 Description: compression library - runtime
  zlib is a library implementing the deflate compression method found
  in gzip and PKZIP.  This package includes the shared library.
-Multi-Arch: same
 Homepage: http://zlib.net/
+Multi-Arch: same
 
 Package: zlib1g-dbg
 Priority: extra
