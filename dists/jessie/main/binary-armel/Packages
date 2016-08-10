@@ -1,41 +1,3 @@
-Package: acl
-Priority: optional
-Section: utils
-Installed-Size: 184
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Architecture: armel
-Version: 2.2.52-3
-Depends: libacl1 (= 2.2.52-3), libattr1 (>= 1:2.4.46-8), libc6 (>= 2.4)
-Filename: pool/main/a/acl/acl_2.2.52-3_armel.deb
-Size: 55542
-MD5sum: 76b59ed89ac68cdb67cac98525ca3fcb
-SHA1: fc142cf606a8292eeb13be846b46c1b656af3378
-SHA256: a4c9318a85e24e2ab0f3fdbc261e17a476cc6eb69f292dac0a7322c679f2e8e2
-Description: Access control list utilities
- This package contains the getfacl and setfacl utilities needed for
- manipulating access control lists.
-Multi-Arch: foreign
-Homepage: http://savannah.nongnu.org/projects/acl/
-
-Package: acl-dbgsym
-Priority: extra
-Section: debug
-Installed-Size: 88
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Architecture: armel
-Source: acl
-Version: 2.2.52-3
-Depends: acl (= 2.2.52-3)
-Filename: pool/main/a/acl/acl-dbgsym_2.2.52-3_armel.deb
-Size: 56930
-MD5sum: 4ab7b68f4c57cac610b2227c799868f6
-SHA1: 0c0b9a8ff6c941de160f1914b77b392967575292
-SHA256: 49bc4348eeeeb89799302d1fb7b4389220a192a2ca062500123ac2ba3c5f5911
-Description: Debug symbols for acl
-Homepage: http://savannah.nongnu.org/projects/acl/
-Build-Ids: 167013015e9d9c3d49af9d01048c26320ed25ae9 b550a6b51967046cd36c06ca6f2772cb3ad22291 d722179d11611025ca4c2aaf1532d0a71a22effe
-Auto-Built-Package: debug-symbols
-
 Package: adduser
 Priority: important
 Section: admin
@@ -72,8 +34,28 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Multi-Arch: foreign
 Homepage: http://alioth.debian.org/projects/adduser/
+Multi-Arch: foreign
+
+Package: ash
+Priority: optional
+Section: shells
+Installed-Size: 66
+Maintainer: Gerrit Pape <pape@smarden.org>
+Architecture: all
+Source: dash
+Version: 0.5.7-4
+Pre-Depends: dash
+Filename: pool/main/d/dash/ash_0.5.7-4_all.deb
+Size: 29246
+MD5sum: e6e2812acec58ce2334373409f868a3a
+SHA1: e9eb2042573d9eb6239dfad5308d3bdcba475a59
+SHA256: d42e5b449ca88a484d2b1d16f9478a85e8d1d7aab9bc1c8dc1d9ad85141db484
+Description: compatibility package for dash
+ This package allows upgrading ash to its replacement,
+ dash. It includes the /bin/ash symlink.
+ It can be removed as soon as /bin/ash is no longer used.
+Homepage: http://gondor.apana.org.au/~herbert/dash/
 
 Package: avrdude
 Priority: extra
@@ -94,6 +76,30 @@ Description: software for programming Atmel AVR microcontrollers
  ROM and EEPROM contents of AVR microcontrollers using the in-system
  programming technique (ISP).
 Homepage: http://savannah.nongnu.org/projects/avrdude/
+
+Package: bash-doc
+Priority: optional
+Section: doc
+Installed-Size: 2581
+Maintainer: Matthias Klose <doko@debian.org>
+Architecture: all
+Source: bash
+Version: 4.3-11
+Replaces: bash (<< 4.3-2)
+Depends: dpkg (>= 1.15.4) | install-info
+Filename: pool/main/b/bash/bash-doc_4.3-11_all.deb
+Size: 1222618
+MD5sum: 378a634ef6825824c5e9e2cee7744334
+SHA1: 65ef28222495013f7102759ddc98a982b87ac3f7
+SHA256: 95e6c210aa7298670e5c6d26c99735bef6390d1475719affc6475e2b7bbaa2e4
+Description: Documentation and examples for the GNU Bourne Again SHell
+ Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file.  Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+ .
+ This package contains the distributable documentation, all the
+ examples and the main changelog.
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
 
 Package: brickpi-base
 Priority: normal
@@ -160,6 +166,27 @@ Description: Debian configuration management system
  use Debconf to ask questions when they are installed.
 Multi-Arch: foreign
 
+Package: debconf-doc
+Priority: optional
+Section: doc
+Installed-Size: 453
+Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+Architecture: all
+Source: debconf
+Version: 1.5.56
+Suggests: debian-policy (>= 3.5)
+Conflicts: debconf (<< 0.3.10)
+Filename: pool/main/d/debconf/debconf-doc_1.5.56_all.deb
+Size: 316560
+MD5sum: d7445e0e6ba23cb1c4d84ea6974a9e9b
+SHA1: 420077ba1d15e329ce9b7a5061823d486e469ee7
+SHA256: 50a710af9baaa478c720ddc1cbf3beeb1f8cfa92f14b1625afd823555193e5f4
+Description: debconf documentation
+ This package contains lots of additional documentation for Debconf,
+ including the debconf user's guide, documentation about using different
+ backend databases via the /etc/debconf.conf file, and a developer's guide
+ to debconf.
+
 Package: debconf-i18n
 Priority: important
 Section: localization
@@ -181,6 +208,67 @@ Description: full internationalization support for debconf
  translations into all available languages, support for using translated
  debconf templates, and support for proper display of multibyte character
  sets.
+
+Package: debconf-utils
+Priority: optional
+Section: devel
+Installed-Size: 153
+Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+Architecture: all
+Source: debconf
+Version: 1.5.56
+Replaces: debconf (<< 0.1.0)
+Depends: debconf (= 1.5.56)
+Conflicts: debconf (<< 0.1.0)
+Filename: pool/main/d/debconf/debconf-utils_1.5.56_all.deb
+Size: 57572
+MD5sum: 01a2380bfdc5eae6630bbf413989307e
+SHA1: 40427ad415be4d948aa6b6e6e53dc81f7e2d886c
+SHA256: e242ffce3af6d74ddb3ab9a547dd1337d75c8aabe45579af3aee7cdd30a104ee
+Description: debconf utilities
+ This package contains some small utilities for debconf developers.
+
+Package: dh-systemd
+Priority: extra
+Section: admin
+Installed-Size: 99
+Maintainer: pkg-systemd-maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: init-system-helpers
+Version: 1.22
+Depends: perl, debhelper
+Suggests: augeas-tools
+Filename: pool/main/i/init-system-helpers/dh-systemd_1.22_all.deb
+Size: 18052
+MD5sum: 76663fd0de02db18e9e6a51e940249b7
+SHA1: 9de39fc2812b987636bd69f108494d4fd362b262
+SHA256: 59d0bd076ece349b53c063d6432547f66b131469b1b188fa105c67e050a09b00
+Description: debhelper add-on to handle systemd unit files
+ dh-systemd provides a debhelper sequence addon named 'systemd' and the
+ dh_systemd_enable/dh_systemd_start commands.
+ .
+ The dh_systemd_enable command adds the appropriate code to the postinst, prerm
+ and postrm maint scripts to properly enable/disable systemd service files.
+ The dh_systemd_start command deals with start/stop/restart on upgrades for
+ systemd-only service files.
+Multi-Arch: foreign
+
+Package: diffutils-doc
+Priority: optional
+Section: doc
+Installed-Size: 732
+Maintainer: Santiago Vila <sanvila@debian.org>
+Architecture: all
+Source: diffutils
+Version: 1:3.3-1
+Filename: pool/main/d/diffutils/diffutils-doc_3.3-1_all.deb
+Size: 97114
+MD5sum: 80343f4f3d9ac0502294cd11536153d9
+SHA1: 3abb241fcd37cd83270f91f367ff204307a456d7
+SHA256: ae72bb0991bb07878fb4189a661e8a059c7a0011a43e6bf41cb52c0a2223a338
+Description: Documentation for GNU diffutils in HTML format
+ This package contains the HTML documentation for GNU diffutils.
+Homepage: http://www.gnu.org/software/diffutils/
 
 Package: dpkg-dev
 Priority: optional
@@ -206,10 +294,10 @@ Description: Debian package development tools
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Bugs: debbugs://bugs.debian.org
-Homepage: https://wiki.debian.org/Teams/Dpkg
 Origin: debian
+Homepage: https://wiki.debian.org/Teams/Dpkg
 Multi-Arch: foreign
+Bugs: debbugs://bugs.debian.org
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -225,33 +313,23 @@ SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
 SHA256: d91d5e002d8056dd9534f31f0f3b77470a04b65869b365aa9b0e547294fae3be
 Description: Installs the ev3lessons gpg key
 
-Package: filemanager-cli
-Priority: normal
-Section: brickpi
-Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Package: gzip-win32
+Priority: extra
+Section: utils
+Installed-Size: 190
+Maintainer: Bdale Garbee <bdale@gag.com>
 Architecture: all
-Version: 1.1
-Depends: python2.7 (>= 0.0.1)
-Filename: pool/main/f/filemanager-cli/FileManager_1.1_all.deb
-Size: 182104
-MD5sum: 3765517b16ce14b5cecd20c6947135ad
-SHA1: bcb82eabfe8268d2913d7287ceeaccb5a4eb3042
-SHA256: ee023cf1da919317a5e14be657b67d52681f9ce2b27554214927493298805fb2
-Description: Installs a python based file manager (for BrickPi/ev3)
-
-Package: filemanager-cli
-Priority: normal
-Section: brickpi
-Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
-Architecture: all
-Version: 1.0
-Depends: python2.7 (>= 0.0.1)
-Filename: pool/main/f/filemanager-cli/FileManager_1.0_all.deb
-Size: 182108
-MD5sum: 9517e85e2ca888f7f7e6e91e087fd768
-SHA1: 454f70b4186a0b3d2128caaadf95c7205c800e72
-SHA256: dd52442e5db905447ffc089eb764912e774e674fefbaebe140d3b5b0185be03f
-Description: Installs a python based file manager (for BrickPi/ev3)
+Source: gzip
+Version: 1.6-4
+Suggests: wine
+Filename: pool/main/g/gzip/gzip-win32_1.6-4_all.deb
+Size: 92660
+MD5sum: c1d349d13dff78f6e6dd90e525558b14
+SHA1: c15db840edcc60cd591a5cc4d1d9a679a9bdc3eb
+SHA256: a8da068f25b89de96119da9f7cc59e0397ea104f0fb1e9d375bd936ad6b0ec4c
+Description: GNU compression utility (win32 build)
+ This is a win32 version of gzip, meant to be used by the win32-loader
+ component of Debian-Installer.
 
 Package: init-system-helpers
 Priority: extra
@@ -305,71 +383,6 @@ Description: generic modular initramfs generator
  NFS is also supported.
  Any boot loader with initrd support is able to load an initramfs archive.
 Multi-Arch: foreign
-
-Package: libacl1
-Priority: required
-Section: libs
-Installed-Size: 52
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Architecture: armel
-Source: acl
-Version: 2.2.52-3
-Depends: libattr1 (>= 1:2.4.46-8), libc6 (>= 2.4)
-Conflicts: acl (<< 2.0.0), libacl1-kerberos4kth
-Filename: pool/main/a/acl/libacl1_2.2.52-3_armel.deb
-Size: 25310
-MD5sum: 121b33a3327273c0058273699446f0a0
-SHA1: ddcdf9f68b65903faffb694db8fa19c2a0dc2e71
-SHA256: 3b6632739285bb8be609e1cd85ba58f146b43ce466844d02edfbb3902ac46c0a
-Description: Access control list shared library
- This package contains the libacl.so dynamic library containing
- the POSIX 1003.1e draft standard 17 functions for manipulating
- access control lists.
-Homepage: http://savannah.nongnu.org/projects/acl/
-Multi-Arch: same
-
-Package: libacl1-dbgsym
-Priority: extra
-Section: debug
-Installed-Size: 61
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Architecture: armel
-Source: acl
-Version: 2.2.52-3
-Depends: libacl1 (= 2.2.52-3)
-Filename: pool/main/a/acl/libacl1-dbgsym_2.2.52-3_armel.deb
-Size: 43244
-MD5sum: 9d9bd25fe53653e0c909d66c6d5accdf
-SHA1: 42ec382754f491ed336e28caf3013cea20d95074
-SHA256: 84b835b463be6ef6bceb08f827ed0e7f9809b1f1efac1a5717044997a0f734c5
-Description: Debug symbols for libacl1
-Auto-Built-Package: debug-symbols
-Build-Ids: f73bd69ebb49aef92e232cd776879278f363d2d6
-Multi-Arch: same
-Homepage: http://savannah.nongnu.org/projects/acl/
-
-Package: libacl1-dev
-Priority: extra
-Section: libdevel
-Installed-Size: 190
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Architecture: armel
-Source: acl
-Version: 2.2.52-3
-Replaces: acl-dev
-Provides: acl-dev
-Depends: libc6-dev | libc-dev, libacl1 (= 2.2.52-3), libattr1-dev (>= 1:2.4.46-8)
-Conflicts: acl (<< 2.0.0), acl-dev, kerberos4kth-dev (<< 1.2.2-4)
-Filename: pool/main/a/acl/libacl1-dev_2.2.52-3_armel.deb
-Size: 84424
-MD5sum: 50da8cc078fa96881f5bbfcf573f7cb0
-SHA1: 8aa0fcb7f47a4d48cc263493833c6a1454d34728
-SHA256: 78ee260b0b1951c3a13bc0e522d181352fa6c8afcfe2e09f1e1f99c2bd5b71fe
-Description: Access control list static libraries and headers
- This package contains the static libraries and header files needed
- for developing programs which make use of the access control list
- programming interface defined in POSIX 1003.1e draft standard 17.
-Homepage: http://savannah.nongnu.org/projects/acl/
 
 Package: libaudit-common
 Priority: optional
@@ -445,155 +458,30 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Bugs: debbugs://bugs.debian.org
-Multi-Arch: foreign
 Origin: debian
+Multi-Arch: foreign
 Homepage: https://wiki.debian.org/Teams/Dpkg
+Bugs: debbugs://bugs.debian.org
 
-Package: libgcrypt11-dev
-Priority: extra
-Section: oldlibs
-Installed-Size: 81
-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
-Architecture: all
-Source: libgcrypt20 (1.6.5-2)
-Version: 1.5.4-3+really1.6.5-2
-Depends: libgcrypt20-dev (>= 1.6.5)
-Breaks: libgnutls-dev (<< 2.12.23-18)
-Filename: pool/main/libg/libgcrypt20/libgcrypt11-dev_1.5.4-3+really1.6.5-2_all.deb
-Size: 67014
-MD5sum: ec759df8e3f92dcbc76abda81eb24b43
-SHA1: b359811398e4558f0b17e2b0476e0613d5199f35
-SHA256: c1e4163091c1df8f056e25391464f19ae6af47b36fd9fd0317802afb0500b1b1
-Description: transitional libgcrypt11-dev package
- This is a transitional dummy package to ease the migration from
- libgcrypt11-dev to libgcrypt20-dev. You can safely remove this package.
-Homepage: http://directory.fsf.org/project/libgcrypt/
-
-Package: libgcrypt20
-Priority: standard
-Section: libs
-Installed-Size: 739
-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
-Architecture: armel
-Version: 1.6.5-2
-Depends: libc6 (>= 2.15), libgpg-error0 (>= 1.14)
-Suggests: rng-tools
-Filename: pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2_armel.deb
-Size: 344314
-MD5sum: 1ead117f5d7420dfbc46c70dc7f0ac4b
-SHA1: 9db0eb9002524e66c9174625a0c97c6d078606dc
-SHA256: 44ca305737bab3b23fc3e97950a22ad6cdd712bcfe3f460fff41a67dc3ddd6ee
-Description: LGPL Crypto library - runtime library
- libgcrypt contains cryptographic functions.  Many important free
- ciphers, hash algorithms and public key signing algorithms have been
- implemented:
- .
- Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
- Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
- Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
-Multi-Arch: same
-Homepage: http://directory.fsf.org/project/libgcrypt/
-
-Package: libgcrypt20-dbgsym
-Priority: extra
-Section: debug
-Installed-Size: 706
-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
-Architecture: armel
-Source: libgcrypt20
-Version: 1.6.5-2
-Replaces: libgcrypt20-dbg (<< 1.6.4-4~)
-Depends: libgcrypt20 (= 1.6.5-2)
-Breaks: libgcrypt20-dbg (<< 1.6.4-4~)
-Filename: pool/main/libg/libgcrypt20/libgcrypt20-dbgsym_1.6.5-2_armel.deb
-Size: 623510
-MD5sum: 8a08a40a9df85dbc6f5270934de30ff9
-SHA1: 42f40f92810e61174715b842cd373a1cc3712ba5
-SHA256: 05f48eed4ae0235d0dd1f6dba1103ad25dbdb3fccd959bcfbb809e2dc7262842
-Description: Debug symbols for libgcrypt20
-Homepage: http://directory.fsf.org/project/libgcrypt/
-Auto-Built-Package: debug-symbols
-Multi-Arch: same
-Build-Ids: 2b154b86e86e7e562b006deb916d06b80fa88a4d
-
-Package: libgcrypt20-dev
+Package: libgcj-common
 Priority: optional
-Section: libdevel
-Installed-Size: 1146
-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
-Architecture: armel
-Source: libgcrypt20
-Version: 1.6.5-2
-Provides: libgcrypt-dev
-Depends: libgcrypt20 (= 1.6.5-2), libc6-dev | libc-dev, libgpg-error-dev
-Suggests: libgcrypt20-doc
-Conflicts: libgcrypt-dev, libgcrypt11-dev (<< 1.5.4-3+really1.6.2-4)
-Filename: pool/main/libg/libgcrypt20/libgcrypt20-dev_1.6.5-2_armel.deb
-Size: 394582
-MD5sum: 312f00f525249b07aad6f1fd238492c4
-SHA1: 15526dc21a1d0ad18e140b35a2cf440b54970060
-SHA256: 9eda84a1966189491b442b45800012f26484a899e5b11ce5e76fb0378295b648
-Description: LGPL Crypto library - development files
- libgcrypt contains cryptographic functions.  Many important free
- ciphers, hash algorithms and public key signing algorithms have been
- implemented:
- .
- Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
- Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
- Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
- .
- This package contains header files and libraries for static linking.
-Homepage: http://directory.fsf.org/project/libgcrypt/
-
-Package: libgcrypt20-dev-dbgsym
-Priority: extra
-Section: debug
-Installed-Size: 60
-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
-Architecture: armel
-Source: libgcrypt20
-Version: 1.6.5-2
-Replaces: libgcrypt20-dbg (<< 1.6.4-4~)
-Depends: libgcrypt20-dev (= 1.6.5-2)
-Breaks: libgcrypt20-dbg (<< 1.6.4-4~)
-Filename: pool/main/libg/libgcrypt20/libgcrypt20-dev-dbgsym_1.6.5-2_armel.deb
-Size: 33072
-MD5sum: 67a2d951d54347b51555e9830acfb6dc
-SHA1: ada7303bd1459d631970c0fa933deed377940223
-SHA256: 1f359e58bb8b30774777b5a8554a9ff1ad6c86d29ac3fdc5cb6d7e9c98047e5a
-Description: Debug symbols for libgcrypt20-dev
-Homepage: http://directory.fsf.org/project/libgcrypt/
-Build-Ids: 1c7854596e49bd8866e90d4f14cf3df03423e174 a32fa291e2ecff0ed7d3caa4456aec682f4f4470 bee3d6ac808abb9ec627728eac2c0e9ae830ffce
-Auto-Built-Package: debug-symbols
-
-Package: libgcrypt20-doc
-Priority: optional
-Section: doc
-Installed-Size: 1521
-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Section: java
+Installed-Size: 273
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: all
-Source: libgcrypt20
-Version: 1.6.5-2
-Replaces: libgcrypt-doc, libgcrypt11-doc, libgcrypt7-doc
-Suggests: libgcrypt20-dev
-Conflicts: libgcrypt-doc, libgcrypt11-doc, libgcrypt7-doc
-Filename: pool/main/libg/libgcrypt20/libgcrypt20-doc_1.6.5-2_all.deb
-Size: 797244
-MD5sum: aadbf9e54318d8805486a2334a8b5936
-SHA1: f43c61d9cb2a52100a027a871aeb833b76d53d35
-SHA256: d6fa58d306480c494eec7f865ba2f13a763e68b6a99e3b131c93abb25b22b000
-Description: LGPL Crypto library - documentation
- libgcrypt contains cryptographic functions.  Many important free
- ciphers, hash algorithms and public key signing algorithms have been
- implemented:
- .
- Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
- Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
- Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
- .
- This package contains developer documentation.
-Homepage: http://directory.fsf.org/project/libgcrypt/
+Source: gcc-defaults (1.136)
+Version: 1:4.9.1-7
+Replaces: java-gcj-compat (<< 1.0.65-8), java-gcj-compat-dev (<< 1.0.80-2)
+Depends: python:any
+Conflicts: classpath (<= 0.04-4)
+Filename: pool/main/g/gcc-defaults/libgcj-common_4.9.1-7_all.deb
+Size: 161452
+MD5sum: eb29067d91249e36e0b1f5eac6b6f590
+SHA1: dc199730a8765ab92a5c08030308db84ad6622bf
+SHA256: ba8ac8a7eaaeb55ebc4b89fac0c6aa3569837b373fc6b7cea5fbd2bc541ae811
+Description: Java runtime library (common files)
+ This package contains files shared by Classpath and libgcj libraries.
+Multi-Arch: foreign
 
 Package: liblzma-doc
 Priority: optional
@@ -616,6 +504,26 @@ Description: XZ-format compression library - API documentation
  explained.
 Homepage: http://tukaani.org/xz/
 
+Package: libpam-doc
+Priority: optional
+Section: doc
+Installed-Size: 986
+Maintainer: Steve Langasek <vorlon@debian.org>
+Architecture: all
+Source: pam
+Version: 1.1.8-3.1+deb8u1
+Provides: pam-doc
+Filename: pool/main/p/pam/libpam-doc_1.1.8-3.1+deb8u1_all.deb
+Size: 279542
+MD5sum: 1c0def94f78c58db54cc6e6436d3424e
+SHA1: 97898ef93358ab254680fea5e3ec6bb698cc17b2
+SHA256: 3ff96395e80821ce57411a100f2e5ddbf4f828d0d74bb5650a61c18531d33e99
+Description: Documentation of PAM
+ Contains documentation (in HTML, ASCII, and PostScript format) for libpam,
+ the Pluggable Authentication Modules library, a library that enables the
+ local system administrator to choose how applications authenticate users.
+Homepage: http://pam.sourceforge.net/
+
 Package: libpam-runtime
 Priority: required
 Section: admin
@@ -636,8 +544,8 @@ Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Multi-Arch: foreign
 Homepage: http://pam.sourceforge.net/
+Multi-Arch: foreign
 
 Package: libsemanage-common
 Priority: optional
@@ -692,65 +600,6 @@ Description: internationalized substitute of Text::Wrap
  .
  It provides wrap().
 Homepage: http://search.cpan.org/search?module=Text::WrapI18N
-
-Package: linux-headers-4.4.15-13-ev3dev-ev3+
-Priority: optional
-Section: kernel
-Installed-Size: 45442
-Maintainer: Anonymous <root@C3-D2>
-Architecture: armel
-Source: linux-4.4.15-13-ev3dev-ev3+
-Version: 1
-Provides: linux-headers, linux-headers-2.6
-Filename: pool/main/l/linux-4.4.15-13-ev3dev-ev3+/linux-headers-4.4.15-13-ev3dev-ev3+_1_armel.deb
-Size: 7057364
-MD5sum: c17feb17f9d9e4cfecc23e82328d595a
-SHA1: c2e6cea0d0badc0af3703e46b9c62d6081d57dec
-SHA256: 7f7d1a9077d87c0d95b4f797ceafb8dcd64442179ba8f3c2ee2e119cd09c9ac8
-Description: Linux kernel headers for 4.4.15-13-ev3dev-ev3+ on armel
- This package provides kernel header files for 4.4.15-13-ev3dev-ev3+ on armel
- .
- This is useful for people who need to build external modules
-Homepage: http://www.kernel.org/
-
-Package: linux-image-4.4.15-13-ev3dev-ev3+
-Priority: optional
-Section: kernel
-Installed-Size: 11239
-Maintainer: Anonymous <root@C3-D2>
-Architecture: armel
-Source: linux-4.4.15-13-ev3dev-ev3+
-Version: 1
-Provides: linux-image, linux-image-2.6, linux-modules-4.4.15-13-ev3dev-ev3+
-Suggests: linux-firmware-image-4.4.15-13-ev3dev-ev3+
-Filename: pool/main/l/linux-4.4.15-13-ev3dev-ev3+/linux-image-4.4.15-13-ev3dev-ev3+_1_armel.deb
-Size: 4805220
-MD5sum: 3f9026cabfcd32e3ccaa63f15b4f2660
-SHA1: 7ba5a9cf890c34980f39c0b12f065375eb36fbfc
-SHA256: a09e005d77b9981a0a28cd643765b9d4dbfefa73fe6449956d123f9b1b3f82e1
-Description: Linux kernel, version 4.4.15-13-ev3dev-ev3+
- This package contains the Linux kernel, modules and corresponding other
- files, version: 4.4.15-13-ev3dev-ev3+.
-Homepage: http://www.kernel.org/
-
-Package: linux-libc-dev
-Priority: optional
-Section: devel
-Installed-Size: 4011
-Maintainer: Anonymous <root@C3-D2>
-Architecture: armel
-Source: linux-4.4.15-13-ev3dev-ev3+
-Version: 1
-Provides: linux-kernel-headers
-Filename: pool/main/l/linux-4.4.15-13-ev3dev-ev3+/linux-libc-dev_1_armel.deb
-Size: 797180
-MD5sum: d2cf90549b5486580ad13da342be471c
-SHA1: 45d746c5c4bb1f406e2d183b7e9101a3f5839e70
-SHA256: d7e8faa0c9ceb17a2d75aa7ec5a3eb830da196bf421d96c41738c8cfdb2fb855
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
- are used by the installed headers for GNU glibc and other system libraries.
-Homepage: http://www.kernel.org/
 
 Package: lsb
 Priority: extra
@@ -926,40 +775,57 @@ Description: basic terminal type definitions
  This package contains terminfo data files to support the most common types of
  terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
  vt52, and xterm.
-Homepage: http://invisible-island.net/ncurses/
 Multi-Arch: foreign
+Homepage: http://invisible-island.net/ncurses/
 
-Package: python-rpi.gpio
+Package: ncurses-doc
 Priority: optional
-Section: python
-Installed-Size: 123
-Maintainer: Ben Croston <ben@croston.org>
-Architecture: armel
-Source: rpi.gpio
-Version: 0.3.1a-1
-Depends: libc6 (>= 2.4), python2.7 | python2.6, python (>= 2.6.6-7~), python (<< 2.8)
-Filename: pool/main/r/rpi.gpio/python-rpi.gpio_0.3.1a-1_armel.deb
-Size: 10860
-MD5sum: 421112ff08013724f42b9bde166e3fee
-SHA1: 7a43e8eee688ad2b93e001d3b4bcb36fa01e040d
-SHA256: c5bed7d9fddf49f285310cc4c086f1de82171235f76033c10c09a2af41a642d4
-Description: Python GPIO module for Raspberry Pi
- This is the RPi.GPIO Python module, for supporting GPIO on a
- Raspberry Pi
-Homepage: http://code.google.com/p/raspberry-gpio-python/
-
-Package: raspberrypi-bootloader
-Priority: required
-Section: bootloader
-Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Section: doc
+Installed-Size: 2293
+Maintainer: Craig Small <csmall@debian.org>
 Architecture: all
-Version: 1.0
-Filename: pool/main/r/raspberrypi-bootloader/raspberrypi-bootloader_1.0_arm64.deb
-Size: 7684016
-MD5sum: 318cbf8e5e097e9ecdea6c875f5377c8
-SHA1: 6234b650c30e418d8e47371354684b8a23dfa14f
-SHA256: 7735567d9d1cd72edefd9bea0d2c996acb0a413429e3005bea5881ca6e3fde1d
-Description: Installs the required raspberrypi bootloader files a arm64 based system
+Source: ncurses
+Version: 5.9+20140913-1
+Replaces: libncurses5-dev (<< 5.7+20101128)
+Filename: pool/main/n/ncurses/ncurses-doc_5.9+20140913-1_all.deb
+Size: 788034
+MD5sum: 36df3a49e39f18eb8a65a9ec13e25d35
+SHA1: 0648603ce6ade3a85fd0850d2abd1c2bdc5e79e1
+SHA256: b703d84d90b1eb711c7fd30b34b8e5177e0bfb6e9218116891ebebcd92f7771c
+Description: developer's guide and documentation for ncurses
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains an introduction to writing programs with
+ ncurses a guide to the internals of the ncurses library.  It also
+ includes the libraries' man pages.
+ .
+ Non-developers likely have little use for this package.
+Homepage: http://invisible-island.net/ncurses/
+
+Package: ncurses-term
+Priority: standard
+Section: misc
+Installed-Size: 2187
+Maintainer: Craig Small <csmall@debian.org>
+Architecture: all
+Source: ncurses
+Version: 5.9+20140913-1
+Replaces: bogl-bterm (<< 0.1.18-7), mlterm-common (<< 3.0.2-1), ncurses-base (<< 5.7+20100313-1), suckless-tools (<< 39)
+Breaks: bogl-bterm (<< 0.1.18-7), mlterm-common (<< 3.0.2-1), suckless-tools (<< 39)
+Filename: pool/main/n/ncurses/ncurses-term_5.9+20140913-1_all.deb
+Size: 454310
+MD5sum: 9bd1618c3586620e73845c384592affe
+SHA1: d39d3b9c99e858996ced908e20acc8017ac58651
+SHA256: cd2ecd010955c07e234ea899de748fcbf95eeecd82cb77738d7437866355e128
+Description: additional terminal type definitions
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains all of the numerous terminal definitions not found in
+ the ncurses-base package.
+Multi-Arch: foreign
+Homepage: http://invisible-island.net/ncurses/
 
 Package: raspbian-archive-keyring
 Priority: important
@@ -978,23 +844,6 @@ SHA256: ea4b6737417fda8eeb4549ece7bb04249faed6779bc2424203fd635fda4dcc21
 Description: GnuPG archive keys of the raspbian archive
  The raspbian archive digitally signs its Release files. This package
  contains the archive keys used for that.
-
-Package: raspi-config
-Priority: extra
-Section: utils
-Installed-Size: 102
-Maintainer: Serge Schneider <serge@raspberrypi.org>
-Architecture: all
-Version: 20160527
-Depends: whiptail, parted, lua5.1, alsa-utils
-Recommends: triggerhappy
-Filename: pool/main/r/raspi-config/raspi-config_20160527_all.deb
-Size: 16748
-MD5sum: f5000d313ca406e2d8c2201c4d47984c
-SHA1: 748db1a618f0af08aa6a1bfe53c130ca1337f909
-SHA256: 7183fff5a7275d9d9ec96acd99f40afd6135c323daef9caf5594adc1d82b8128
-Description: Raspberry Pi configuration tool
- A simple configuration tool for common Raspberry Pi administrative tasks
 
 Package: readline-common
 Priority: important
@@ -1067,8 +916,8 @@ Description: System-V-like runlevel change mechanism
  This package provides support for the System-V like system
  for booting, changing runlevels, and shutting down,
  configured through symbolic links in /etc/rc?.d/.
-Homepage: http://savannah.nongnu.org/projects/sysvinit
 Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/sysvinit
 
 Package: tzdata
 Priority: required
@@ -1091,6 +940,31 @@ Description: time zone and daylight-saving time data
  globe. It is updated periodically to reflect changes made by
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
+Multi-Arch: foreign
+Homepage: http://www.iana.org/time-zones
+
+Package: tzdata-java
+Priority: optional
+Section: java
+Installed-Size: 357
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: all
+Source: tzdata
+Version: 2016d-0+deb8u1
+Depends: tzdata (= 2016d-0+deb8u1)
+Filename: pool/main/t/tzdata/tzdata-java_2016d-0+deb8u1_all.deb
+Size: 82796
+MD5sum: 771654af4cec08b4c797e6617c6b0b30
+SHA1: 71ea0cbd51d8ab4e72142949f71e53a8e2d1b85f
+SHA256: 05eb4bdfc815a3f9c812103b2ef2c3c1b449207b8079342edffb0ea2a5a0efff
+Description: time zone and daylight-saving time data for use by java runtimes
+ This package contains data required for the implementation of
+ standard local time for many representative locations around the
+ globe. It is updated periodically to reflect changes made by
+ political bodies to time zone boundaries, UTC offsets, and
+ daylight-saving rules.
+ .
+ This package contains the data for use by Java runtimes.
 Homepage: http://www.iana.org/time-zones
 Multi-Arch: foreign
 
