@@ -34,28 +34,8 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Homepage: http://alioth.debian.org/projects/adduser/
 Multi-Arch: foreign
-
-Package: ash
-Priority: optional
-Section: shells
-Installed-Size: 66
-Maintainer: Gerrit Pape <pape@smarden.org>
-Architecture: all
-Source: dash
-Version: 0.5.7-4
-Pre-Depends: dash
-Filename: pool/main/d/dash/ash_0.5.7-4_all.deb
-Size: 29246
-MD5sum: e6e2812acec58ce2334373409f868a3a
-SHA1: e9eb2042573d9eb6239dfad5308d3bdcba475a59
-SHA256: d42e5b449ca88a484d2b1d16f9478a85e8d1d7aab9bc1c8dc1d9ad85141db484
-Description: compatibility package for dash
- This package allows upgrading ash to its replacement,
- dash. It includes the /bin/ash symlink.
- It can be removed as soon as /bin/ash is no longer used.
-Homepage: http://gondor.apana.org.au/~herbert/dash/
+Homepage: http://alioth.debian.org/projects/adduser/
 
 Package: avrdude
 Priority: extra
@@ -76,30 +56,6 @@ Description: software for programming Atmel AVR microcontrollers
  ROM and EEPROM contents of AVR microcontrollers using the in-system
  programming technique (ISP).
 Homepage: http://savannah.nongnu.org/projects/avrdude/
-
-Package: bash-doc
-Priority: optional
-Section: doc
-Installed-Size: 2581
-Maintainer: Matthias Klose <doko@debian.org>
-Architecture: all
-Source: bash
-Version: 4.3-11
-Replaces: bash (<< 4.3-2)
-Depends: dpkg (>= 1.15.4) | install-info
-Filename: pool/main/b/bash/bash-doc_4.3-11_all.deb
-Size: 1222618
-MD5sum: 378a634ef6825824c5e9e2cee7744334
-SHA1: 65ef28222495013f7102759ddc98a982b87ac3f7
-SHA256: 95e6c210aa7298670e5c6d26c99735bef6390d1475719affc6475e2b7bbaa2e4
-Description: Documentation and examples for the GNU Bourne Again SHell
- Bash is an sh-compatible command language interpreter that executes
- commands read from the standard input or from a file.  Bash also
- incorporates useful features from the Korn and C shells (ksh and csh).
- .
- This package contains the distributable documentation, all the
- examples and the main changelog.
-Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
 
 Package: brickpi-base
 Priority: normal
@@ -129,20 +85,6 @@ SHA1: 9af3ad5b348d5ca33873daa0c7aa823208f387aa
 SHA256: 3e972fd8d9b13b70e95e423c78b986d3c5ba0e09b2ebbd081f6487e68b5c437c
 Description: Installs the required raspberrypi bootloader files for the brickpi to work
 
-Package: brickpi-python
-Priority: required
-Section: base
-Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
-Architecture: all
-Version: 1.1
-Depends: python2.7 (>= 1.0.0)
-Filename: pool/main/b/brickpi-python/Python-BrickPi_1.0_all.deb
-Size: 18624
-MD5sum: 0d5378fbdfcbe3fda7d430fc8c2c2fef
-SHA1: 52ee1ca4c40473c27071201e563a1fc8a92aad45
-SHA256: 6eca412423b58125dc1eeaa992008025fb230ca4e10d6cb7ae36c2dab0f4f6c4
-Description: Installs the BrickPi Python Modules
-
 Package: debconf
 Priority: important
 Section: admin
@@ -166,27 +108,6 @@ Description: Debian configuration management system
  use Debconf to ask questions when they are installed.
 Multi-Arch: foreign
 
-Package: debconf-doc
-Priority: optional
-Section: doc
-Installed-Size: 453
-Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
-Architecture: all
-Source: debconf
-Version: 1.5.56
-Suggests: debian-policy (>= 3.5)
-Conflicts: debconf (<< 0.3.10)
-Filename: pool/main/d/debconf/debconf-doc_1.5.56_all.deb
-Size: 316560
-MD5sum: d7445e0e6ba23cb1c4d84ea6974a9e9b
-SHA1: 420077ba1d15e329ce9b7a5061823d486e469ee7
-SHA256: 50a710af9baaa478c720ddc1cbf3beeb1f8cfa92f14b1625afd823555193e5f4
-Description: debconf documentation
- This package contains lots of additional documentation for Debconf,
- including the debconf user's guide, documentation about using different
- backend databases via the /etc/debconf.conf file, and a developer's guide
- to debconf.
-
 Package: debconf-i18n
 Priority: important
 Section: localization
@@ -209,67 +130,6 @@ Description: full internationalization support for debconf
  debconf templates, and support for proper display of multibyte character
  sets.
 
-Package: debconf-utils
-Priority: optional
-Section: devel
-Installed-Size: 153
-Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
-Architecture: all
-Source: debconf
-Version: 1.5.56
-Replaces: debconf (<< 0.1.0)
-Depends: debconf (= 1.5.56)
-Conflicts: debconf (<< 0.1.0)
-Filename: pool/main/d/debconf/debconf-utils_1.5.56_all.deb
-Size: 57572
-MD5sum: 01a2380bfdc5eae6630bbf413989307e
-SHA1: 40427ad415be4d948aa6b6e6e53dc81f7e2d886c
-SHA256: e242ffce3af6d74ddb3ab9a547dd1337d75c8aabe45579af3aee7cdd30a104ee
-Description: debconf utilities
- This package contains some small utilities for debconf developers.
-
-Package: dh-systemd
-Priority: extra
-Section: admin
-Installed-Size: 99
-Maintainer: pkg-systemd-maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
-Architecture: all
-Source: init-system-helpers
-Version: 1.22
-Depends: perl, debhelper
-Suggests: augeas-tools
-Filename: pool/main/i/init-system-helpers/dh-systemd_1.22_all.deb
-Size: 18052
-MD5sum: 76663fd0de02db18e9e6a51e940249b7
-SHA1: 9de39fc2812b987636bd69f108494d4fd362b262
-SHA256: 59d0bd076ece349b53c063d6432547f66b131469b1b188fa105c67e050a09b00
-Description: debhelper add-on to handle systemd unit files
- dh-systemd provides a debhelper sequence addon named 'systemd' and the
- dh_systemd_enable/dh_systemd_start commands.
- .
- The dh_systemd_enable command adds the appropriate code to the postinst, prerm
- and postrm maint scripts to properly enable/disable systemd service files.
- The dh_systemd_start command deals with start/stop/restart on upgrades for
- systemd-only service files.
-Multi-Arch: foreign
-
-Package: diffutils-doc
-Priority: optional
-Section: doc
-Installed-Size: 732
-Maintainer: Santiago Vila <sanvila@debian.org>
-Architecture: all
-Source: diffutils
-Version: 1:3.3-1
-Filename: pool/main/d/diffutils/diffutils-doc_3.3-1_all.deb
-Size: 97114
-MD5sum: 80343f4f3d9ac0502294cd11536153d9
-SHA1: 3abb241fcd37cd83270f91f367ff204307a456d7
-SHA256: ae72bb0991bb07878fb4189a661e8a059c7a0011a43e6bf41cb52c0a2223a338
-Description: Documentation for GNU diffutils in HTML format
- This package contains the HTML documentation for GNU diffutils.
-Homepage: http://www.gnu.org/software/diffutils/
-
 Package: dpkg-dev
 Priority: optional
 Section: utils
@@ -284,20 +144,20 @@ Recommends: gcc | c-compiler, build-essential, fakeroot, gnupg | gnupg2, gpgv | 
 Suggests: debian-keyring
 Breaks: devscripts (<< 2.14.10), dpkg-cross (<< 2.0.0)
 Filename: pool/main/d/dpkg/dpkg-dev_1.17.27_all.deb
-Size: 1548054
-MD5sum: b6d1d7890c19f207a9a01177d862881a
-SHA1: 5a043500a6309921d368fa7d43a3c1713253ea78
-SHA256: 0e18fac671d716a2372ab6a4a56c2a8d0f4d4ea124873006c1d266db7dc7e58c
+Size: 1548208
+MD5sum: c61bffbab70bd01f84630347c9aebf91
+SHA1: f9ab48ffb40bd035f0938c3b68ad0d8bd90ad777
+SHA256: 8da1ad932bdd767fc715a43d098b7338328a81e770499b28063dd1805c46522f
 Description: Debian package development tools
  This package provides the development tools (including dpkg-source)
  required to unpack, build and upload Debian source packages.
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Origin: debian
 Homepage: https://wiki.debian.org/Teams/Dpkg
-Multi-Arch: foreign
+Origin: debian
 Bugs: debbugs://bugs.debian.org
+Multi-Arch: foreign
 
 Package: ev3lessons-archive-keyring
 Priority: required
@@ -312,24 +172,6 @@ MD5sum: d5cbff7ddd4fed0b541b7f8963f307e0
 SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
 SHA256: d91d5e002d8056dd9534f31f0f3b77470a04b65869b365aa9b0e547294fae3be
 Description: Installs the ev3lessons gpg key
-
-Package: gzip-win32
-Priority: extra
-Section: utils
-Installed-Size: 190
-Maintainer: Bdale Garbee <bdale@gag.com>
-Architecture: all
-Source: gzip
-Version: 1.6-4
-Suggests: wine
-Filename: pool/main/g/gzip/gzip-win32_1.6-4_all.deb
-Size: 92660
-MD5sum: c1d349d13dff78f6e6dd90e525558b14
-SHA1: c15db840edcc60cd591a5cc4d1d9a679a9bdc3eb
-SHA256: a8da068f25b89de96119da9f7cc59e0397ea104f0fb1e9d375bd936ad6b0ec4c
-Description: GNU compression utility (win32 build)
- This is a win32 version of gzip, meant to be used by the win32-loader
- component of Debian-Installer.
 
 Package: init-system-helpers
 Priority: extra
@@ -394,11 +236,11 @@ Source: audit
 Version: 1:2.4-1
 Replaces: libaudit0, libaudit1 (<< 1:2.2.1-2)
 Breaks: libaudit0, libaudit1 (<< 1:2.2.1-2)
-Filename: pool/main/a/audit/libaudit-common_2.4-1_all.deb
-Size: 13496
-MD5sum: c573d4b833ecfb5a76f706d43beef9f4
-SHA1: 1242e556b5e534421fc1d4b5f4de6f1d0e8a9b26
-SHA256: 30bbe5dae2bac5c794db7b8c82a84f6928a75a627e2fa3855ed9925138368e96
+Filename: pool/main/a/audit/libaudit-common_13a2.4-1_all.deb
+Size: 13502
+MD5sum: 91f5a412f21ee9522262fa605a22b4df
+SHA1: 12cc31bf6c6a2b244ae74858d89a05f59ed8464a
+SHA256: be7f873c8f149b53b8cc3c337b067050d18208cb0de3f8cf6114a29bd20a17e3
 Description: Dynamic library for security auditing - common files
  The audit-libs package contains the dynamic libraries needed for
  applications to use the audit framework. It is used to monitor systems for
@@ -423,10 +265,10 @@ Recommends: libfile-fcntllock-perl, bzip2, xz-utils
 Suggests: debian-keyring, gnupg | gnupg2, gpgv | gpgv2, gcc | c-compiler, binutils, patch
 Breaks: dpkg-dev (<< 1.15.6), patch (<< 2.7)
 Filename: pool/main/d/dpkg/libdpkg-perl_1.17.27_all.deb
-Size: 1074856
-MD5sum: 1223537e3b6cfa19d1c6a1b82a6d4b50
-SHA1: 55e6df4cf36b97eca65c64486356cd076dc0a5aa
-SHA256: b7bf8d90918a5e6374b117ba7557403fd60f63d259dfc429bb10d9a22b7bcd0e
+Size: 1075108
+MD5sum: eee02ee61657e0063c00f71b1e63e21f
+SHA1: db265c123f861d25ec2a720965db848f6c69ad1a
+SHA256: 2382e4d67177aae934a173fdcd1e94005bf19640a6c8f9e0dd20a39b7c2c8718
 Description: Dpkg perl modules
  This package provides the perl modules used by the scripts
  in dpkg-dev. They cover a wide range of functionality. Among them
@@ -458,71 +300,10 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Origin: debian
-Multi-Arch: foreign
 Homepage: https://wiki.debian.org/Teams/Dpkg
 Bugs: debbugs://bugs.debian.org
-
-Package: libgcj-common
-Priority: optional
-Section: java
-Installed-Size: 273
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Architecture: all
-Source: gcc-defaults (1.136)
-Version: 1:4.9.1-7
-Replaces: java-gcj-compat (<< 1.0.65-8), java-gcj-compat-dev (<< 1.0.80-2)
-Depends: python:any
-Conflicts: classpath (<= 0.04-4)
-Filename: pool/main/g/gcc-defaults/libgcj-common_4.9.1-7_all.deb
-Size: 161452
-MD5sum: eb29067d91249e36e0b1f5eac6b6f590
-SHA1: dc199730a8765ab92a5c08030308db84ad6622bf
-SHA256: ba8ac8a7eaaeb55ebc4b89fac0c6aa3569837b373fc6b7cea5fbd2bc541ae811
-Description: Java runtime library (common files)
- This package contains files shared by Classpath and libgcj libraries.
+Origin: debian
 Multi-Arch: foreign
-
-Package: liblzma-doc
-Priority: optional
-Section: doc
-Installed-Size: 3585
-Maintainer: Jonathan Nieder <jrnieder@gmail.com>
-Architecture: all
-Source: xz-utils
-Version: 5.1.1alpha+20120614-2
-Suggests: liblzma-dev
-Filename: pool/main/x/xz-utils/liblzma-doc_5.1.1alpha+20120614-2_all.deb
-Size: 341320
-MD5sum: 0f7d39c0c1a69defca0d9ab9d9832716
-SHA1: cbc498ddde4e925ffd4a1a106dac8a7a687e6edc
-SHA256: 113fea030652ea6a936fff270579f4f6394fb0c4306686ac4940c926cad24ebe
-Description: XZ-format compression library - API documentation
- This package contains a reference manual for the liblzma data
- compression library, in Doxygen-generated HTML files. The purpose
- of each struct, macro, and function in the public interface is
- explained.
-Homepage: http://tukaani.org/xz/
-
-Package: libpam-doc
-Priority: optional
-Section: doc
-Installed-Size: 986
-Maintainer: Steve Langasek <vorlon@debian.org>
-Architecture: all
-Source: pam
-Version: 1.1.8-3.1+deb8u1
-Provides: pam-doc
-Filename: pool/main/p/pam/libpam-doc_1.1.8-3.1+deb8u1_all.deb
-Size: 279542
-MD5sum: 1c0def94f78c58db54cc6e6436d3424e
-SHA1: 97898ef93358ab254680fea5e3ec6bb698cc17b2
-SHA256: 3ff96395e80821ce57411a100f2e5ddbf4f828d0d74bb5650a61c18531d33e99
-Description: Documentation of PAM
- Contains documentation (in HTML, ASCII, and PostScript format) for libpam,
- the Pluggable Authentication Modules library, a library that enables the
- local system administrator to choose how applications authenticate users.
-Homepage: http://pam.sourceforge.net/
 
 Package: libpam-runtime
 Priority: required
@@ -601,36 +382,30 @@ Description: internationalized substitute of Text::Wrap
  It provides wrap().
 Homepage: http://search.cpan.org/search?module=Text::WrapI18N
 
-Package: lsb
-Priority: extra
-Section: misc
-Installed-Size: 52
-Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
+Package: libtimedate-perl
+Priority: optional
+Section: perl
+Installed-Size: 96
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Architecture: all
-Version: 4.1+Debian13+nmu1
-Depends: lsb-core (>= 4.1+Debian13+nmu1), lsb-graphics (>= 4.1+Debian13+nmu1), lsb-cxx (>= 4.1+Debian13+nmu1), lsb-desktop (>= 4.1+Debian13+nmu1), lsb-printing (>= 4.1+Debian13+nmu1), lsb-languages (>= 4.1+Debian13+nmu1)
-Filename: pool/main/l/lsb/lsb_4.1+Debian13+nmu1_all.deb
-Size: 19970
-MD5sum: ceadc41955c4184fb5592ab74bad1c30
-SHA1: 66e69d4e78afa94b476cbd6404bc21bd198dfcfe
-SHA256: 8dbfff71d8ab54ec9bad79b1f2ba933420ffd197d808bf950080650dbe20e742
-Description: Linux Standard Base 4.1 support package
- The Linux Standard Base (http://www.linuxbase.org/) is a standard
- core system that third-party applications written for Linux can
- depend upon.
+Version: 2.3000-2
+Replaces: timedate
+Provides: timedate
+Depends: perl
+Breaks: timedate
+Filename: pool/main/libt/libtimedate-perl/libtimedate-perl_2.3000-2_all.deb
+Size: 42242
+MD5sum: 9643e09e3263c234d30ca42df33f0cdb
+SHA1: 12401585ca7f639b86997483494460ea3f0ca466
+SHA256: d083bf60f0af08085fa5b583e7d46fcff5a24e3de8b6817b7ae167654826517f
+Description: collection of modules to manipulate date/time information
+ TimeDate is a collection of Perl modules useful for manipulating date and
+ time information. Date::Parse can parse absolute date specifications in a
+ wide variety of input formats and many languages (via Date::Language).
  .
- This package provides an implementation of all modules of version 4.1
- of the Linux Standard Base for Debian on the Intel x86, Intel ia64
- (Itanium), IBM S390, and PowerPC 32-bit architectures with the Linux
- kernel. Future revisions of the specification and this package may
- support the LSB on additional architectures and kernels.
- .
- The intent of this package is to provide a best current practice way
- of installing and running LSB packages on Debian GNU/Linux. Its
- presence does not imply that Debian fully complies
- with the Linux Standard Base, and should not be construed as a
- statement that Debian is LSB-compliant.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
+ This package also includes Date::Format, which can format dates into strings,
+ as well as Time::Zone, which contains miscellaneous time zone functions.
+Homepage: https://metacpan.org/release/TimeDate
 
 Package: lsb-base
 Priority: required
@@ -639,12 +414,12 @@ Installed-Size: 72
 Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
 Architecture: all
 Source: lsb
-Version: 4.1+Debian13+nmu1
-Filename: pool/main/l/lsb/lsb-base_4.1+Debian13+nmu1_all.deb
-Size: 26730
-MD5sum: 7d13703342a7c60740f1473ac3f0eb43
-SHA1: f62ffc8eb766161c2c1fd17608077349d3df8cc5
-SHA256: bd5eb97905b1c190b8cd7dfc43f10cd5358329f8629568433c17e3ac50ada108
+Version: 4.1+Debian13+rpi1+nmu1
+Filename: pool/main/l/lsb/lsb-base_4.1+Debian13+rpi1+nmu1_all.deb
+Size: 26934
+MD5sum: 837f7b1f29c7f4ed354fd13d3b76fa2f
+SHA1: 94af60a9629f8cbdd6eb883572464a6c4a7122e8
+SHA256: 164132410da6b2267df4fe34391e8ecd44349d29636317b09c65f3aa1b5aa111
 Description: Linux Standard Base 4.1 init script functionality
  The Linux Standard Base (http://www.linuxbase.org/) is a standard
  core system that third-party applications written for Linux can
@@ -653,79 +428,8 @@ Description: Linux Standard Base 4.1 init script functionality
  This package only includes the init-functions shell library, which
  may be used by other packages' initialization scripts for console
  logging and other purposes.
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 Multi-Arch: foreign
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
-
-Package: lsb-invalid-mta
-Priority: extra
-Section: misc
-Installed-Size: 60
-Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
-Architecture: all
-Source: lsb
-Version: 4.1+Debian13+nmu1
-Provides: mail-transport-agent
-Suggests: lsb
-Conflicts: mail-transport-agent
-Filename: pool/main/l/lsb/lsb-invalid-mta_4.1+Debian13+nmu1_all.deb
-Size: 20332
-MD5sum: 6a8d518174a830a678303d1acdabd061
-SHA1: a15685105ef360781ad2efee15ef016edf43d2bb
-SHA256: 9a758d4193fa4b408a7a977ab5c25ab1acc8d7b123c87dbe68cea1f74cc57f7a
-Description: Linux Standard Base sendmail dummy
- The Linux Standard Base (http://www.linuxbase.org/) is a standard
- core system that third-party applications written for Linux can
- depend upon.
- .
- This package contains nothing else than a fake /usr/sbin/sendmail
- command to fulfill the LSB's requirement of providing this command without
- requiring an MTA to get installed, which once introduces a daemon which
- can cause security problems and second, users get asked questions about
- how they want their MTA configured when in reality they simply wanted to
- install a desktop application or a printer driver, but the dependency on
- LSB compliance pulls in an MTA with the installation.
- .
- The LSB requirement on /usr/sbin/sendmail comes from old times where Linux
- and Unix machines had all fixed IPs and did server tasks in data centers.
- Today's typical desktop Linux machines do not do local e-mail any more as
- users use external e-mail services.
- .
- The /usr/sbin/sendmail always exits with exit status -1 (255) and sends a
- warning message to stderr, so that if a program actually tries to send e-mail
- via the sendmail command the user gets note.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
-
-Package: lsb-release
-Priority: optional
-Section: misc
-Installed-Size: 97
-Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
-Architecture: all
-Source: lsb
-Version: 4.1+Debian13+nmu1
-Depends: python (>= 2.7), python (<< 2.8)
-Recommends: apt
-Suggests: lsb
-Filename: pool/main/l/lsb/lsb-release_4.1+Debian13+nmu1_all.deb
-Size: 26552
-MD5sum: c87cadffcd6ea819109965d6d12a83c1
-SHA1: 6f949f9ddc7148f0cd9914242dd9d3eebf56f852
-SHA256: ab5b923650efd86f3c405be475c5973d7f562f7ad015db7959e47e5ec105aa53
-Description: Linux Standard Base version reporting utility
- The Linux Standard Base (http://www.linuxbase.org/) is a standard
- core system that third-party applications written for Linux can
- depend upon.
- .
- The lsb-release command is a simple tool to help identify the Linux
- distribution being used and its compliance with the Linux Standard Base.
- LSB conformance will not be reported unless the required metapackages are
- installed.
- .
- While it is intended for use by LSB packages, this command may also
- be useful for programmatically distinguishing between a pure Debian
- installation and derived distributions.
-Multi-Arch: foreign
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
 
 Package: makedev
 Priority: extra
@@ -778,54 +482,37 @@ Description: basic terminal type definitions
 Multi-Arch: foreign
 Homepage: http://invisible-island.net/ncurses/
 
-Package: ncurses-doc
-Priority: optional
-Section: doc
-Installed-Size: 2293
-Maintainer: Craig Small <csmall@debian.org>
-Architecture: all
-Source: ncurses
-Version: 5.9+20140913-1
-Replaces: libncurses5-dev (<< 5.7+20101128)
-Filename: pool/main/n/ncurses/ncurses-doc_5.9+20140913-1_all.deb
-Size: 788034
-MD5sum: 36df3a49e39f18eb8a65a9ec13e25d35
-SHA1: 0648603ce6ade3a85fd0850d2abd1c2bdc5e79e1
-SHA256: b703d84d90b1eb711c7fd30b34b8e5177e0bfb6e9218116891ebebcd92f7771c
-Description: developer's guide and documentation for ncurses
- The ncurses library routines are a terminal-independent method of
- updating character screens with reasonable optimization.
- .
- This package contains an introduction to writing programs with
- ncurses a guide to the internals of the ncurses library.  It also
- includes the libraries' man pages.
- .
- Non-developers likely have little use for this package.
-Homepage: http://invisible-island.net/ncurses/
-
-Package: ncurses-term
+Package: perl-modules
 Priority: standard
-Section: misc
-Installed-Size: 2187
-Maintainer: Craig Small <csmall@debian.org>
+Section: perl
+Installed-Size: 15108
+Maintainer: Niko Tyni <ntyni@debian.org>
 Architecture: all
-Source: ncurses
-Version: 5.9+20140913-1
-Replaces: bogl-bterm (<< 0.1.18-7), mlterm-common (<< 3.0.2-1), ncurses-base (<< 5.7+20100313-1), suckless-tools (<< 39)
-Breaks: bogl-bterm (<< 0.1.18-7), mlterm-common (<< 3.0.2-1), suckless-tools (<< 39)
-Filename: pool/main/n/ncurses/ncurses-term_5.9+20140913-1_all.deb
-Size: 454310
-MD5sum: 9bd1618c3586620e73845c384592affe
-SHA1: d39d3b9c99e858996ced908e20acc8017ac58651
-SHA256: cd2ecd010955c07e234ea899de748fcbf95eeecd82cb77738d7437866355e128
-Description: additional terminal type definitions
- The ncurses library routines are a terminal-independent method of
- updating character screens with reasonable optimization.
+Source: perl
+Version: 5.20.2-3+deb8u6
+Replaces: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpan-meta-perl, libcpan-meta-requirements-perl, libcpan-meta-yaml-perl, libdigest-perl, libexperimental-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-spec-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libnet-perl, libnet-ping-perl, libpackage-constants-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
+Provides: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcpan-meta-perl, libcpan-meta-requirements-perl, libcpan-meta-yaml-perl, libdigest-perl, libexperimental-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-spec-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
+Depends: perl-base (>= 5.20.2-3+deb8u6)
+Pre-Depends: dpkg (>= 1.17.17)
+Recommends: perl (>= 5.20.2-1), libarchive-extract-perl, libmodule-pluggable-perl, libpod-latex-perl, libterm-ui-perl, libtext-soundex-perl, libcgi-pm-perl, libmodule-build-perl, libpackage-constants-perl
+Suggests: libb-lint-perl, libcpanplus-dist-build-perl, libcpanplus-perl, libfile-checktree-perl, liblog-message-simple-perl, liblog-message-perl, libobject-accessor-perl
+Conflicts: defoma (<< 0.11.12), mono-gac (<< 2.10.8.1-3)
+Breaks: cli-common (<< 0.9+nmu1), libansicolor-perl (<< 4.02), libarchive-tar-perl (<< 1.96), libattribute-handlers-perl (<< 0.96), libautodie-perl (<< 2.23), libcgi-pm-perl (<< 3.65), libcpan-meta-perl (<< 2.140640), libcpan-meta-requirements-perl (<< 2.125), libcpan-meta-yaml-perl (<< 0.012), libdigest-perl (<< 1.17), libexperimental-perl (<< 0.007), libextutils-cbuilder-perl (<< 0.280217), libextutils-command-perl (<< 1.18), libextutils-install-perl (<< 1.67), libextutils-parsexs-perl (<< 3.240000), libfile-spec-perl (<< 3.4801), libhttp-tiny-perl (<< 0.043), libi18n-langtags-perl (<< 0.40), libio-zlib-perl (<< 1.10), libjson-pp-perl (<< 2.27203), liblocale-codes-perl (<< 3.30), liblocale-maketext-perl (<< 1.25), liblocale-maketext-simple-perl (<< 0.21), libmath-bigint-perl (<< 1.9993), libmath-complex-perl (<< 1.59), libmodule-build-perl (<< 0.420500), libmodule-corelist-perl (<< 5.20150214), libmodule-load-conditional-perl (<< 0.62), libmodule-load-perl (<< 0.32), libmodule-metadata-perl (<< 1.000019), libnet-perl (<= 1:1.22), libnet-ping-perl (<< 2.43), libpackage-constants-perl (<< 0.04), libparams-check-perl (<< 0.38), libparent-perl (<< 0.228), libparse-cpan-meta-perl (<< 1.4414), libperl-ostype-perl (<< 1.007), libpod-escapes-perl (<< 1.06), libpod-parser-perl (<< 1.62), libpod-simple-perl (<< 3.28), libtest-harness-perl (<< 3.30), libtest-simple-perl (<< 1.001002), libthread-queue-perl (<< 3.05), libtime-local-perl (<< 1.2300), libunicode-collate-perl (<< 1.04), libversion-perl (<< 1:0.9909), libversion-requirements-perl (<< 0.101022), mono-apache-server2 (<< 3.8-2.1), mono-apache-server4 (<< 3.8-2.1), mono-fastcgi-server2 (<< 3.8-2.1), mono-fastcgi-server4 (<< 3.8-2.1), patcher (<< 0.0.20040521-6.1), pdl (<< 1:2.007-4), perl (<< 5.20.2~), podlators-perl (<< 2.3.1), polygen-data (<< 1.0.6.ds2-13.1), pristine-tar (<< 1.33), pure-ftpd-common (<< 1.0.36-3.2), rinse (<< 3.0.7), shorewall (<< 4.6.4.3-2), shorewall-core (<< 4.6.4.3-2), tvtime (<< 1.0.2-14)
+Filename: pool/main/p/perl/perl-modules_5.20.2-3+deb8u6_all.deb
+Size: 2546644
+MD5sum: 0d9a0dd06969ab4d8b68d49d598c9ec4
+SHA1: b08ba3dd6c6643cfbde1871ca2e6d42314ac8df5
+SHA256: 59c74e72dc08a7d13245cceee1b4877238503b2e24ef05209dd4ce34256d034c
+Description: Core Perl modules
+ Architecture independent Perl modules.  These modules are part of Perl and
+ required if the `perl' package is installed.
  .
- This package contains all of the numerous terminal definitions not found in
- the ncurses-base package.
+ Note that this package only exists to save archive space and should be
+ considered an internal implementation detail of the `perl' package.
+ Other packages should not depend on `perl-modules' directly, they
+ should use `perl' (which depends on `perl-modules') instead.
 Multi-Arch: foreign
-Homepage: http://invisible-island.net/ncurses/
+Homepage: http://dev.perl.org/perl5/
 
 Package: raspbian-archive-keyring
 Priority: important
@@ -916,8 +603,8 @@ Description: System-V-like runlevel change mechanism
  This package provides support for the System-V like system
  for booting, changing runlevels, and shutting down,
  configured through symbolic links in /etc/rc?.d/.
-Multi-Arch: foreign
 Homepage: http://savannah.nongnu.org/projects/sysvinit
+Multi-Arch: foreign
 
 Package: tzdata
 Priority: required
@@ -940,53 +627,6 @@ Description: time zone and daylight-saving time data
  globe. It is updated periodically to reflect changes made by
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
-Multi-Arch: foreign
-Homepage: http://www.iana.org/time-zones
-
-Package: tzdata-java
-Priority: optional
-Section: java
-Installed-Size: 357
-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
-Architecture: all
-Source: tzdata
-Version: 2016d-0+deb8u1
-Depends: tzdata (= 2016d-0+deb8u1)
-Filename: pool/main/t/tzdata/tzdata-java_2016d-0+deb8u1_all.deb
-Size: 82796
-MD5sum: 771654af4cec08b4c797e6617c6b0b30
-SHA1: 71ea0cbd51d8ab4e72142949f71e53a8e2d1b85f
-SHA256: 05eb4bdfc815a3f9c812103b2ef2c3c1b449207b8079342edffb0ea2a5a0efff
-Description: time zone and daylight-saving time data for use by java runtimes
- This package contains data required for the implementation of
- standard local time for many representative locations around the
- globe. It is updated periodically to reflect changes made by
- political bodies to time zone boundaries, UTC offsets, and
- daylight-saving rules.
- .
- This package contains the data for use by Java runtimes.
 Homepage: http://www.iana.org/time-zones
 Multi-Arch: foreign
-
-Package: util-linux-locales
-Priority: optional
-Section: localization
-Installed-Size: 5386
-Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
-Architecture: all
-Source: util-linux
-Version: 2.25.2-6
-Replaces: util-linux (<< 2.11b)
-Depends: util-linux (>= 2.25.2)
-Filename: pool/main/u/util-linux/util-linux-locales_2.25.2-6_all.deb
-Size: 866566
-MD5sum: c0f9d0c3d7bbf211758f74b1d0ffae16
-SHA1: 54fb09d6bec5c343783116dd07dea33af57d8c45
-SHA256: 66f8aa4ec02aa3904ae16dcbe184578be201078f2e04382664d3bfee83725d62
-Description: Locales files for util-linux
- This package contains the internationalization files of for the util-linux
- package.
- .
- They are needed when you want the programs in util-linux to print their
- messages in other languages than English.
 
