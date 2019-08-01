@@ -99,10 +99,10 @@ Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Priority: required
 Section: base
 Filename: pool/main/r/raspberrypi3-kernel/raspberrypi3-kernel_4.15.0_arm64.deb
-Size: 102432632
-SHA256: b9e39796bcb540a241129abcc6f571e457c8bc815bacd7612364c5a37854ac04
-SHA1: d3e8c9ec82df2947fd383e5c2f7f02365e0bf5d8
-MD5sum: 5d4bb679060093d72f0c4a6a79efc85e
+Size: 102426472
+SHA256: e10ade7cba1f770f7549c2461fb2b082578bd7936fc31457e323ef630c3b37ff
+SHA1: 5b674c0683c454a1befc205bd02002542f044729
+MD5sum: 33981178887ecfb59bd2303cf589688d
 Description: Raspberry Pi 3 kernel in aarch64 mode
 
 Package: raspberrypi4-kernel
@@ -113,10 +113,10 @@ Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Priority: required
 Section: base
 Filename: pool/main/r/raspberrypi4-kernel/raspberrypi4-kernel_4.19.59_arm64.deb
-Size: 86877092
-SHA256: 9f4f94cd85f1cfa0796fe7037563672a57ce11a9ce0789cc8bf0d601da50e6ac
-SHA1: 2253395062163400cab147a7f26e038bfef99002
-MD5sum: 938a2745eb8c97fe0faab9838423766d
+Size: 86878844
+SHA256: bbf646da426ca08102011969db1e7bff2f2202906a62bf4c73a5e3a5e833abd8
+SHA1: bd75d91e12c7fee74e4ccb8de6ca7a9d81c8b325
+MD5sum: eb07d46dc58829fc28c5e0e8a27e16d2
 Description: Raspberry Pi 4 kernel in aarch64 mode
 
 Package: raspi-config

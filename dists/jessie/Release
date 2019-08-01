@@ -1,7 +1,7 @@
 Origin: rpi
 Label: rpi
 Codename: jessie
-Date: Thu, 01 Aug 2019 00:24:50 UTC
+Date: Thu, 01 Aug 2019 02:09:43 UTC
 Architectures: arm64 armhf armv6hf i386 armel amd64
 Components: main
 Description: Apt repository for rpi
