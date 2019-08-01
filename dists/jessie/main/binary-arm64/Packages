@@ -1,18 +1,20 @@
 Package: adduser
-Priority: important
-Section: admin
-Installed-Size: 1066
-Maintainer: Debian Adduser Developers <adduser-devel@lists.alioth.debian.org>
-Architecture: all
 Version: 3.113+nmu3
-Replaces: manpages-it (<< 0.3.4-2), manpages-pl (<= 20051117-1)
+Architecture: all
+Maintainer: Debian Adduser Developers <adduser-devel@lists.alioth.debian.org>
+Installed-Size: 1066
 Depends: perl-base (>= 5.6.0), passwd (>= 1:4.0.12), debconf | debconf-2.0
 Suggests: liblocale-gettext-perl, perl-modules
+Replaces: manpages-it (<< 0.3.4-2), manpages-pl (<= 20051117-1)
+Multi-Arch: foreign
+Homepage: http://alioth.debian.org/projects/adduser/
+Priority: important
+Section: admin
 Filename: pool/main/a/adduser/adduser_3.113+nmu3_all.deb
 Size: 263714
-MD5sum: 9b7a9665cd1a6290786478931aafa9bc
-SHA1: 40d47adb274cc8e5e5fd19d7e26f17171e2db40f
 SHA256: ae69ab0da5c36e48ba38e27c5e0886d6a67988adead5e5324b9b90736d37c11e
+SHA1: 40d47adb274cc8e5e5fd19d7e26f17171e2db40f
+MD5sum: 9b7a9665cd1a6290786478931aafa9bc
 Description: add and remove users and groups
  This package includes the 'adduser' and 'deluser' commands for creating
  and removing users.
@@ -34,96 +36,94 @@ Description: add and remove users and groups
  .
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
-Homepage: http://alioth.debian.org/projects/adduser/
-Multi-Arch: foreign
 
 Package: avrdude
-Priority: extra
-Section: electronics
-Installed-Size: 933
-Maintainer: Michael Biebl <biebl@debian.org>
-Architecture: arm64
 Version: 6.1-2
+Architecture: arm64
+Maintainer: Michael Biebl <biebl@debian.org>
+Installed-Size: 933
 Depends: libc6 (>= 2.17), libelf1 (>= 0.142), libftdi1 (>= 0.20), libncurses5 (>= 5.5-5~), libreadline6 (>= 6.0), libtinfo5, libusb-0.1-4 (>= 2:0.1.12)
 Suggests: avrdude-doc
+Homepage: http://savannah.nongnu.org/projects/avrdude/
+Priority: extra
+Section: electronics
 Filename: pool/main/a/avrdude/avrdude_6.1-2_arm64.deb
 Size: 244210
-MD5sum: fece179d6b43b981b952eba5f770499d
-SHA1: 3192600cf6819bbe66663850febf1788a55f0058
 SHA256: d5103d25cee0c3652efde824688bdfcfdc76e3910106451d79c6923cf2cb0a27
+SHA1: 3192600cf6819bbe66663850febf1788a55f0058
+MD5sum: fece179d6b43b981b952eba5f770499d
 Description: software for programming Atmel AVR microcontrollers
  AVRDUDE is an open source utility to download/upload/manipulate the
  ROM and EEPROM contents of AVR microcontrollers using the in-system
  programming technique (ISP).
-Homepage: http://savannah.nongnu.org/projects/avrdude/
 
 Package: brickpi-base
+Version: 1.0
+Architecture: all
+Depends: raspberrypi-bootloader (>= 1.0.0), brickpi-boot (>= 1.0.0), python-pip (>= 1.0.0), libi2c-dev (>= 1.0.0), python-serial (>= 1.0.0), python-rpi.gpio (>= 1.0.0), i2c-tools (>= 1.0.0), python-smbus (>= 1.0.0), arduino (>= 1.0.0), minicom (>= 1.0.0), libnss-mdns (>= 1.0.0), python-dev (>= 1.0.0)
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Priority: normal
 Section: brickpi
-Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
-Architecture: all
-Version: 1.0
-Depends: raspberrypi-bootloader (>= 1.0.0), brickpi-boot (>= 1.0.0), python-pip (>= 1.0.0), libi2c-dev (>= 1.0.0), python-serial (>= 1.0.0), python-rpi.gpio (>= 1.0.0), i2c-tools (>= 1.0.0), python-smbus (>= 1.0.0), arduino (>= 1.0.0), minicom (>= 1.0.0), libnss-mdns (>= 1.0.0), python-dev (>= 1.0.0)
-Filename: pool/main/b/brickpi-base/BrickPiMain_1.0_all.deb
+Filename: pool/main/b/brickpi-base/brickpi-base_1.0_all.deb
 Size: 3826
-MD5sum: c185ddd004bd187dfb4a1605d48c2c4b
-SHA1: a36bc3c2958ec3f9919b6bc3fe51877265386079
 SHA256: 0ece7dcdc55e2278b01de608dbf3e2d6af9b669f6ddc196f4dc84ca02af3c3d8
+SHA1: a36bc3c2958ec3f9919b6bc3fe51877265386079
+MD5sum: c185ddd004bd187dfb4a1605d48c2c4b
 Description: Installs the base files for the BrickPi
 
 Package: brickpi-boot
+Version: 1.0
+Architecture: all
+Depends: raspberrypi-bootloader (>= 1.0.0)
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Priority: normal
 Section: brickpi
-Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
-Architecture: all
-Version: 1.0
-Depends: raspberrypi-bootloader (>= 1.0.0)
-Filename: pool/main/b/brickpi-boot/BrickPiBoot_1.0_all.deb
+Filename: pool/main/b/brickpi-boot/brickpi-boot_1.0_all.deb
 Size: 2384
-MD5sum: ea7f4c69344fa38475181d68cb52ff1d
-SHA1: 9af3ad5b348d5ca33873daa0c7aa823208f387aa
 SHA256: 3e972fd8d9b13b70e95e423c78b986d3c5ba0e09b2ebbd081f6487e68b5c437c
+SHA1: 9af3ad5b348d5ca33873daa0c7aa823208f387aa
+MD5sum: ea7f4c69344fa38475181d68cb52ff1d
 Description: Installs the required raspberrypi bootloader files for the brickpi to work
 
 Package: debconf
-Priority: important
-Section: admin
-Installed-Size: 614
-Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
-Architecture: all
 Version: 1.5.56
-Replaces: debconf-tiny
-Provides: debconf-2.0
+Architecture: all
+Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+Installed-Size: 614
 Pre-Depends: perl-base (>= 5.6.1-4)
 Recommends: apt-utils (>= 0.5.1), debconf-i18n
 Suggests: debconf-doc, debconf-utils, whiptail | dialog | gnome-utils, libterm-readline-gnu-perl, libgtk2-perl (>= 1:1.130), libnet-ldap-perl, perl, libqtgui4-perl, libqtcore4-perl
 Conflicts: apt (<< 0.3.12.1), cdebconf (<< 0.96), debconf-tiny, debconf-utils (<< 1.3.22), dialog (<< 0.9b-20020814-1), menu (<= 2.1.3-1), whiptail (<< 0.51.4-11), whiptail-utf8 (<= 0.50.17-13)
+Replaces: debconf-tiny
+Provides: debconf-2.0
+Multi-Arch: foreign
+Priority: important
+Section: admin
 Filename: pool/main/d/debconf/debconf_1.5.56_all.deb
 Size: 167410
-MD5sum: bf11b982800b3a06a471e64987ff86a0
-SHA1: 7b71e696e29eb3698fea3b5d36cc3b09b640563e
 SHA256: bc773e0b34097ec23baeb08c48f66639a88c23815b0ca9903710c6cc2c8e9041
+SHA1: 7b71e696e29eb3698fea3b5d36cc3b09b640563e
+MD5sum: bf11b982800b3a06a471e64987ff86a0
 Description: Debian configuration management system
  Debconf is a configuration management system for debian packages. Packages
  use Debconf to ask questions when they are installed.
-Multi-Arch: foreign
 
 Package: debconf-i18n
-Priority: important
-Section: localization
-Installed-Size: 1091
-Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
-Architecture: all
 Source: debconf
 Version: 1.5.56
-Replaces: debconf (<< 1.3.0), debconf-utils (<< 1.3.22)
+Architecture: all
+Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+Installed-Size: 1091
 Depends: debconf (= 1.5.56), liblocale-gettext-perl, libtext-iconv-perl, libtext-wrapi18n-perl, libtext-charwidth-perl
 Conflicts: debconf-english, debconf-utils (<< 1.3.22)
+Replaces: debconf (<< 1.3.0), debconf-utils (<< 1.3.22)
+Priority: important
+Section: localization
 Filename: pool/main/d/debconf/debconf-i18n_1.5.56_all.deb
 Size: 206050
-MD5sum: 04c44a2e1ad92b95fe80e207e8eefef4
-SHA1: a8cd8f3ff912732c0fc8a81ed36ed9370e145767
 SHA256: 7466e5710ced6992091824e48fd7eb190ceba42209b8c7a6f726533863f946f9
+SHA1: a8cd8f3ff912732c0fc8a81ed36ed9370e145767
+MD5sum: 04c44a2e1ad92b95fe80e207e8eefef4
 Description: full internationalization support for debconf
  This package provides full internationalization for debconf, including
  translations into all available languages, support for using translated
@@ -131,62 +131,63 @@ Description: full internationalization support for debconf
  sets.
 
 Package: dpkg-dev
-Priority: optional
-Section: utils
-Installed-Size: 1791
-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
-Architecture: all
 Source: dpkg
 Version: 1.17.27
-Replaces: manpages-it (<< 2.80-4)
+Architecture: all
+Origin: debian
+Bugs: debbugs://bugs.debian.org
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Installed-Size: 1791
 Depends: libdpkg-perl (= 1.17.27), bzip2, xz-utils, patch (>= 2.7), make, binutils, base-files (>= 5.0.0)
 Recommends: gcc | c-compiler, build-essential, fakeroot, gnupg | gnupg2, gpgv | gpgv2, libalgorithm-merge-perl
 Suggests: debian-keyring
 Breaks: devscripts (<< 2.14.10), dpkg-cross (<< 2.0.0)
+Replaces: manpages-it (<< 2.80-4)
+Multi-Arch: foreign
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Priority: optional
+Section: utils
 Filename: pool/main/d/dpkg/dpkg-dev_1.17.27_all.deb
 Size: 1548208
-MD5sum: c61bffbab70bd01f84630347c9aebf91
-SHA1: f9ab48ffb40bd035f0938c3b68ad0d8bd90ad777
 SHA256: 8da1ad932bdd767fc715a43d098b7338328a81e770499b28063dd1805c46522f
+SHA1: f9ab48ffb40bd035f0938c3b68ad0d8bd90ad777
+MD5sum: c61bffbab70bd01f84630347c9aebf91
 Description: Debian package development tools
  This package provides the development tools (including dpkg-source)
  required to unpack, build and upload Debian source packages.
  .
  Most Debian source packages will require additional tools to build;
  for example, most packages need make and the C compiler gcc.
-Bugs: debbugs://bugs.debian.org
-Multi-Arch: foreign
-Homepage: https://wiki.debian.org/Teams/Dpkg
-Origin: debian
 
 Package: ev3lessons-archive-keyring
+Version: 1.0
+Architecture: all
+Depends: apt (>= 1.0.0)
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Priority: required
 Section: base
-Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
-Architecture: all
-Version: 1.0
-Depends: apt (>= 1.0.0)
 Filename: pool/main/e/ev3lessons-archive-keyring/ev3lessons-archive-keyring_1.0_all.deb
 Size: 1998
-MD5sum: d5cbff7ddd4fed0b541b7f8963f307e0
-SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
 SHA256: d91d5e002d8056dd9534f31f0f3b77470a04b65869b365aa9b0e547294fae3be
+SHA1: f1852f3d2ecce13dfbd08973ac1a2d9ca6d1d1f3
+MD5sum: d5cbff7ddd4fed0b541b7f8963f307e0
 Description: Installs the ev3lessons gpg key
 
 Package: init-system-helpers
-Priority: extra
-Section: admin
-Installed-Size: 97
-Maintainer: pkg-systemd-maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
-Architecture: all
 Version: 1.22
+Architecture: all
+Maintainer: pkg-systemd-maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 97
 Depends: perl-base (>= 5.20.1-3)
 Breaks: systemd (<< 44-12)
+Multi-Arch: foreign
+Priority: extra
+Section: admin
 Filename: pool/main/i/init-system-helpers/init-system-helpers_1.22_all.deb
 Size: 14026
-MD5sum: af77e64e51c53668d735a760bec4fb75
-SHA1: d0296765f47f15649e5328f70b9c946143f9ba26
 SHA256: bd10514a4fb6b377ec5fddb6f3dcdefe30d840c32d3dd5376d09e5a2dfc953dd
+SHA1: d0296765f47f15649e5328f70b9c946143f9ba26
+MD5sum: af77e64e51c53668d735a760bec4fb75
 Description: helper tools for all init systems
  This package contains helper tools that are necessary for switching between
  the various init systems that Debian contains (e.g. sysvinit, upstart,
@@ -196,26 +197,26 @@ Description: helper tools for all init systems
  While this package is maintained by pkg-systemd-maintainers, it is NOT
  specific to systemd at all. Maintainers of other init systems are welcome to
  include their helpers in this package.
-Multi-Arch: foreign
 
 Package: initramfs-tools
-Priority: optional
-Section: utils
-Installed-Size: 347
-Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
-Architecture: all
 Version: 0.120+deb8u2
-Provides: linux-initramfs-tool
+Architecture: all
+Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+Installed-Size: 347
 Depends: klibc-utils (>= 2.0-1~), cpio, kmod | module-init-tools, udev, klibc-utils (>= 2.0.4-1.2~) | busybox (>= 1:1.01-3) | busybox-initramfs | busybox-static
 Recommends: busybox (>= 1:1.01-3) | busybox-initramfs | busybox-static
 Suggests: bash-completion
 Conflicts: linux-initramfs-tool, usplash (<< 0.5.50)
 Breaks: console-setup (<< 1.72), cryptsetup (<< 2:1.6.6-4~), elilo (<< 3.12-3.1~), lilo (<< 22.8-8.2~), lvm2 (<< 2.02.111-2.1~), s390-tools (<< 1.8.3-2~), systemd-sysv (<< 186)
+Provides: linux-initramfs-tool
+Multi-Arch: foreign
+Priority: optional
+Section: utils
 Filename: pool/main/i/initramfs-tools/initramfs-tools_0.120+deb8u2_all.deb
 Size: 96350
-MD5sum: 193cdd69f5b01e794a80a1cc086e5c03
-SHA1: 22fe77ee5a1cc270d706a39371ef1dbc435e661e
 SHA256: f2ac374e85f6aef8a22d67c3be63f45fc70f2181cd772975f0235de937028312
+SHA1: 22fe77ee5a1cc270d706a39371ef1dbc435e661e
+MD5sum: 193cdd69f5b01e794a80a1cc086e5c03
 Description: generic modular initramfs generator
  This package contains tools to create a bootable initramfs for Linux kernel
  packages. The initramfs is a compressed cpio archive. At boot time, the
@@ -224,23 +225,24 @@ Description: generic modular initramfs generator
  klibc provides utilities to setup root. Having the root on MD, LVM2, LUKS or
  NFS is also supported.
  Any boot loader with initrd support is able to load an initramfs archive.
-Multi-Arch: foreign
 
 Package: libaudit-common
-Priority: optional
-Section: libs
-Installed-Size: 49
-Maintainer: Laurent Bigonville <bigon@debian.org>
-Architecture: all
 Source: audit
 Version: 1:2.4-1
-Replaces: libaudit0, libaudit1 (<< 1:2.2.1-2)
+Architecture: all
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 49
 Breaks: libaudit0, libaudit1 (<< 1:2.2.1-2)
-Filename: pool/main/a/audit/libaudit-common_13a2.4-1_all.deb
+Replaces: libaudit0, libaudit1 (<< 1:2.2.1-2)
+Multi-Arch: foreign
+Homepage: http://people.redhat.com/sgrubb/audit/
+Priority: optional
+Section: libs
+Filename: pool/main/a/audit/libaudit-common_2.4-1_all.deb
 Size: 13502
-MD5sum: 91f5a412f21ee9522262fa605a22b4df
-SHA1: 12cc31bf6c6a2b244ae74858d89a05f59ed8464a
 SHA256: be7f873c8f149b53b8cc3c337b067050d18208cb0de3f8cf6114a29bd20a17e3
+SHA1: 12cc31bf6c6a2b244ae74858d89a05f59ed8464a
+MD5sum: 91f5a412f21ee9522262fa605a22b4df
 Description: Dynamic library for security auditing - common files
  The audit-libs package contains the dynamic libraries needed for
  applications to use the audit framework. It is used to monitor systems for
@@ -248,27 +250,29 @@ Description: Dynamic library for security auditing - common files
  .
  This package contains the libaudit.conf configuration file and the associated
  manpage.
-Multi-Arch: foreign
-Homepage: http://people.redhat.com/sgrubb/audit/
 
 Package: libdpkg-perl
-Priority: optional
-Section: perl
-Installed-Size: 2211
-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
-Architecture: all
 Source: dpkg
 Version: 1.17.27
-Replaces: dpkg (<< 1.15.8), dpkg-dev (<< 1.15.6)
+Architecture: all
+Origin: debian
+Bugs: debbugs://bugs.debian.org
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Installed-Size: 2211
 Depends: dpkg (>= 1.15.8), perl, libtimedate-perl
 Recommends: libfile-fcntllock-perl, bzip2, xz-utils
 Suggests: debian-keyring, gnupg | gnupg2, gpgv | gpgv2, gcc | c-compiler, binutils, patch
 Breaks: dpkg-dev (<< 1.15.6), patch (<< 2.7)
+Replaces: dpkg (<< 1.15.8), dpkg-dev (<< 1.15.6)
+Multi-Arch: foreign
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Priority: optional
+Section: perl
 Filename: pool/main/d/dpkg/libdpkg-perl_1.17.27_all.deb
 Size: 1075108
-MD5sum: eee02ee61657e0063c00f71b1e63e21f
-SHA1: db265c123f861d25ec2a720965db848f6c69ad1a
 SHA256: 2382e4d67177aae934a173fdcd1e94005bf19640a6c8f9e0dd20a39b7c2c8718
+SHA1: db265c123f861d25ec2a720965db848f6c69ad1a
+MD5sum: eee02ee61657e0063c00f71b1e63e21f
 Description: Dpkg perl modules
  This package provides the perl modules used by the scripts
  in dpkg-dev. They cover a wide range of functionality. Among them
@@ -300,49 +304,47 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
-Multi-Arch: foreign
-Origin: debian
-Bugs: debbugs://bugs.debian.org
-Homepage: https://wiki.debian.org/Teams/Dpkg
 
 Package: libpam-runtime
-Priority: required
-Section: admin
-Installed-Size: 1447
-Maintainer: Steve Langasek <vorlon@debian.org>
-Architecture: all
 Source: pam
 Version: 1.1.8-3.1+deb8u1
-Replaces: libpam0g-dev, libpam0g-util
+Architecture: all
+Maintainer: Steve Langasek <vorlon@debian.org>
+Installed-Size: 1447
 Depends: debconf (>= 0.5) | debconf-2.0, debconf (>= 1.5.19) | cdebconf, libpam-modules (>= 1.0.1-6)
 Conflicts: libpam0g-util
+Replaces: libpam0g-dev, libpam0g-util
+Multi-Arch: foreign
+Homepage: http://pam.sourceforge.net/
+Priority: required
+Section: admin
 Filename: pool/main/p/pam/libpam-runtime_1.1.8-3.1+deb8u1_all.deb
 Size: 212608
-MD5sum: 61450f7851fd0af69e3b534b4681ad12
-SHA1: a8c5688b501a22617c4634acbb712514974ce2bc
 SHA256: 5bee3794abe9085ec4d7b92bc50f7b490a20a54f6be6555fc1415876960a2d0a
+SHA1: a8c5688b501a22617c4634acbb712514974ce2bc
+MD5sum: 61450f7851fd0af69e3b534b4681ad12
 Description: Runtime support for the PAM library
  Contains configuration files and  directories required for
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
-Homepage: http://pam.sourceforge.net/
-Multi-Arch: foreign
 
 Package: libsemanage-common
-Priority: optional
-Section: libs
-Installed-Size: 65
-Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
-Architecture: all
 Source: libsemanage
 Version: 2.3-1
-Replaces: libsemanage1 (<= 2.0.41-1), libsemanage1-dev (<< 2.1.6-3~)
+Architecture: all
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 65
 Breaks: libsemanage1 (<= 2.0.41-1), libsemanage1-dev (<< 2.1.6-3~)
+Replaces: libsemanage1 (<= 2.0.41-1), libsemanage1-dev (<< 2.1.6-3~)
+Multi-Arch: foreign
+Homepage: http://userspace.selinuxproject.org/
+Priority: optional
+Section: libs
 Filename: pool/main/libs/libsemanage/libsemanage-common_2.3-1_all.deb
 Size: 24580
-MD5sum: 0b201e8dac4668c70a6755ef82e0ece1
-SHA1: 29b16f92cb55964bae28e113f2d7dd0667257e71
 SHA256: 6cee4cf858797141ecb5775f33a82cb7ffb5d2c047a0fb9f4ed08005b9c33671
+SHA1: 29b16f92cb55964bae28e113f2d7dd0667257e71
+MD5sum: 0b201e8dac4668c70a6755ef82e0ece1
 Description: Common files for SELinux policy management libraries
  This package provides the common files used by the shared libraries
  for SELinux policy management.
@@ -356,22 +358,21 @@ Description: Common files for SELinux policy management libraries
  of many kinds of mandatory access control policies, including those
  based on the concepts of Type Enforcement, Role-based Access
  Control, and Multi-level Security.
-Multi-Arch: foreign
-Homepage: http://userspace.selinuxproject.org/
 
 Package: libtext-wrapi18n-perl
+Version: 0.06-7
+Architecture: all
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 53
+Depends: libtext-charwidth-perl
+Homepage: http://search.cpan.org/search?module=Text::WrapI18N
 Priority: required
 Section: perl
-Installed-Size: 53
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Architecture: all
-Version: 0.06-7
-Depends: libtext-charwidth-perl
 Filename: pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7_all.deb
 Size: 8980
-MD5sum: 4232fe55dda8ac097ab215127d397fbc
-SHA1: 05671bec9ed3b620338c2e7be8d596e74a578538
 SHA256: e51e82096fa987f484a3ed89140a284051c0d414a1ec9920af72134054aa6d0e
+SHA1: 05671bec9ed3b620338c2e7be8d596e74a578538
+MD5sum: 4232fe55dda8ac097ab215127d397fbc
 Description: internationalized substitute of Text::Wrap
  This module is a substitution for Text::Wrap, supporting
  multibyte characters such as UTF-8, EUC-JP, and GB2312, fullwidth
@@ -380,24 +381,24 @@ Description: internationalized substitute of Text::Wrap
  use whitespaces between words such as Chinese and Japanese.
  .
  It provides wrap().
-Homepage: http://search.cpan.org/search?module=Text::WrapI18N
 
 Package: libtimedate-perl
-Priority: optional
-Section: perl
-Installed-Size: 96
-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
-Architecture: all
 Version: 2.3000-2
-Replaces: timedate
-Provides: timedate
+Architecture: all
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 96
 Depends: perl
 Breaks: timedate
+Replaces: timedate
+Provides: timedate
+Homepage: https://metacpan.org/release/TimeDate
+Priority: optional
+Section: perl
 Filename: pool/main/libt/libtimedate-perl/libtimedate-perl_2.3000-2_all.deb
 Size: 42242
-MD5sum: 9643e09e3263c234d30ca42df33f0cdb
-SHA1: 12401585ca7f639b86997483494460ea3f0ca466
 SHA256: d083bf60f0af08085fa5b583e7d46fcff5a24e3de8b6817b7ae167654826517f
+SHA1: 12401585ca7f639b86997483494460ea3f0ca466
+MD5sum: 9643e09e3263c234d30ca42df33f0cdb
 Description: collection of modules to manipulate date/time information
  TimeDate is a collection of Perl modules useful for manipulating date and
  time information. Date::Parse can parse absolute date specifications in a
@@ -405,21 +406,22 @@ Description: collection of modules to manipulate date/time information
  .
  This package also includes Date::Format, which can format dates into strings,
  as well as Time::Zone, which contains miscellaneous time zone functions.
-Homepage: https://metacpan.org/release/TimeDate
 
 Package: lsb-base
-Priority: required
-Section: misc
-Installed-Size: 72
-Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
-Architecture: all
 Source: lsb
 Version: 4.1+Debian13+rpi1+nmu1
+Architecture: all
+Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
+Installed-Size: 72
+Multi-Arch: foreign
+Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
+Priority: required
+Section: misc
 Filename: pool/main/l/lsb/lsb-base_4.1+Debian13+rpi1+nmu1_all.deb
 Size: 26934
-MD5sum: 837f7b1f29c7f4ed354fd13d3b76fa2f
-SHA1: 94af60a9629f8cbdd6eb883572464a6c4a7122e8
 SHA256: 164132410da6b2267df4fe34391e8ecd44349d29636317b09c65f3aa1b5aa111
+SHA1: 94af60a9629f8cbdd6eb883572464a6c4a7122e8
+MD5sum: 837f7b1f29c7f4ed354fd13d3b76fa2f
 Description: Linux Standard Base 4.1 init script functionality
  The Linux Standard Base (http://www.linuxbase.org/) is a standard
  core system that third-party applications written for Linux can
@@ -428,23 +430,22 @@ Description: Linux Standard Base 4.1 init script functionality
  This package only includes the init-functions shell library, which
  may be used by other packages' initialization scripts for console
  logging and other purposes.
-Homepage: http://www.linuxfoundation.org/collaborate/workgroups/lsb
-Multi-Arch: foreign
 
 Package: makedev
-Priority: extra
-Section: admin
-Installed-Size: 126
-Maintainer: Debian QA Group <packages@qa.debian.org>
-Architecture: all
 Version: 2.3.1-93
+Architecture: all
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 126
 Depends: base-passwd (>= 3.0.4)
 Conflicts: udev (<= 0.024-7)
+Multi-Arch: foreign
+Priority: extra
+Section: admin
 Filename: pool/main/m/makedev/makedev_2.3.1-93_all.deb
 Size: 42582
-MD5sum: e438bdc64c4d1a81e13213f03368b4ef
-SHA1: 8c579e5006c4709c027dfbd09c11dd399cbeff7f
 SHA256: 43e93d32318cece9adf01067d9e700dc4600d3627aa15c7e1b238f6b9e2cd276
+SHA1: 8c579e5006c4709c027dfbd09c11dd399cbeff7f
+MD5sum: e438bdc64c4d1a81e13213f03368b4ef
 Description: creates device files in /dev
  The MAKEDEV executable is used to create device files, often in /dev.
  .
@@ -453,25 +454,26 @@ Description: creates device files in /dev
  .
  This package is not necessary for most modern Linux systems, where the udev
  subsystem provides a more dynamic mechanism for device file management.
-Multi-Arch: foreign
 
 Package: ncurses-base
-Essential: yes
-Priority: required
-Section: misc
-Installed-Size: 371
-Maintainer: Craig Small <csmall@debian.org>
-Architecture: all
 Source: ncurses
 Version: 5.9+20140913-1
-Provides: ncurses-runtime
+Architecture: all
+Essential: yes
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 371
 Conflicts: ncurses, ncurses-runtime
 Breaks: ncurses-term (<< 5.7+20100313-3)
+Provides: ncurses-runtime
+Multi-Arch: foreign
+Homepage: http://invisible-island.net/ncurses/
+Priority: required
+Section: misc
 Filename: pool/main/n/ncurses/ncurses-base_5.9+20140913-1_all.deb
 Size: 221992
-MD5sum: 3798da5fb6b4328fc6269349b363f2b1
-SHA1: 1f48c5af96a4da5ba68313719db529a6f2ded1ea
 SHA256: 1cdb5a8be45347eae4a5821e04fb564e907c216711397cd0a2e6cdf34f7e7f50
+SHA1: 1f48c5af96a4da5ba68313719db529a6f2ded1ea
+MD5sum: 3798da5fb6b4328fc6269349b363f2b1
 Description: basic terminal type definitions
  The ncurses library routines are a terminal-independent method of
  updating character screens with reasonable optimization.
@@ -479,30 +481,30 @@ Description: basic terminal type definitions
  This package contains terminfo data files to support the most common types of
  terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
  vt52, and xterm.
-Multi-Arch: foreign
-Homepage: http://invisible-island.net/ncurses/
 
 Package: perl-modules
-Priority: standard
-Section: perl
-Installed-Size: 15108
-Maintainer: Niko Tyni <ntyni@debian.org>
-Architecture: all
 Source: perl
 Version: 5.20.2-3+deb8u6
-Replaces: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpan-meta-perl, libcpan-meta-requirements-perl, libcpan-meta-yaml-perl, libdigest-perl, libexperimental-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-spec-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libnet-perl, libnet-ping-perl, libpackage-constants-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
-Provides: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcpan-meta-perl, libcpan-meta-requirements-perl, libcpan-meta-yaml-perl, libdigest-perl, libexperimental-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-spec-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
-Depends: perl-base (>= 5.20.2-3+deb8u6)
+Architecture: all
+Maintainer: Niko Tyni <ntyni@debian.org>
+Installed-Size: 15108
 Pre-Depends: dpkg (>= 1.17.17)
+Depends: perl-base (>= 5.20.2-3+deb8u6)
 Recommends: perl (>= 5.20.2-1), libarchive-extract-perl, libmodule-pluggable-perl, libpod-latex-perl, libterm-ui-perl, libtext-soundex-perl, libcgi-pm-perl, libmodule-build-perl, libpackage-constants-perl
 Suggests: libb-lint-perl, libcpanplus-dist-build-perl, libcpanplus-perl, libfile-checktree-perl, liblog-message-simple-perl, liblog-message-perl, libobject-accessor-perl
 Conflicts: defoma (<< 0.11.12), mono-gac (<< 2.10.8.1-3)
 Breaks: cli-common (<< 0.9+nmu1), libansicolor-perl (<< 4.02), libarchive-tar-perl (<< 1.96), libattribute-handlers-perl (<< 0.96), libautodie-perl (<< 2.23), libcgi-pm-perl (<< 3.65), libcpan-meta-perl (<< 2.140640), libcpan-meta-requirements-perl (<< 2.125), libcpan-meta-yaml-perl (<< 0.012), libdigest-perl (<< 1.17), libexperimental-perl (<< 0.007), libextutils-cbuilder-perl (<< 0.280217), libextutils-command-perl (<< 1.18), libextutils-install-perl (<< 1.67), libextutils-parsexs-perl (<< 3.240000), libfile-spec-perl (<< 3.4801), libhttp-tiny-perl (<< 0.043), libi18n-langtags-perl (<< 0.40), libio-zlib-perl (<< 1.10), libjson-pp-perl (<< 2.27203), liblocale-codes-perl (<< 3.30), liblocale-maketext-perl (<< 1.25), liblocale-maketext-simple-perl (<< 0.21), libmath-bigint-perl (<< 1.9993), libmath-complex-perl (<< 1.59), libmodule-build-perl (<< 0.420500), libmodule-corelist-perl (<< 5.20150214), libmodule-load-conditional-perl (<< 0.62), libmodule-load-perl (<< 0.32), libmodule-metadata-perl (<< 1.000019), libnet-perl (<= 1:1.22), libnet-ping-perl (<< 2.43), libpackage-constants-perl (<< 0.04), libparams-check-perl (<< 0.38), libparent-perl (<< 0.228), libparse-cpan-meta-perl (<< 1.4414), libperl-ostype-perl (<< 1.007), libpod-escapes-perl (<< 1.06), libpod-parser-perl (<< 1.62), libpod-simple-perl (<< 3.28), libtest-harness-perl (<< 3.30), libtest-simple-perl (<< 1.001002), libthread-queue-perl (<< 3.05), libtime-local-perl (<< 1.2300), libunicode-collate-perl (<< 1.04), libversion-perl (<< 1:0.9909), libversion-requirements-perl (<< 0.101022), mono-apache-server2 (<< 3.8-2.1), mono-apache-server4 (<< 3.8-2.1), mono-fastcgi-server2 (<< 3.8-2.1), mono-fastcgi-server4 (<< 3.8-2.1), patcher (<< 0.0.20040521-6.1), pdl (<< 1:2.007-4), perl (<< 5.20.2~), podlators-perl (<< 2.3.1), polygen-data (<< 1.0.6.ds2-13.1), pristine-tar (<< 1.33), pure-ftpd-common (<< 1.0.36-3.2), rinse (<< 3.0.7), shorewall (<< 4.6.4.3-2), shorewall-core (<< 4.6.4.3-2), tvtime (<< 1.0.2-14)
+Replaces: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpan-meta-perl, libcpan-meta-requirements-perl, libcpan-meta-yaml-perl, libdigest-perl, libexperimental-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-spec-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libnet-perl, libnet-ping-perl, libpackage-constants-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
+Provides: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcpan-meta-perl, libcpan-meta-requirements-perl, libcpan-meta-yaml-perl, libdigest-perl, libexperimental-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-spec-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
+Multi-Arch: foreign
+Homepage: http://dev.perl.org/perl5/
+Priority: standard
+Section: perl
 Filename: pool/main/p/perl/perl-modules_5.20.2-3+deb8u6_all.deb
 Size: 2546644
-MD5sum: 0d9a0dd06969ab4d8b68d49d598c9ec4
-SHA1: b08ba3dd6c6643cfbde1871ca2e6d42314ac8df5
 SHA256: 59c74e72dc08a7d13245cceee1b4877238503b2e24ef05209dd4ce34256d034c
+SHA1: b08ba3dd6c6643cfbde1871ca2e6d42314ac8df5
+MD5sum: 0d9a0dd06969ab4d8b68d49d598c9ec4
 Description: Core Perl modules
  Architecture independent Perl modules.  These modules are part of Perl and
  required if the `perl' package is installed.
@@ -511,44 +513,43 @@ Description: Core Perl modules
  considered an internal implementation detail of the `perl' package.
  Other packages should not depend on `perl-modules' directly, they
  should use `perl' (which depends on `perl-modules') instead.
-Homepage: http://dev.perl.org/perl5/
-Multi-Arch: foreign
 
 Package: raspbian-archive-keyring
+Version: 20120528.2
+Architecture: all
+Maintainer: Peter Michael Green <plugwash@p10link.net>
+Installed-Size: 31
+Depends: gnupg
+Provides: debian-archive-keyring
 Priority: important
 Section: misc
-Installed-Size: 31
-Maintainer: Peter Michael Green <plugwash@p10link.net>
-Architecture: all
-Version: 20120528.2
-Provides: debian-archive-keyring
-Depends: gnupg
 Filename: pool/main/r/raspbian-archive-keyring/raspbian-archive-keyring_20120528.2_all.deb
 Size: 3514
-MD5sum: ce84c83e8e47a894f7b3e2499513f297
-SHA1: 1f730314ef8cd6e603389e911deab4bb8f40903a
 SHA256: ea4b6737417fda8eeb4549ece7bb04249faed6779bc2424203fd635fda4dcc21
+SHA1: 1f730314ef8cd6e603389e911deab4bb8f40903a
+MD5sum: ce84c83e8e47a894f7b3e2499513f297
 Description: GnuPG archive keys of the raspbian archive
  The raspbian archive digitally signs its Release files. This package
  contains the archive keys used for that.
 
 Package: readline-common
-Priority: important
-Section: utils
-Installed-Size: 109
-Maintainer: Matthias Klose <doko@debian.org>
-Architecture: all
 Source: readline6
 Version: 6.3-8
-Replaces: libreadline-common, libreadline4 (<< 4.3-16), libreadline5 (<< 5.0-11)
+Architecture: all
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 109
 Depends: dpkg (>= 1.15.4) | install-info
 Suggests: readline-doc
 Conflicts: libreadline-common, libreadline5 (<< 5.0-11)
+Replaces: libreadline-common, libreadline4 (<< 4.3-16), libreadline5 (<< 5.0-11)
+Multi-Arch: foreign
+Priority: important
+Section: utils
 Filename: pool/main/r/readline6/readline-common_6.3-8_all.deb
 Size: 57698
-MD5sum: d072984a0bf5e597ca57bc8f07ef1849
-SHA1: 89c5b0b7650c5bdc90308cad953052ff714c7a4d
 SHA256: 8b91bce988c38798e565820919a600f1a58ca483d8406860cc37e847a55a6bfd
+SHA1: 89c5b0b7650c5bdc90308cad953052ff714c7a4d
+MD5sum: d072984a0bf5e597ca57bc8f07ef1849
 Description: GNU readline and history libraries, common files
  The GNU readline library aids in the consistency of user interface
  across discrete programs that need to provide a command line
@@ -556,21 +557,21 @@ Description: GNU readline and history libraries, common files
  .
  The GNU history library provides a consistent user interface for
  recalling lines of previously typed input.
-Multi-Arch: foreign
 
 Package: sensible-utils
+Version: 0.0.9
+Architecture: all
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 110
+Replaces: debianutils (<= 2.32.3), manpages-pl (<= 20060617-3~)
+Multi-Arch: foreign
 Priority: required
 Section: utils
-Installed-Size: 110
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Architecture: all
-Version: 0.0.9
-Replaces: debianutils (<= 2.32.3), manpages-pl (<= 20060617-3~)
 Filename: pool/main/s/sensible-utils/sensible-utils_0.0.9_all.deb
 Size: 11260
-MD5sum: 1b8ddff8ac3690dfce889b580779dc1b
-SHA1: cc837927dad61fc7fc4b1114957c03b6661fd3e4
 SHA256: c848f80734e61379b5baac315c2342b2fea18d246074e6f5510fc643f5024978
+SHA1: cc837927dad61fc7fc4b1114957c03b6661fd3e4
+MD5sum: 1b8ddff8ac3690dfce889b580779dc1b
 Description: Utilities for sensible alternative selection
  This package provides a number of small utilities which are used
  by programs to sensibly select and spawn an appropriate browser,
@@ -578,55 +579,54 @@ Description: Utilities for sensible alternative selection
  .
  The specific utilities included are: sensible-browser sensible-editor
  sensible-pager
-Multi-Arch: foreign
 
 Package: sysv-rc
-Priority: required
-Section: admin
-Installed-Size: 125
-Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
-Architecture: all
 Source: sysvinit
 Version: 2.88dsf-59
-Replaces: file-rc
+Architecture: all
+Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
+Installed-Size: 125
 Depends: debconf (>= 0.5) | debconf-2.0, sysvinit-utils (>= 2.86.ds1-62), insserv (>> 1.12.0-10), startpar
 Recommends: lsb-base (>= 3.2-14)
 Suggests: bum
 Conflicts: file-rc
 Breaks: initscripts (<< 2.86.ds1-63)
+Replaces: file-rc
+Multi-Arch: foreign
+Homepage: http://savannah.nongnu.org/projects/sysvinit
+Priority: required
+Section: admin
 Filename: pool/main/s/sysvinit/sysv-rc_2.88dsf-59_all.deb
 Size: 82814
-MD5sum: 0ed4ac245bbb6e0dbde36613151bc393
-SHA1: af65a5f4f2e49a0ae1f7e8009eba7ba303ad9699
 SHA256: da964cb1d9016ebbb65667b1ec743bbec06d817278d4038e15292ce554f835da
+SHA1: af65a5f4f2e49a0ae1f7e8009eba7ba303ad9699
+MD5sum: 0ed4ac245bbb6e0dbde36613151bc393
 Description: System-V-like runlevel change mechanism
  This package provides support for the System-V like system
  for booting, changing runlevels, and shutting down,
  configured through symbolic links in /etc/rc?.d/.
-Homepage: http://savannah.nongnu.org/projects/sysvinit
-Multi-Arch: foreign
 
 Package: tzdata
-Priority: required
-Section: localization
-Installed-Size: 1532
-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
-Architecture: all
 Version: 2016d-0+deb8u1
+Architecture: all
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 1532
+Depends: debconf (>= 0.5) | debconf-2.0
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Provides: tzdata-jessie
-Depends: debconf (>= 0.5) | debconf-2.0
+Multi-Arch: foreign
+Homepage: http://www.iana.org/time-zones
+Priority: required
+Section: localization
 Filename: pool/main/t/tzdata/tzdata_2016d-0+deb8u1_all.deb
 Size: 184918
-MD5sum: dc0ebde5328ef1d03e2d84736b888e09
-SHA1: 6e56dd34d30701ea8982a631f172e9ea47d947ab
 SHA256: 15413a299ed8fbaf5a889188dfa04d54dce82885143aa2d8a55421f86d53ab34
+SHA1: 6e56dd34d30701ea8982a631f172e9ea47d947ab
+MD5sum: dc0ebde5328ef1d03e2d84736b888e09
 Description: time zone and daylight-saving time data
  This package contains data required for the implementation of
  standard local time for many representative locations around the
  globe. It is updated periodically to reflect changes made by
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
-Homepage: http://www.iana.org/time-zones
-Multi-Arch: foreign
 

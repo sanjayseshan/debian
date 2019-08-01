@@ -1,0 +1,138 @@
+Package: libraspberrypi-bin
+Source: raspberrypi-vc
+Version: 1.20161003.2350bf2-1
+Architecture: arm64
+Maintainer: Ryan Finnie <ryan@finnie.org>
+Installed-Size: 235
+Depends: libraspberrypi0 (= 1.20161003.2350bf2-1)
+Homepage: https://github.com/raspberrypi/userland
+Priority: extra
+Section: misc
+Filename: pool/main/r/raspberrypi-vc/libraspberrypi-bin_1.20161003.2350bf2-1_arm64.deb
+Size: 49764
+SHA256: 30ab114946523d3b0f0cde712aac1a7fc60f566ac2f08896c253ed7a1ee7ec4d
+SHA1: 85fe3699560d33326e20f190064b235e2b8ff75a
+MD5sum: 74176178d57527a897a4aa7a484bb098
+Description: Miscellaneous Raspberry Pi utilities
+ This package contains various utilities for interacting with the Raspberry
+ Pi's VideoCore IV.
+
+Package: libraspberrypi-dev
+Source: raspberrypi-vc
+Version: 1.20161003.2350bf2-1
+Architecture: arm64
+Maintainer: Ryan Finnie <ryan@finnie.org>
+Installed-Size: 2161
+Depends: libraspberrypi0 (= 1.20161003.2350bf2-1)
+Homepage: https://github.com/raspberrypi/userland
+Priority: extra
+Section: libdevel
+Filename: pool/main/r/raspberrypi-vc/libraspberrypi-dev_1.20161003.2350bf2-1_arm64.deb
+Size: 241656
+SHA256: 7351f0c94fb4ee236628210af86601884bc72eb70b368d77554d7c0eb0dffa2e
+SHA1: ee1ea8493771919e1d3317b1f79a90a68ac9f3af
+MD5sum: 868ead2b9cacc7877c933586402b4083
+Description: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV (headers)
+ This package contains headers and other development files for implementations
+ of EGL, OpenGL ES, OpenVG, OpenWF Composition, and others for the Raspberry
+ Pi's VideoCore IV multimedia processor.
+
+Package: libraspberrypi-doc
+Source: raspberrypi-vc
+Version: 1.20161003.2350bf2-1
+Architecture: arm64
+Maintainer: Ryan Finnie <ryan@finnie.org>
+Installed-Size: 32603
+Depends: libraspberrypi0 (= 1.20161003.2350bf2-1)
+Homepage: https://github.com/raspberrypi/userland
+Priority: extra
+Section: libdevel
+Filename: pool/main/r/raspberrypi-vc/libraspberrypi-doc_1.20161003.2350bf2-1_arm64.deb
+Size: 31338830
+SHA256: eb92b837bf02cbcec480f81f3c3d57cbde0620c3476cd9ac293d1f582b173bb8
+SHA1: 1f01cb22fd62fc9b1435cbac7fbe9c9722c29d10
+MD5sum: fd8efffe3d258fa6f75244d7adb69156
+Description: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV (headers)
+ This package contains headers, example code, and other development files for
+ implementations of EGL, OpenGL ES, OpenVG, OpenWF Composition, and others for
+ the Raspberry Pi's VideoCore IV multimedia processor.
+
+Package: libraspberrypi0
+Source: raspberrypi-vc
+Version: 1.20161003.2350bf2-1
+Architecture: arm64
+Maintainer: Ryan Finnie <ryan@finnie.org>
+Installed-Size: 189
+Depends: libc6 (>= 2.17)
+Homepage: https://github.com/raspberrypi/userland
+Priority: extra
+Section: libs
+Filename: pool/main/r/raspberrypi-vc/libraspberrypi0_1.20161003.2350bf2-1_arm64.deb
+Size: 40308
+SHA256: f62aecac6d90cce9cedde30a13893ecf290a19e743313556b722c817c7140e53
+SHA1: 7822a8f2d84cf9ad0cd2a2a1e9c1a7e013af4a99
+MD5sum: e3ac33821ca1397725f7fb155eb6eeb5
+Description: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV
+ This package contains implementations of EGL, OpenGL ES, OpenVG, OpenWF
+ Composition, and others for the Raspberry Pi's VideoCore IV multimedia
+ processor.
+
+Package: raspberrypi-firmware
+Version: 0.0.1
+Architecture: all
+Depends: 
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Priority: required
+Section: base
+Filename: pool/main/r/raspberrypi-firmware/raspberrypi-firmware_0.0.1_all.deb
+Size: 44878900
+SHA256: 695f523d2a0f4bb83dda2f8e3a0fde95889d7eddd84ba29dbb14e6f35dba638a
+SHA1: a03a7b731110158955fed4c9432369f76fa91355
+MD5sum: 83ca4bde6019c3739b22a50c467243ca
+Description: Raspberry Pi non-free firmware
+
+Package: raspberrypi3-kernel
+Version: 4.15.0
+Architecture: arm64
+Depends: 
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Priority: required
+Section: base
+Filename: pool/main/r/raspberrypi3-kernel/raspberrypi3-kernel_4.15.0_arm64.deb
+Size: 102432632
+SHA256: b9e39796bcb540a241129abcc6f571e457c8bc815bacd7612364c5a37854ac04
+SHA1: d3e8c9ec82df2947fd383e5c2f7f02365e0bf5d8
+MD5sum: 5d4bb679060093d72f0c4a6a79efc85e
+Description: Raspberry Pi 3 kernel in aarch64 mode
+
+Package: raspberrypi4-kernel
+Version: 4.19.59
+Architecture: arm64
+Depends: 
+Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
+Priority: required
+Section: base
+Filename: pool/main/r/raspberrypi4-kernel/raspberrypi4-kernel_4.19.59_arm64.deb
+Size: 86877092
+SHA256: 9f4f94cd85f1cfa0796fe7037563672a57ce11a9ce0789cc8bf0d601da50e6ac
+SHA1: 2253395062163400cab147a7f26e038bfef99002
+MD5sum: 938a2745eb8c97fe0faab9838423766d
+Description: Raspberry Pi 4 kernel in aarch64 mode
+
+Package: raspi-config
+Version: 20190709
+Architecture: all
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 90
+Depends: whiptail, parted, lua5.1, alsa-utils, psmisc
+Recommends: triggerhappy, iw
+Priority: optional
+Section: utils
+Filename: pool/main/r/raspi-config/raspi-config_20190709_all.deb
+Size: 21668
+SHA256: 7cb92b6fdae79ebbb0d1eb6d9a370ea17819c41d71ec6030d509a7f84c112909
+SHA1: 3cbf862f4ceb724fff907c6749734ff9d011189c
+MD5sum: 155a04bf7aa03f0e1fc617d176093e72
+Description: Raspberry Pi configuration tool
+ A simple configuration tool for common Raspberry Pi administrative tasks
+

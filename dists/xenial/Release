@@ -1,0 +1,19 @@
+Origin: rpi
+Label: rpi
+Codename: xenial
+Date: Thu, 01 Aug 2019 00:25:19 UTC
+Architectures: armel
+Components: main
+Description: Apt repository for rpi
+MD5Sum:
+ 2715e89e012c5f97ef8647a3f5365c30 110502 main/binary-armel/Packages
+ 8582c09b27819b6c977e5c8de66874e4 35383 main/binary-armel/Packages.gz
+ 0dd160ec8d579b98fb7b982a37b24adb 95 main/binary-armel/Release
+SHA1:
+ dab1a32d5e0e0528672583d661137dd9b2082ecc 110502 main/binary-armel/Packages
+ 6e01dd19d093911d04ba592cf7d4f6a9ad74bfe9 35383 main/binary-armel/Packages.gz
+ 07ffecc3c7ef649b38ead054dffc8fb3c0adb428 95 main/binary-armel/Release
+SHA256:
+ f3ae14abf1cfca26bfdfbc2c8d5092e9a7f2493127f65f26a2b5b29effc07e33 110502 main/binary-armel/Packages
+ e8216d6faea7c5b4f9e1ee2fc2f031b652d1f2dd63070f2bb23e1b31492c37f6 35383 main/binary-armel/Packages.gz
+ 0e692361ea367c666aaba1e2c6b3baa0ae1378f491d7145ce247e8aaed9b0024 95 main/binary-armel/Release
