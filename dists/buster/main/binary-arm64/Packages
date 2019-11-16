@@ -106,17 +106,17 @@ MD5sum: 33981178887ecfb59bd2303cf589688d
 Description: Raspberry Pi 3 kernel in aarch64 mode
 
 Package: raspberrypi4-kernel
-Version: 4.19.59
+Version: 4.19.81
 Architecture: arm64
 Depends: 
 Maintainer: Sanjay Seshan <sanjay.seshan@outlook.com>
 Priority: required
 Section: base
-Filename: pool/main/r/raspberrypi4-kernel/raspberrypi4-kernel_4.19.59_arm64.deb
-Size: 86878844
-SHA256: bbf646da426ca08102011969db1e7bff2f2202906a62bf4c73a5e3a5e833abd8
-SHA1: bd75d91e12c7fee74e4ccb8de6ca7a9d81c8b325
-MD5sum: eb07d46dc58829fc28c5e0e8a27e16d2
+Filename: pool/main/r/raspberrypi4-kernel/raspberrypi4-kernel_4.19.81_arm64.deb
+Size: 25001768
+SHA256: 15dc2305c1353efcf9c29302aa110a96931318906853a85cb6bb81dd7fa594cc
+SHA1: e6766f4e659b27b52d6838cbedfac0cfb74bed36
+MD5sum: 9889baaf9d51b1d58577bd223abab283
 Description: Raspberry Pi 4 kernel in aarch64 mode
 
 Package: raspi-config
