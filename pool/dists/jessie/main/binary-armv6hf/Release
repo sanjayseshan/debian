@@ -1,0 +1,5 @@
+Component: main
+Origin: rpi
+Label: rpi
+Architecture: armv6hf
+Description: Apt repository for rpi

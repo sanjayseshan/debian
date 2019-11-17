@@ -1,0 +1,23 @@
+Origin: rpi
+Label: rpi
+Codename: buster
+Architectures: arm64
+Components: main
+Description: Apt repository for rpi
+SignWith: F6DE6DA3792C0D0C
+
+Origin: rpi
+Label: rpi
+Codename: jessie
+Architectures: arm64 armhf armv6hf i386 armel amd64
+Components: main
+Description: Apt repository for rpi
+SignWith: F6DE6DA3792C0D0C
+
+Origin: rpi
+Label: rpi
+Codename: xenial
+Architectures: armel
+Components: main
+Description: Apt repository for rpi
+SignWith: F6DE6DA3792C0D0C
