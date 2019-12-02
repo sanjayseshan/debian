@@ -1,19 +1,37 @@
 Origin: rpi
 Label: rpi
 Codename: buster
-Date: Sun, 17 Nov 2019 00:52:31 UTC
-Architectures: arm64
+Date: Mon, 02 Dec 2019 16:43:07 UTC
+Architectures: arm64 armel armhf
 Components: main
 Description: Apt repository for rpi
 MD5Sum:
- 930954cd4da20a1c05c0d6cc35ac9061 5213 main/binary-arm64/Packages
- 236df175e37986b57c40e1821dff06bc 1764 main/binary-arm64/Packages.gz
+ af56c799bda4a91f89237f81e330d6af 219732 main/binary-arm64/Packages
+ 59fe1e43bd3d782f3055a2acd248d16c 54600 main/binary-arm64/Packages.gz
  6fccf9acc492df618d1a4d9ad18f029c 95 main/binary-arm64/Release
+ 9b5824d35e304dce4c02b87889a84487 197994 main/binary-armel/Packages
+ 784043420f85f8a96f8e434dc3cd8b7a 48741 main/binary-armel/Packages.gz
+ 0dd160ec8d579b98fb7b982a37b24adb 95 main/binary-armel/Release
+ 0e7619b188cb1fad67b4634658fef6ab 279755 main/binary-armhf/Packages
+ c858328041dc7a25c8b8722830ce933a 66159 main/binary-armhf/Packages.gz
+ 7b3b6367eb41331ca5bc9449d5699ca1 95 main/binary-armhf/Release
 SHA1:
- e81abd07a2efdfb9aa597d9ca28dc9e59c74b48b 5213 main/binary-arm64/Packages
- 7291a968e5e8504cf867f7bd47f5101dd2168a4c 1764 main/binary-arm64/Packages.gz
+ 2230abf33e656e4f1b57e95acea4f510d87ceea6 219732 main/binary-arm64/Packages
+ 6985a96b527646bb357f070dfdcccf03f329563a 54600 main/binary-arm64/Packages.gz
  c0d5ee2c6c8e76da268e5408dbcc0d1ce4039289 95 main/binary-arm64/Release
+ eec771297c4179d22d95cd3d31e8ac8caaf91ff1 197994 main/binary-armel/Packages
+ aec7ae0973253a95298401fdcf0370be0933be7a 48741 main/binary-armel/Packages.gz
+ 07ffecc3c7ef649b38ead054dffc8fb3c0adb428 95 main/binary-armel/Release
+ 3019b3fb24704cba4d90a0d27c2ad604734757f4 279755 main/binary-armhf/Packages
+ bd63f0f66d1b47164faf50557b5a7f18ab598ae7 66159 main/binary-armhf/Packages.gz
+ 668248d7b993ac65f6b8c60ddb88988d3a0afc21 95 main/binary-armhf/Release
 SHA256:
- 3140633df87746f311d6b42108b7c2c6d3c520d24c61312fae28e037c7cb3065 5213 main/binary-arm64/Packages
- ab99f1f345c6c0909b9ea50e1413feff4884ed8a27007e0ab586d2d90448995e 1764 main/binary-arm64/Packages.gz
+ 9f624418a4cf52b4662697306532e8efae4c10a203b798e820f11b420630656a 219732 main/binary-arm64/Packages
+ dc46d4c312c339a1b88f0d1038ac78e3f7fed69f9800a4866d6633dd7e21e1ed 54600 main/binary-arm64/Packages.gz
  d9be10713293776866b603f485a2f991985362b45fd6099624e43fe00ef975d0 95 main/binary-arm64/Release
+ b5acec5c6bc7c121f1fa060c0748dfb39b286313414092a87e8a10c4f4e9e729 197994 main/binary-armel/Packages
+ 8338db5c2139de0f22f1ad6934524ca69cfce72a7052b8716b7c882244466d68 48741 main/binary-armel/Packages.gz
+ 0e692361ea367c666aaba1e2c6b3baa0ae1378f491d7145ce247e8aaed9b0024 95 main/binary-armel/Release
+ 298bce7b879edafa62b913b715fc1e5ae4e7dfa571bee19363c491b3c42fb6e9 279755 main/binary-armhf/Packages
+ 6f9066ccf8e544618e4e15ab295fb6d7e5f4948f47c6d9968dd4750fd35150cd 66159 main/binary-armhf/Packages.gz
+ 3c14c64abc44b8bdd95123c4c9b3667709cf35c5ab6ec1059dc1c8cb90ea7483 95 main/binary-armhf/Release
