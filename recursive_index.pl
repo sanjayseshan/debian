@@ -44,6 +44,7 @@ $cwd =~ s#^(.+)[/\\]##;
 
 my $template = <<TMPL;
 <html><head>
+<style>h1 {color:red;font-family:verdana;font-size:200%;} b  {    color:green;    font-family:arial;    font-size:100%} p  {    color:brown;    font-family:arial;    font-size:110%}</style>
 <title>List of files in <tmpl_var path></title>
 <style>body {font-family: Arial, sans-serif;} .mg {padding-left: 16px;} .r {text-align: right;} .sp {padding-bottom: 8px;} .f {margin-top: 2em; font-size: 9pt; font-style: italic;}</style>
 </head>
@@ -52,10 +53,10 @@ my $template = <<TMPL;
 <tmpl_if readme><div class="readme"><pre><tmpl_var readme></pre></div></tmpl_if>
 <table cellspacing="2" cellpadding="0">
 <tmpl_unless root>
-<tr><td colspan="4" class="sp"><b><a href="../$index_file">Parent directory</a></b></td></tr>
+<tr><td colspan="4" class="sp"><b><a href="../$index_file"><img src='http://archive.ev3lessons.com/web/EV3lessons-EV3Trainer-v1/advanced/back_arrow.jpg'> Parent directory</a></b></td></tr>
 </tmpl_unless>
 <tmpl_loop dirs>
-<tr><td colspan="3"><b><a href="<tmpl_var name escape=url>/$index_file"><tmpl_var name></a></b></td><td class="mg"><tmpl_var desc></td></tr>
+<tr><td colspan="3"><b><a href="<tmpl_var name escape=url>/$index_file"><img src='http://archive.ev3lessons.com/web/EV3lessons-EV3Trainer-v1/PE_MABEZAT_A_O_img1.gif'><tmpl_var name></a></b></td><td class="mg"><tmpl_var desc></td></tr>
 </tmpl_loop>
 <tr><td colspan="3" class="sp"></td></tr>
 <tmpl_loop files>
@@ -65,7 +66,7 @@ my $template = <<TMPL;
 <tmpl_if nothing>
 <p><i>Nothing here.</i></p>
 </tmpl_if>
-<p class="f">Created with <a href="https://gist.github.com/3555260">recursive_index.pl</a> on <tmpl_var date>.</p>
+
 </body>
 </html>
 TMPL
